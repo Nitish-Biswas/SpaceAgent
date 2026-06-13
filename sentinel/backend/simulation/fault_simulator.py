@@ -12,19 +12,19 @@ standard library (``random``, ``math``, ``datetime``, ``json``, ``typing``).
 
 Supported fault types
 ---------------------
-- ``EPS_POWER_FAULT``       : Solar-array failure leading to battery drain.
-- ``ADCS_SENSOR_FAULT``     : Gyroscope failure causing attitude divergence.
-- ``OBC_SOFTWARE_FAULT``    : Memory leak / watchdog-timeout sequence.
-- ``TCS_THERMAL_FAULT``     : Heater control failure causing thermal runaway.
-- ``COMMS_FAULT``           : Transponder lock-loss due to antenna mispointing.
-- ``MULTI_SYSTEM_CASCADE``  : Causal chain spanning ADCS, EPS, and TCS subsystems.
+- ``EPS_SOLAR_UNDERVOLT``      : Solar-array failure leading to battery drain.
+- ``ADCS_GYRO_SEU``            : Gyroscope SEU failure causing attitude divergence.
+- ``OBC_WATCHDOG_OVERFLOW``    : Memory leak / watchdog-timeout sequence.
+- ``TCS_THERMAL_RUNAWAY``      : Heater control failure causing thermal runaway.
+- ``COMMS_TRANSPONDER_LOSS``   : Transponder lock-loss due to antenna mispointing.
+- ``MULTI_CASCADE``            : Causal chain spanning ADCS, EPS, and TCS subsystems.
 
 Quick start
 -----------
     >>> from fault_simulator import SatelliteFaultSimulator
     >>> sim = SatelliteFaultSimulator(seed=42)
-    >>> dump = sim.generate_crash_dump("EPS_POWER_FAULT", scenario_id=1)
-    >>> truth = sim.get_ground_truth("EPS_POWER_FAULT")
+    >>> dump = sim.generate_crash_dump("EPS_SOLAR_UNDERVOLT", scenario_id=1)
+    >>> truth = sim.get_ground_truth("EPS_SOLAR_UNDERVOLT")
 """
 
 import random
@@ -49,24 +49,24 @@ class SatelliteFaultSimulator:
     Usage
     -----
         >>> sim = SatelliteFaultSimulator(seed=42)
-        >>> dump = sim.generate_crash_dump("TCS_THERMAL_FAULT", scenario_id=7)
+        >>> dump = sim.generate_crash_dump("TCS_THERMAL_RUNAWAY", scenario_id=7)
         >>> print(dump["fault_type"])
-        TCS_THERMAL_FAULT
+        TCS_THERMAL_RUNAWAY
 
     Supported fault types
     ---------------------
-    ``EPS_POWER_FAULT``, ``ADCS_SENSOR_FAULT``, ``OBC_SOFTWARE_FAULT``,
-    ``TCS_THERMAL_FAULT``, ``COMMS_FAULT``, ``MULTI_SYSTEM_CASCADE``.
+    ``EPS_SOLAR_UNDERVOLT``, ``ADCS_GYRO_SEU``, ``OBC_WATCHDOG_OVERFLOW``,
+    ``TCS_THERMAL_RUNAWAY``, ``COMMS_TRANSPONDER_LOSS``, ``MULTI_CASCADE``.
     """
 
     # The six valid fault type identifiers used throughout the class.
     _VALID_FAULT_TYPES = frozenset({
-        "EPS_POWER_FAULT",
-        "ADCS_SENSOR_FAULT",
-        "OBC_SOFTWARE_FAULT",
-        "TCS_THERMAL_FAULT",
-        "COMMS_FAULT",
-        "MULTI_SYSTEM_CASCADE",
+        "EPS_SOLAR_UNDERVOLT",
+        "ADCS_GYRO_SEU",
+        "OBC_WATCHDOG_OVERFLOW",
+        "TCS_THERMAL_RUNAWAY",
+        "COMMS_TRANSPONDER_LOSS",
+        "MULTI_CASCADE",
     })
 
     def __init__(self, seed: int = 42) -> None:
@@ -489,12 +489,12 @@ class SatelliteFaultSimulator:
         fault_type : str
             One of the six supported fault type identifiers:
 
-            - ``"EPS_POWER_FAULT"``       : Solar-array failure leading to battery drain.
-            - ``"ADCS_SENSOR_FAULT"``     : Gyroscope failure causing attitude divergence.
-            - ``"OBC_SOFTWARE_FAULT"``    : Memory leak / watchdog-timeout sequence.
-            - ``"TCS_THERMAL_FAULT"``     : Heater control failure causing thermal runaway.
-            - ``"COMMS_FAULT"``           : Transponder lock-loss due to antenna mispointing.
-            - ``"MULTI_SYSTEM_CASCADE"``  : Causal chain spanning ADCS, EPS, and TCS.
+            - ``"EPS_SOLAR_UNDERVOLT"``      : Solar-array failure leading to battery drain.
+            - ``"ADCS_GYRO_SEU"``            : Gyroscope SEU failure causing attitude divergence.
+            - ``"OBC_WATCHDOG_OVERFLOW"``    : Memory leak / watchdog-timeout sequence.
+            - ``"TCS_THERMAL_RUNAWAY"``      : Heater control failure causing thermal runaway.
+            - ``"COMMS_TRANSPONDER_LOSS"``   : Transponder lock-loss due to antenna mispointing.
+            - ``"MULTI_CASCADE"``            : Causal chain spanning ADCS, EPS, and TCS.
 
         scenario_id : int
             An integer identifier that uniquely labels this crash dump within a dataset.
@@ -537,12 +537,12 @@ class SatelliteFaultSimulator:
 
         # Dispatch to the appropriate private fault generator.
         _dispatch = {
-            "EPS_POWER_FAULT":      self._generate_eps_fault,
-            "ADCS_SENSOR_FAULT":    self._generate_adcs_fault,
-            "OBC_SOFTWARE_FAULT":   self._generate_obc_fault,
-            "TCS_THERMAL_FAULT":    self._generate_tcs_fault,
-            "COMMS_FAULT":          self._generate_comms_fault,
-            "MULTI_SYSTEM_CASCADE": self._generate_cascade_fault,
+            "EPS_SOLAR_UNDERVOLT":      self._generate_eps_fault,
+            "ADCS_GYRO_SEU":            self._generate_adcs_fault,
+            "OBC_WATCHDOG_OVERFLOW":    self._generate_obc_fault,
+            "TCS_THERMAL_RUNAWAY":      self._generate_tcs_fault,
+            "COMMS_TRANSPONDER_LOSS":   self._generate_comms_fault,
+            "MULTI_CASCADE":            self._generate_cascade_fault,
         }
         generator = _dispatch[fault_type]
         telemetry, event_log, hardware_state, operating_context, fault_register = generator()
@@ -1005,12 +1005,12 @@ class SatelliteFaultSimulator:
         fault_type : str
             One of the six supported fault type identifiers:
 
-            - ``"EPS_POWER_FAULT"``       : Solar-array failure leading to battery drain.
-            - ``"ADCS_SENSOR_FAULT"``     : Gyroscope failure causing attitude divergence.
-            - ``"OBC_SOFTWARE_FAULT"``    : Memory leak / watchdog-timeout sequence.
-            - ``"TCS_THERMAL_FAULT"``     : Heater control failure causing thermal runaway.
-            - ``"COMMS_FAULT"``           : Transponder lock-loss due to antenna mispointing.
-            - ``"MULTI_SYSTEM_CASCADE"``  : Causal chain spanning ADCS, EPS, and TCS.
+            - ``"EPS_SOLAR_UNDERVOLT"``      : Solar-array failure leading to battery drain.
+            - ``"ADCS_GYRO_SEU"``            : Gyroscope SEU failure causing attitude divergence.
+            - ``"OBC_WATCHDOG_OVERFLOW"``    : Memory leak / watchdog-timeout sequence.
+            - ``"TCS_THERMAL_RUNAWAY"``      : Heater control failure causing thermal runaway.
+            - ``"COMMS_TRANSPONDER_LOSS"``   : Transponder lock-loss due to antenna mispointing.
+            - ``"MULTI_CASCADE"``            : Causal chain spanning ADCS, EPS, and TCS.
 
         Returns
         -------
@@ -1024,7 +1024,7 @@ class SatelliteFaultSimulator:
             - ``causal_chain`` (list of str): Ordered sequence of fault events
               from initial trigger to final system state.
             - ``confidence`` (float): Diagnostic confidence in [0.0, 1.0].
-              ``"MULTI_SYSTEM_CASCADE"`` returns ~0.65 to reflect ambiguity.
+              ``"MULTI_CASCADE"`` returns ~0.65 to reflect ambiguity.
             - ``recovery_action_sequence`` (list of str): Ordered recovery steps
               recommended by ground operators.
             - ``risk_level`` (str): One of ``"LOW"``, ``"MEDIUM"``, ``"HIGH"``.
@@ -1042,8 +1042,8 @@ class SatelliteFaultSimulator:
             )
 
         _ground_truth_data = {
-            "EPS_POWER_FAULT": {
-                "root_cause_classification": "EPS_POWER_FAULT",
+            "EPS_SOLAR_UNDERVOLT": {
+                "root_cause_classification": "EPS_SOLAR_UNDERVOLT",
                 "root_cause_subsystem": "EPS",
                 "causal_chain": [
                     "Solar array output current drops to near zero due to panel damage or shadowing",
@@ -1064,8 +1064,8 @@ class SatelliteFaultSimulator:
                 ],
                 "risk_level": "HIGH",
             },
-            "ADCS_SENSOR_FAULT": {
-                "root_cause_classification": "ADCS_SENSOR_FAULT",
+            "ADCS_GYRO_SEU": {
+                "root_cause_classification": "ADCS_GYRO_SEU",
                 "root_cause_subsystem": "ADCS",
                 "causal_chain": [
                     "Ionising radiation causes an SEU burst in gyroscope memory registers",
@@ -1087,8 +1087,8 @@ class SatelliteFaultSimulator:
                 ],
                 "risk_level": "HIGH",
             },
-            "OBC_SOFTWARE_FAULT": {
-                "root_cause_classification": "OBC_SOFTWARE_FAULT",
+            "OBC_WATCHDOG_OVERFLOW": {
+                "root_cause_classification": "OBC_WATCHDOG_OVERFLOW",
                 "root_cause_subsystem": "OBC",
                 "causal_chain": [
                     "A software process begins leaking heap memory due to unfreed allocations",
@@ -1109,8 +1109,8 @@ class SatelliteFaultSimulator:
                 ],
                 "risk_level": "MEDIUM",
             },
-            "TCS_THERMAL_FAULT": {
-                "root_cause_classification": "TCS_THERMAL_FAULT",
+            "TCS_THERMAL_RUNAWAY": {
+                "root_cause_classification": "TCS_THERMAL_RUNAWAY",
                 "root_cause_subsystem": "TCS",
                 "causal_chain": [
                     "Heater control loop fails, leaving heater enable flag stuck high",
@@ -1131,8 +1131,8 @@ class SatelliteFaultSimulator:
                 ],
                 "risk_level": "HIGH",
             },
-            "COMMS_FAULT": {
-                "root_cause_classification": "COMMS_FAULT",
+            "COMMS_TRANSPONDER_LOSS": {
+                "root_cause_classification": "COMMS_TRANSPONDER_LOSS",
                 "root_cause_subsystem": "COMMS",
                 "causal_chain": [
                     "Antenna pointing error develops due to an ADCS anomaly",
@@ -1153,8 +1153,8 @@ class SatelliteFaultSimulator:
                 ],
                 "risk_level": "MEDIUM",
             },
-            "MULTI_SYSTEM_CASCADE": {
-                "root_cause_classification": "MULTI_SYSTEM_CASCADE",
+            "MULTI_CASCADE": {
+                "root_cause_classification": "MULTI_CASCADE",
                 "root_cause_subsystem": "MULTI",
                 "causal_chain": [
                     "SEU burst corrupts gyroscope registers, initiating ADCS failure",
@@ -1199,12 +1199,12 @@ if __name__ == "__main__":
     ]
 
     FAULT_TYPES = [
-        "EPS_POWER_FAULT",
-        "ADCS_SENSOR_FAULT",
-        "OBC_SOFTWARE_FAULT",
-        "TCS_THERMAL_FAULT",
-        "COMMS_FAULT",
-        "MULTI_SYSTEM_CASCADE",
+        "EPS_SOLAR_UNDERVOLT",
+        "ADCS_GYRO_SEU",
+        "OBC_WATCHDOG_OVERFLOW",
+        "TCS_THERMAL_RUNAWAY",
+        "COMMS_TRANSPONDER_LOSS",
+        "MULTI_CASCADE",
     ]
 
     sim = SatelliteFaultSimulator(seed=42)

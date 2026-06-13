@@ -1,0 +1,895 @@
+{
+  "scenario_id": 109,
+  "timestamp": "2006-09-25T19:55:49.062Z",
+  "fault_type": "ESA_ADB_ANOMALY",
+  "fault_register": "ESA_LABEL:id_109;CLASS:class_3;SUBCLASS:subclass_2",
+  "pre_fault_telemetry": [
+    {
+      "timestamp_offset": "T-593.088s",
+      "parameter": "channel_41",
+      "value": 0.816503,
+      "unit": "normalized",
+      "nominal_min": 0.797548,
+      "nominal_max": 0.82607,
+      "anomalous": false
+    },
+    {
+      "timestamp_offset": "T-593.088s",
+      "parameter": "channel_42",
+      "value": 0.772688,
+      "unit": "normalized",
+      "nominal_min": 0.764285,
+      "nominal_max": 0.806006,
+      "anomalous": false
+    },
+    {
+      "timestamp_offset": "T-593.088s",
+      "parameter": "channel_43",
+      "value": 0.773482,
+      "unit": "normalized",
+      "nominal_min": 0.758193,
+      "nominal_max": 0.786285,
+      "anomalous": false
+    },
+    {
+      "timestamp_offset": "T-593.088s",
+      "parameter": "channel_44",
+      "value": 0.803115,
+      "unit": "normalized",
+      "nominal_min": 0.780812,
+      "nominal_max": 0.815033,
+      "anomalous": false
+    },
+    {
+      "timestamp_offset": "T-593.088s",
+      "parameter": "channel_45",
+      "value": 0.804984,
+      "unit": "normalized",
+      "nominal_min": 0.797574,
+      "nominal_max": 0.829473,
+      "anomalous": false
+    },
+    {
+      "timestamp_offset": "T-593.088s",
+      "parameter": "channel_46",
+      "value": 0.776273,
+      "unit": "normalized",
+      "nominal_min": 0.747717,
+      "nominal_max": 0.78975,
+      "anomalous": false
+    },
+    {
+      "timestamp_offset": "T-533.088s",
+      "parameter": "channel_41",
+      "value": 0.815718,
+      "unit": "normalized",
+      "nominal_min": 0.797548,
+      "nominal_max": 0.82607,
+      "anomalous": false
+    },
+    {
+      "timestamp_offset": "T-533.088s",
+      "parameter": "channel_42",
+      "value": 0.775902,
+      "unit": "normalized",
+      "nominal_min": 0.764285,
+      "nominal_max": 0.806006,
+      "anomalous": false
+    },
+    {
+      "timestamp_offset": "T-533.088s",
+      "parameter": "channel_43",
+      "value": 0.774274,
+      "unit": "normalized",
+      "nominal_min": 0.758193,
+      "nominal_max": 0.786285,
+      "anomalous": false
+    },
+    {
+      "timestamp_offset": "T-533.088s",
+      "parameter": "channel_44",
+      "value": 0.803901,
+      "unit": "normalized",
+      "nominal_min": 0.780812,
+      "nominal_max": 0.815033,
+      "anomalous": false
+    },
+    {
+      "timestamp_offset": "T-533.088s",
+      "parameter": "channel_45",
+      "value": 0.805832,
+      "unit": "normalized",
+      "nominal_min": 0.797574,
+      "nominal_max": 0.829473,
+      "anomalous": false
+    },
+    {
+      "timestamp_offset": "T-533.088s",
+      "parameter": "channel_46",
+      "value": 0.774584,
+      "unit": "normalized",
+      "nominal_min": 0.747717,
+      "nominal_max": 0.78975,
+      "anomalous": false
+    },
+    {
+      "timestamp_offset": "T-473.088s",
+      "parameter": "channel_41",
+      "value": 0.814149,
+      "unit": "normalized",
+      "nominal_min": 0.797548,
+      "nominal_max": 0.82607,
+      "anomalous": false
+    },
+    {
+      "timestamp_offset": "T-473.088s",
+      "parameter": "channel_42",
+      "value": 0.777508,
+      "unit": "normalized",
+      "nominal_min": 0.764285,
+      "nominal_max": 0.806006,
+      "anomalous": false
+    },
+    {
+      "timestamp_offset": "T-473.088s",
+      "parameter": "channel_43",
+      "value": 0.775064,
+      "unit": "normalized",
+      "nominal_min": 0.758193,
+      "nominal_max": 0.786285,
+      "anomalous": false
+    },
+    {
+      "timestamp_offset": "T-473.088s",
+      "parameter": "channel_44",
+      "value": 0.798391,
+      "unit": "normalized",
+      "nominal_min": 0.780812,
+      "nominal_max": 0.815033,
+      "anomalous": false
+    },
+    {
+      "timestamp_offset": "T-473.088s",
+      "parameter": "channel_45",
+      "value": 0.805832,
+      "unit": "normalized",
+      "nominal_min": 0.797574,
+      "nominal_max": 0.829473,
+      "anomalous": false
+    },
+    {
+      "timestamp_offset": "T-473.088s",
+      "parameter": "channel_46",
+      "value": 0.778807,
+      "unit": "normalized",
+      "nominal_min": 0.747717,
+      "nominal_max": 0.78975,
+      "anomalous": false
+    },
+    {
+      "timestamp_offset": "T-413.088s",
+      "parameter": "channel_41",
+      "value": 0.814932,
+      "unit": "normalized",
+      "nominal_min": 0.797548,
+      "nominal_max": 0.82607,
+      "anomalous": false
+    },
+    {
+      "timestamp_offset": "T-413.088s",
+      "parameter": "channel_42",
+      "value": 0.779114,
+      "unit": "normalized",
+      "nominal_min": 0.764285,
+      "nominal_max": 0.806006,
+      "anomalous": false
+    },
+    {
+      "timestamp_offset": "T-413.088s",
+      "parameter": "channel_43",
+      "value": 0.775856,
+      "unit": "normalized",
+      "nominal_min": 0.758193,
+      "nominal_max": 0.786285,
+      "anomalous": false
+    },
+    {
+      "timestamp_offset": "T-413.088s",
+      "parameter": "channel_44",
+      "value": 0.803115,
+      "unit": "normalized",
+      "nominal_min": 0.780812,
+      "nominal_max": 0.815033,
+      "anomalous": false
+    },
+    {
+      "timestamp_offset": "T-413.088s",
+      "parameter": "channel_45",
+      "value": 0.805832,
+      "unit": "normalized",
+      "nominal_min": 0.797574,
+      "nominal_max": 0.829473,
+      "anomalous": false
+    },
+    {
+      "timestamp_offset": "T-413.088s",
+      "parameter": "channel_46",
+      "value": 0.776273,
+      "unit": "normalized",
+      "nominal_min": 0.747717,
+      "nominal_max": 0.78975,
+      "anomalous": false
+    },
+    {
+      "timestamp_offset": "T-360.588s",
+      "parameter": "channel_41",
+      "value": 0.807868,
+      "unit": "normalized",
+      "nominal_min": 0.797548,
+      "nominal_max": 0.82607,
+      "anomalous": false
+    },
+    {
+      "timestamp_offset": "T-360.588s",
+      "parameter": "channel_42",
+      "value": 0.793574,
+      "unit": "normalized",
+      "nominal_min": 0.764285,
+      "nominal_max": 0.806006,
+      "anomalous": false
+    },
+    {
+      "timestamp_offset": "T-360.588s",
+      "parameter": "channel_43",
+      "value": 0.768735,
+      "unit": "normalized",
+      "nominal_min": 0.758193,
+      "nominal_max": 0.786285,
+      "anomalous": false
+    },
+    {
+      "timestamp_offset": "T-360.588s",
+      "parameter": "channel_44",
+      "value": 0.795242,
+      "unit": "normalized",
+      "nominal_min": 0.780812,
+      "nominal_max": 0.815033,
+      "anomalous": false
+    },
+    {
+      "timestamp_offset": "T-360.588s",
+      "parameter": "channel_45",
+      "value": 0.821941,
+      "unit": "normalized",
+      "nominal_min": 0.797574,
+      "nominal_max": 0.829473,
+      "anomalous": false
+    },
+    {
+      "timestamp_offset": "T-360.588s",
+      "parameter": "channel_46",
+      "value": 0.763607,
+      "unit": "normalized",
+      "nominal_min": 0.747717,
+      "nominal_max": 0.78975,
+      "anomalous": false
+    },
+    {
+      "timestamp_offset": "T-323.088s",
+      "parameter": "channel_41",
+      "value": 0.811009,
+      "unit": "normalized",
+      "nominal_min": 0.797548,
+      "nominal_max": 0.82607,
+      "anomalous": false
+    },
+    {
+      "timestamp_offset": "T-323.088s",
+      "parameter": "channel_42",
+      "value": 0.778311,
+      "unit": "normalized",
+      "nominal_min": 0.764285,
+      "nominal_max": 0.806006,
+      "anomalous": false
+    },
+    {
+      "timestamp_offset": "T-323.088s",
+      "parameter": "channel_43",
+      "value": 0.779021,
+      "unit": "normalized",
+      "nominal_min": 0.758193,
+      "nominal_max": 0.786285,
+      "anomalous": false
+    },
+    {
+      "timestamp_offset": "T-323.088s",
+      "parameter": "channel_44",
+      "value": 0.794455,
+      "unit": "normalized",
+      "nominal_min": 0.780812,
+      "nominal_max": 0.815033,
+      "anomalous": false
+    },
+    {
+      "timestamp_offset": "T-323.088s",
+      "parameter": "channel_45",
+      "value": 0.804984,
+      "unit": "normalized",
+      "nominal_min": 0.797574,
+      "nominal_max": 0.829473,
+      "anomalous": false
+    },
+    {
+      "timestamp_offset": "T-323.088s",
+      "parameter": "channel_46",
+      "value": 0.779651,
+      "unit": "normalized",
+      "nominal_min": 0.747717,
+      "nominal_max": 0.78975,
+      "anomalous": false
+    },
+    {
+      "timestamp_offset": "T-263.088s",
+      "parameter": "channel_41",
+      "value": 0.812578,
+      "unit": "normalized",
+      "nominal_min": 0.797548,
+      "nominal_max": 0.82607,
+      "anomalous": false
+    },
+    {
+      "timestamp_offset": "T-263.088s",
+      "parameter": "channel_42",
+      "value": 0.776705,
+      "unit": "normalized",
+      "nominal_min": 0.764285,
+      "nominal_max": 0.806006,
+      "anomalous": false
+    },
+    {
+      "timestamp_offset": "T-263.088s",
+      "parameter": "channel_43",
+      "value": 0.779021,
+      "unit": "normalized",
+      "nominal_min": 0.758193,
+      "nominal_max": 0.786285,
+      "anomalous": false
+    },
+    {
+      "timestamp_offset": "T-263.088s",
+      "parameter": "channel_44",
+      "value": 0.793667,
+      "unit": "normalized",
+      "nominal_min": 0.780812,
+      "nominal_max": 0.815033,
+      "anomalous": false
+    },
+    {
+      "timestamp_offset": "T-263.088s",
+      "parameter": "channel_45",
+      "value": 0.804984,
+      "unit": "normalized",
+      "nominal_min": 0.797574,
+      "nominal_max": 0.829473,
+      "anomalous": false
+    },
+    {
+      "timestamp_offset": "T-263.088s",
+      "parameter": "channel_46",
+      "value": 0.78134,
+      "unit": "normalized",
+      "nominal_min": 0.747717,
+      "nominal_max": 0.78975,
+      "anomalous": false
+    },
+    {
+      "timestamp_offset": "T-203.088s",
+      "parameter": "channel_41",
+      "value": 0.811009,
+      "unit": "normalized",
+      "nominal_min": 0.797548,
+      "nominal_max": 0.82607,
+      "anomalous": false
+    },
+    {
+      "timestamp_offset": "T-203.088s",
+      "parameter": "channel_42",
+      "value": 0.778311,
+      "unit": "normalized",
+      "nominal_min": 0.764285,
+      "nominal_max": 0.806006,
+      "anomalous": false
+    },
+    {
+      "timestamp_offset": "T-203.088s",
+      "parameter": "channel_43",
+      "value": 0.77823,
+      "unit": "normalized",
+      "nominal_min": 0.758193,
+      "nominal_max": 0.786285,
+      "anomalous": false
+    },
+    {
+      "timestamp_offset": "T-203.088s",
+      "parameter": "channel_44",
+      "value": 0.793667,
+      "unit": "normalized",
+      "nominal_min": 0.780812,
+      "nominal_max": 0.815033,
+      "anomalous": false
+    },
+    {
+      "timestamp_offset": "T-203.088s",
+      "parameter": "channel_45",
+      "value": 0.805832,
+      "unit": "normalized",
+      "nominal_min": 0.797574,
+      "nominal_max": 0.829473,
+      "anomalous": false
+    },
+    {
+      "timestamp_offset": "T-203.088s",
+      "parameter": "channel_46",
+      "value": 0.779651,
+      "unit": "normalized",
+      "nominal_min": 0.747717,
+      "nominal_max": 0.78975,
+      "anomalous": false
+    },
+    {
+      "timestamp_offset": "T-143.088s",
+      "parameter": "channel_41",
+      "value": 0.810224,
+      "unit": "normalized",
+      "nominal_min": 0.797548,
+      "nominal_max": 0.82607,
+      "anomalous": false
+    },
+    {
+      "timestamp_offset": "T-143.088s",
+      "parameter": "channel_42",
+      "value": 0.777508,
+      "unit": "normalized",
+      "nominal_min": 0.764285,
+      "nominal_max": 0.806006,
+      "anomalous": false
+    },
+    {
+      "timestamp_offset": "T-143.088s",
+      "parameter": "channel_43",
+      "value": 0.779021,
+      "unit": "normalized",
+      "nominal_min": 0.758193,
+      "nominal_max": 0.786285,
+      "anomalous": false
+    },
+    {
+      "timestamp_offset": "T-143.088s",
+      "parameter": "channel_44",
+      "value": 0.792881,
+      "unit": "normalized",
+      "nominal_min": 0.780812,
+      "nominal_max": 0.815033,
+      "anomalous": false
+    },
+    {
+      "timestamp_offset": "T-143.088s",
+      "parameter": "channel_45",
+      "value": 0.80668,
+      "unit": "normalized",
+      "nominal_min": 0.797574,
+      "nominal_max": 0.829473,
+      "anomalous": false
+    },
+    {
+      "timestamp_offset": "T-143.088s",
+      "parameter": "channel_46",
+      "value": 0.777962,
+      "unit": "normalized",
+      "nominal_min": 0.747717,
+      "nominal_max": 0.78975,
+      "anomalous": false
+    },
+    {
+      "timestamp_offset": "T-83.088s",
+      "parameter": "channel_41",
+      "value": 0.807868,
+      "unit": "normalized",
+      "nominal_min": 0.797548,
+      "nominal_max": 0.82607,
+      "anomalous": false
+    },
+    {
+      "timestamp_offset": "T-83.088s",
+      "parameter": "channel_42",
+      "value": 0.778311,
+      "unit": "normalized",
+      "nominal_min": 0.764285,
+      "nominal_max": 0.806006,
+      "anomalous": false
+    },
+    {
+      "timestamp_offset": "T-83.088s",
+      "parameter": "channel_43",
+      "value": 0.780603,
+      "unit": "normalized",
+      "nominal_min": 0.758193,
+      "nominal_max": 0.786285,
+      "anomalous": false
+    },
+    {
+      "timestamp_offset": "T-83.088s",
+      "parameter": "channel_44",
+      "value": 0.79052,
+      "unit": "normalized",
+      "nominal_min": 0.780812,
+      "nominal_max": 0.815033,
+      "anomalous": false
+    },
+    {
+      "timestamp_offset": "T-83.088s",
+      "parameter": "channel_45",
+      "value": 0.805832,
+      "unit": "normalized",
+      "nominal_min": 0.797574,
+      "nominal_max": 0.829473,
+      "anomalous": false
+    },
+    {
+      "timestamp_offset": "T-83.088s",
+      "parameter": "channel_46",
+      "value": 0.779651,
+      "unit": "normalized",
+      "nominal_min": 0.747717,
+      "nominal_max": 0.78975,
+      "anomalous": false
+    },
+    {
+      "timestamp_offset": "T-23.088s",
+      "parameter": "channel_41",
+      "value": 0.807085,
+      "unit": "normalized",
+      "nominal_min": 0.797548,
+      "nominal_max": 0.82607,
+      "anomalous": false
+    },
+    {
+      "timestamp_offset": "T-23.088s",
+      "parameter": "channel_42",
+      "value": 0.781524,
+      "unit": "normalized",
+      "nominal_min": 0.764285,
+      "nominal_max": 0.806006,
+      "anomalous": false
+    },
+    {
+      "timestamp_offset": "T-23.088s",
+      "parameter": "channel_43",
+      "value": 0.780603,
+      "unit": "normalized",
+      "nominal_min": 0.758193,
+      "nominal_max": 0.786285,
+      "anomalous": false
+    },
+    {
+      "timestamp_offset": "T-23.088s",
+      "parameter": "channel_44",
+      "value": 0.788945,
+      "unit": "normalized",
+      "nominal_min": 0.780812,
+      "nominal_max": 0.815033,
+      "anomalous": false
+    },
+    {
+      "timestamp_offset": "T-23.088s",
+      "parameter": "channel_45",
+      "value": 0.808375,
+      "unit": "normalized",
+      "nominal_min": 0.797574,
+      "nominal_max": 0.829473,
+      "anomalous": false
+    },
+    {
+      "timestamp_offset": "T-23.088s",
+      "parameter": "channel_46",
+      "value": 0.782185,
+      "unit": "normalized",
+      "nominal_min": 0.747717,
+      "nominal_max": 0.78975,
+      "anomalous": false
+    },
+    {
+      "timestamp_offset": "T+0.000s",
+      "parameter": "channel_41",
+      "value": 0.960135,
+      "unit": "normalized",
+      "nominal_min": 0.797548,
+      "nominal_max": 0.82607,
+      "anomalous": true
+    },
+    {
+      "timestamp_offset": "T+0.000s",
+      "parameter": "channel_42",
+      "value": 0.0,
+      "unit": "normalized",
+      "nominal_min": 0.764285,
+      "nominal_max": 0.806006,
+      "anomalous": true
+    },
+    {
+      "timestamp_offset": "T+0.000s",
+      "parameter": "channel_43",
+      "value": 0.93332,
+      "unit": "normalized",
+      "nominal_min": 0.758193,
+      "nominal_max": 0.786285,
+      "anomalous": true
+    },
+    {
+      "timestamp_offset": "T+0.000s",
+      "parameter": "channel_44",
+      "value": 0.947167,
+      "unit": "normalized",
+      "nominal_min": 0.780812,
+      "nominal_max": 0.815033,
+      "anomalous": true
+    },
+    {
+      "timestamp_offset": "T+0.000s",
+      "parameter": "channel_45",
+      "value": 0.977107,
+      "unit": "normalized",
+      "nominal_min": 0.797574,
+      "nominal_max": 0.829473,
+      "anomalous": true
+    },
+    {
+      "timestamp_offset": "T+0.000s",
+      "parameter": "channel_46",
+      "value": 0.95193,
+      "unit": "normalized",
+      "nominal_min": 0.747717,
+      "nominal_max": 0.78975,
+      "anomalous": true
+    },
+    {
+      "timestamp_offset": "T+6.912s",
+      "parameter": "channel_41",
+      "value": 0.962489,
+      "unit": "normalized",
+      "nominal_min": 0.797548,
+      "nominal_max": 0.82607,
+      "anomalous": true
+    },
+    {
+      "timestamp_offset": "T+6.912s",
+      "parameter": "channel_42",
+      "value": 0.0,
+      "unit": "normalized",
+      "nominal_min": 0.764285,
+      "nominal_max": 0.806006,
+      "anomalous": true
+    },
+    {
+      "timestamp_offset": "T+6.912s",
+      "parameter": "channel_43",
+      "value": 0.934112,
+      "unit": "normalized",
+      "nominal_min": 0.758193,
+      "nominal_max": 0.786285,
+      "anomalous": true
+    },
+    {
+      "timestamp_offset": "T+6.912s",
+      "parameter": "channel_44",
+      "value": 0.948742,
+      "unit": "normalized",
+      "nominal_min": 0.780812,
+      "nominal_max": 0.815033,
+      "anomalous": true
+    },
+    {
+      "timestamp_offset": "T+6.912s",
+      "parameter": "channel_45",
+      "value": 0.978803,
+      "unit": "normalized",
+      "nominal_min": 0.797574,
+      "nominal_max": 0.829473,
+      "anomalous": true
+    },
+    {
+      "timestamp_offset": "T+6.912s",
+      "parameter": "channel_46",
+      "value": 0.948551,
+      "unit": "normalized",
+      "nominal_min": 0.747717,
+      "nominal_max": 0.78975,
+      "anomalous": true
+    },
+    {
+      "timestamp_offset": "T+66.912s",
+      "parameter": "channel_41",
+      "value": 0.80316,
+      "unit": "normalized",
+      "nominal_min": 0.797548,
+      "nominal_max": 0.82607,
+      "anomalous": false
+    },
+    {
+      "timestamp_offset": "T+66.912s",
+      "parameter": "channel_42",
+      "value": 0.786344,
+      "unit": "normalized",
+      "nominal_min": 0.764285,
+      "nominal_max": 0.806006,
+      "anomalous": false
+    },
+    {
+      "timestamp_offset": "T+66.912s",
+      "parameter": "channel_43",
+      "value": 0.779021,
+      "unit": "normalized",
+      "nominal_min": 0.758193,
+      "nominal_max": 0.786285,
+      "anomalous": false
+    },
+    {
+      "timestamp_offset": "T+66.912s",
+      "parameter": "channel_44",
+      "value": 0.788157,
+      "unit": "normalized",
+      "nominal_min": 0.780812,
+      "nominal_max": 0.815033,
+      "anomalous": false
+    },
+    {
+      "timestamp_offset": "T+66.912s",
+      "parameter": "channel_45",
+      "value": 0.81092,
+      "unit": "normalized",
+      "nominal_min": 0.797574,
+      "nominal_max": 0.829473,
+      "anomalous": false
+    },
+    {
+      "timestamp_offset": "T+66.912s",
+      "parameter": "channel_46",
+      "value": 0.778807,
+      "unit": "normalized",
+      "nominal_min": 0.747717,
+      "nominal_max": 0.78975,
+      "anomalous": false
+    },
+    {
+      "timestamp_offset": "T+126.912s",
+      "parameter": "channel_41",
+      "value": 0.807085,
+      "unit": "normalized",
+      "nominal_min": 0.797548,
+      "nominal_max": 0.82607,
+      "anomalous": false
+    },
+    {
+      "timestamp_offset": "T+126.912s",
+      "parameter": "channel_42",
+      "value": 0.778311,
+      "unit": "normalized",
+      "nominal_min": 0.764285,
+      "nominal_max": 0.806006,
+      "anomalous": false
+    },
+    {
+      "timestamp_offset": "T+126.912s",
+      "parameter": "channel_43",
+      "value": 0.780603,
+      "unit": "normalized",
+      "nominal_min": 0.758193,
+      "nominal_max": 0.786285,
+      "anomalous": false
+    },
+    {
+      "timestamp_offset": "T+126.912s",
+      "parameter": "channel_44",
+      "value": 0.791306,
+      "unit": "normalized",
+      "nominal_min": 0.780812,
+      "nominal_max": 0.815033,
+      "anomalous": false
+    },
+    {
+      "timestamp_offset": "T+126.912s",
+      "parameter": "channel_45",
+      "value": 0.81092,
+      "unit": "normalized",
+      "nominal_min": 0.797574,
+      "nominal_max": 0.829473,
+      "anomalous": false
+    },
+    {
+      "timestamp_offset": "T+126.912s",
+      "parameter": "channel_46",
+      "value": 0.777118,
+      "unit": "normalized",
+      "nominal_min": 0.747717,
+      "nominal_max": 0.78975,
+      "anomalous": false
+    }
+  ],
+  "event_log": [
+    {
+      "time_offset": "T+0.000s",
+      "source": "ESA_ADB_LABEL",
+      "message": "id_109 labelled Anomaly starts; class=class_3"
+    },
+    {
+      "time_offset": "T+6.912s",
+      "source": "ESA_ADB_LABEL",
+      "message": "id_109 labelled interval ends"
+    },
+    {
+      "time_offset": "T-6765.306s",
+      "source": "GROUND_TELECOMMAND",
+      "message": "telecommand_197 observed (priority=0)"
+    },
+    {
+      "time_offset": "T-6763.371s",
+      "source": "GROUND_TELECOMMAND",
+      "message": "telecommand_198 observed (priority=0)"
+    },
+    {
+      "time_offset": "T-6761.670s",
+      "source": "GROUND_TELECOMMAND",
+      "message": "telecommand_198 observed (priority=0)"
+    },
+    {
+      "time_offset": "T-6759.741s",
+      "source": "GROUND_TELECOMMAND",
+      "message": "telecommand_198 observed (priority=0)"
+    },
+    {
+      "time_offset": "T-6757.812s",
+      "source": "GROUND_TELECOMMAND",
+      "message": "telecommand_198 observed (priority=0)"
+    },
+    {
+      "time_offset": "T-6755.925s",
+      "source": "GROUND_TELECOMMAND",
+      "message": "telecommand_198 observed (priority=0)"
+    },
+    {
+      "time_offset": "T-6754.161s",
+      "source": "GROUND_TELECOMMAND",
+      "message": "telecommand_198 observed (priority=0)"
+    },
+    {
+      "time_offset": "T-6752.298s",
+      "source": "GROUND_TELECOMMAND",
+      "message": "telecommand_198 observed (priority=0)"
+    },
+    {
+      "time_offset": "T-6750.396s",
+      "source": "GROUND_TELECOMMAND",
+      "message": "telecommand_198 observed (priority=0)"
+    },
+    {
+      "time_offset": "T-6748.584s",
+      "source": "GROUND_TELECOMMAND",
+      "message": "telecommand_198 observed (priority=0)"
+    }
+  ],
+  "hardware_state": {
+    "last_reset_cause": "NOT_PROVIDED_BY_ESA_ADB",
+    "SEU_event_count_since_boot": "NOT_PROVIDED_BY_ESA_ADB",
+    "running_processes": [],
+    "memory_allocation_MB": "NOT_PROVIDED_BY_ESA_ADB"
+  },
+  "operating_context": {
+    "source_dataset": "ESA Anomaly Dataset / ESA-ADB",
+    "mission_folder": "ESA-Mission1",
+    "label_id": "id_109",
+    "safe_mode_state": "not_provided_by_dataset",
+    "mission_phase": "unknown",
+    "minutes_since_last_ground_contact": "unknown",
+    "safe_mode_entry_count_total": "unknown"
+  }
+}

@@ -824,9 +824,8 @@ class SentinelAgent:
                 data=f"LLM Agent reasoning failed: {exc}",
             )
 
-
 # ---------------------------------------------------------------------------
-# Tool-node hooks (Step 9+ — future LangGraph nodes)
+# Tool-node hooks (Step 9+ stubs — genuinely future work)
 # ---------------------------------------------------------------------------
 #
 # Steps 4, 5, 6, and 7 are complete and wired:
@@ -835,6 +834,17 @@ class SentinelAgent:
 #   - Step 6: retrieve_procedures(use_pdf_rag=True) in rag.py
 #   - Step 7: validate_recovery_plan() + apply_validation_to_output() in safety.py
 #
-# Future (Step 9+): LangGraph tool nodes
-# def query_telemetry(state, param): ...
-# def propose_recovery(state): ...
+# The following are genuinely future (Step 9+) and NOT yet implemented:
+#
+# def query_telemetry(state: AgentState, param: str) -> str:
+#     """Step 9+: Read a specific parameter from the crash dump.
+#     Will be a LangGraph tool node."""
+#     ...
+#
+# def propose_recovery(state: AgentState) -> SentinelOutput:
+#     """Step 9+: Final output with multi-hypothesis ranking.
+#     Will be a LangGraph tool node."""
+#     ...
+#
+# Future Step 11: add SSE streaming wrapper for analyze_crash_dump
+# analyze_crash_dump_stream() yielding events from each pipeline stage

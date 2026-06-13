@@ -1,0 +1,6422 @@
+{
+  "dataset": "ESA-Mission1",
+  "channels": {
+    "count": 76,
+    "target_counts": {
+      "NO": 18,
+      "YES": 58
+    },
+    "subsystem_counts": {
+      "subsystem_1": 17,
+      "subsystem_6": 42,
+      "subsystem_5": 6,
+      "subsystem_3": 11
+    },
+    "group_counts": {
+      "1": 3,
+      "2": 8,
+      "3": 8,
+      "4": 5,
+      "7": 5,
+      "6": 5,
+      "5": 6,
+      "8": 6,
+      "9": 3,
+      "10": 3,
+      "11": 2,
+      "12": 2,
+      "13": 4,
+      "14": 3,
+      "15": 2,
+      "16": 1,
+      "17": 3,
+      "18": 7
+    }
+  },
+  "telecommands": {
+    "count": 698,
+    "priority_counts": {
+      "1": 323,
+      "2": 19,
+      "3": 11,
+      "0": 345
+    }
+  },
+  "labels": {
+    "row_count": 3589,
+    "event_count": 200,
+    "labelled_channel_count": 58,
+    "top_labelled_channels": [
+      [
+        "channel_41",
+        212
+      ],
+      [
+        "channel_42",
+        211
+      ],
+      [
+        "channel_43",
+        211
+      ],
+      [
+        "channel_44",
+        210
+      ],
+      [
+        "channel_45",
+        208
+      ],
+      [
+        "channel_46",
+        203
+      ],
+      [
+        "channel_14",
+        96
+      ],
+      [
+        "channel_21",
+        96
+      ],
+      [
+        "channel_29",
+        95
+      ],
+      [
+        "channel_48",
+        87
+      ],
+      [
+        "channel_47",
+        86
+      ],
+      [
+        "channel_49",
+        84
+      ],
+      [
+        "channel_52",
+        83
+      ],
+      [
+        "channel_51",
+        82
+      ],
+      [
+        "channel_50",
+        81
+      ]
+    ]
+  },
+  "anomaly_types": {
+    "row_count": 200,
+    "category_counts": {
+      "Rare Event": 78,
+      "Anomaly": 118,
+      "Communication Gap": 4
+    },
+    "class_counts": {
+      "class_6": 2,
+      "class_7": 45,
+      "class_9": 2,
+      "class_11": 3,
+      "class_4": 5,
+      "class_16": 10,
+      "class_18": 1,
+      "class_10": 3,
+      "class_19": 1,
+      "class_8": 8,
+      "class_14": 30,
+      "class_12": 3,
+      "class_1": 1,
+      "class_13": 1,
+      "class_5": 4,
+      "class_22": 33,
+      "class_15": 6,
+      "class_2": 4,
+      "class_3": 30,
+      "class_17": 3,
+      "class_21": 1,
+      "class_20": 4
+    },
+    "subclass_counts": {
+      "subclass_1": 104,
+      "unknown": 30,
+      "subclass_2": 51,
+      "subclass_3": 10,
+      "subclass_4": 3,
+      "subclass_5": 1,
+      "subclass_6": 1
+    },
+    "dimensionality_counts": {
+      "Multivariate": 164,
+      "Univariate": 32,
+      "": 4
+    },
+    "locality_counts": {
+      "Global": 113,
+      "Local": 83,
+      "": 4
+    },
+    "length_counts": {
+      "Subsequence": 184,
+      "Point": 12,
+      "": 4
+    }
+  },
+  "duration_hours": {
+    "count": 200,
+    "min": 0.0,
+    "p10": 0.083333,
+    "p25": 0.233829,
+    "p50": 5.475,
+    "p75": 71.732811,
+    "p90": 251.389595,
+    "p95": 275.02622,
+    "max": 967.149384
+  },
+  "recommended_first_events": [
+    {
+      "id": "id_2",
+      "start": "2001-08-30T06:27:15.570Z",
+      "end": "2001-08-30T09:22:45.570Z",
+      "duration_hours": 2.925,
+      "category": "Anomaly",
+      "class": "class_7",
+      "subclass": "subclass_1",
+      "dimensionality": "Multivariate",
+      "locality": "Local",
+      "length": "Subsequence",
+      "channel_count": 3,
+      "channels": [
+        "channel_14",
+        "channel_21",
+        "channel_29"
+      ],
+      "subsystems": [
+        "subsystem_6"
+      ]
+    },
+    {
+      "id": "id_3",
+      "start": "2001-11-24T17:31:45.561Z",
+      "end": "2001-11-25T00:16:45.561Z",
+      "duration_hours": 6.75,
+      "category": "Anomaly",
+      "class": "class_7",
+      "subclass": "subclass_1",
+      "dimensionality": "Multivariate",
+      "locality": "Global",
+      "length": "Subsequence",
+      "channel_count": 3,
+      "channels": [
+        "channel_14",
+        "channel_21",
+        "channel_29"
+      ],
+      "subsystems": [
+        "subsystem_6"
+      ]
+    },
+    {
+      "id": "id_4",
+      "start": "2000-04-27T20:54:18.621Z",
+      "end": "2000-04-28T02:33:18.621Z",
+      "duration_hours": 5.65,
+      "category": "Anomaly",
+      "class": "class_7",
+      "subclass": "subclass_1",
+      "dimensionality": "Multivariate",
+      "locality": "Local",
+      "length": "Subsequence",
+      "channel_count": 3,
+      "channels": [
+        "channel_14",
+        "channel_21",
+        "channel_29"
+      ],
+      "subsystems": [
+        "subsystem_6"
+      ]
+    },
+    {
+      "id": "id_5",
+      "start": "2001-07-30T18:52:45.573Z",
+      "end": "2001-07-31T02:12:15.573Z",
+      "duration_hours": 7.325,
+      "category": "Anomaly",
+      "class": "class_7",
+      "subclass": "subclass_1",
+      "dimensionality": "Multivariate",
+      "locality": "Local",
+      "length": "Subsequence",
+      "channel_count": 3,
+      "channels": [
+        "channel_14",
+        "channel_21",
+        "channel_29"
+      ],
+      "subsystems": [
+        "subsystem_6"
+      ]
+    },
+    {
+      "id": "id_6",
+      "start": "2001-12-17T07:57:15.558Z",
+      "end": "2001-12-17T11:27:15.558Z",
+      "duration_hours": 3.5,
+      "category": "Anomaly",
+      "class": "class_7",
+      "subclass": "subclass_1",
+      "dimensionality": "Multivariate",
+      "locality": "Local",
+      "length": "Subsequence",
+      "channel_count": 3,
+      "channels": [
+        "channel_14",
+        "channel_21",
+        "channel_29"
+      ],
+      "subsystems": [
+        "subsystem_6"
+      ]
+    },
+    {
+      "id": "id_7",
+      "start": "2002-07-20T17:27:15.534Z",
+      "end": "2002-07-20T20:37:45.534Z",
+      "duration_hours": 3.175,
+      "category": "Anomaly",
+      "class": "class_7",
+      "subclass": "subclass_1",
+      "dimensionality": "Multivariate",
+      "locality": "Local",
+      "length": "Subsequence",
+      "channel_count": 3,
+      "channels": [
+        "channel_14",
+        "channel_21",
+        "channel_29"
+      ],
+      "subsystems": [
+        "subsystem_6"
+      ]
+    },
+    {
+      "id": "id_8",
+      "start": "2003-01-12T14:58:45.513Z",
+      "end": "2003-01-12T20:27:15.513Z",
+      "duration_hours": 5.475,
+      "category": "Anomaly",
+      "class": "class_7",
+      "subclass": "subclass_1",
+      "dimensionality": "Multivariate",
+      "locality": "Local",
+      "length": "Subsequence",
+      "channel_count": 3,
+      "channels": [
+        "channel_14",
+        "channel_21",
+        "channel_29"
+      ],
+      "subsystems": [
+        "subsystem_6"
+      ]
+    },
+    {
+      "id": "id_9",
+      "start": "2003-02-12T07:00:15.510Z",
+      "end": "2003-02-12T08:06:15.510Z",
+      "duration_hours": 1.1,
+      "category": "Anomaly",
+      "class": "class_7",
+      "subclass": "subclass_1",
+      "dimensionality": "Multivariate",
+      "locality": "Local",
+      "length": "Subsequence",
+      "channel_count": 3,
+      "channels": [
+        "channel_14",
+        "channel_21",
+        "channel_29"
+      ],
+      "subsystems": [
+        "subsystem_6"
+      ]
+    },
+    {
+      "id": "id_30",
+      "start": "2000-02-27T08:27:06.627Z",
+      "end": "2000-02-27T14:06:06.627Z",
+      "duration_hours": 5.65,
+      "category": "Anomaly",
+      "class": "class_7",
+      "subclass": "subclass_1",
+      "dimensionality": "Multivariate",
+      "locality": "Local",
+      "length": "Subsequence",
+      "channel_count": 3,
+      "channels": [
+        "channel_14",
+        "channel_21",
+        "channel_29"
+      ],
+      "subsystems": [
+        "subsystem_6"
+      ]
+    },
+    {
+      "id": "id_36",
+      "start": "2000-08-16T09:58:48.609Z",
+      "end": "2000-08-16T15:27:18.609Z",
+      "duration_hours": 5.475,
+      "category": "Anomaly",
+      "class": "class_7",
+      "subclass": "subclass_1",
+      "dimensionality": "Multivariate",
+      "locality": "Local",
+      "length": "Subsequence",
+      "channel_count": 3,
+      "channels": [
+        "channel_14",
+        "channel_21",
+        "channel_29"
+      ],
+      "subsystems": [
+        "subsystem_6"
+      ]
+    },
+    {
+      "id": "id_42",
+      "start": "2012-12-06T18:34:09.723Z",
+      "end": "2012-12-06T18:34:09.723Z",
+      "duration_hours": 0.0,
+      "category": "Anomaly",
+      "class": "class_1",
+      "subclass": "unknown",
+      "dimensionality": "Univariate",
+      "locality": "Local",
+      "length": "Point",
+      "channel_count": 1,
+      "channels": [
+        "channel_41"
+      ],
+      "subsystems": [
+        "subsystem_5"
+      ]
+    },
+    {
+      "id": "id_45",
+      "start": "2001-03-12T20:57:18.588Z",
+      "end": "2001-03-13T01:34:48.588Z",
+      "duration_hours": 4.625,
+      "category": "Anomaly",
+      "class": "class_7",
+      "subclass": "subclass_2",
+      "dimensionality": "Multivariate",
+      "locality": "Global",
+      "length": "Subsequence",
+      "channel_count": 6,
+      "channels": [
+        "channel_14",
+        "channel_21",
+        "channel_22",
+        "channel_29",
+        "channel_31",
+        "channel_39"
+      ],
+      "subsystems": [
+        "subsystem_6"
+      ]
+    },
+    {
+      "id": "id_58",
+      "start": "2001-05-23T07:00:18.579Z",
+      "end": "2001-05-23T14:21:18.579Z",
+      "duration_hours": 7.35,
+      "category": "Anomaly",
+      "class": "class_7",
+      "subclass": "subclass_1",
+      "dimensionality": "Multivariate",
+      "locality": "Local",
+      "length": "Subsequence",
+      "channel_count": 3,
+      "channels": [
+        "channel_14",
+        "channel_21",
+        "channel_29"
+      ],
+      "subsystems": [
+        "subsystem_6"
+      ]
+    },
+    {
+      "id": "id_61",
+      "start": "2000-11-11T10:14:59.061Z",
+      "end": "2000-11-11T10:22:59.061Z",
+      "duration_hours": 0.133333,
+      "category": "Anomaly",
+      "class": "class_22",
+      "subclass": "subclass_1",
+      "dimensionality": "Univariate",
+      "locality": "Global",
+      "length": "Subsequence",
+      "channel_count": 1,
+      "channels": [
+        "channel_73"
+      ],
+      "subsystems": [
+        "subsystem_3"
+      ]
+    },
+    {
+      "id": "id_62",
+      "start": "2000-11-13T02:09:29.061Z",
+      "end": "2000-11-13T02:17:29.061Z",
+      "duration_hours": 0.133333,
+      "category": "Anomaly",
+      "class": "class_22",
+      "subclass": "subclass_3",
+      "dimensionality": "Univariate",
+      "locality": "Global",
+      "length": "Subsequence",
+      "channel_count": 1,
+      "channels": [
+        "channel_73"
+      ],
+      "subsystems": [
+        "subsystem_3"
+      ]
+    },
+    {
+      "id": "id_63",
+      "start": "2000-11-15T05:50:10.686Z",
+      "end": "2000-11-15T05:58:40.686Z",
+      "duration_hours": 0.141667,
+      "category": "Anomaly",
+      "class": "class_22",
+      "subclass": "subclass_3",
+      "dimensionality": "Univariate",
+      "locality": "Global",
+      "length": "Subsequence",
+      "channel_count": 1,
+      "channels": [
+        "channel_76"
+      ],
+      "subsystems": [
+        "subsystem_3"
+      ]
+    },
+    {
+      "id": "id_64",
+      "start": "2000-11-18T20:11:26.811Z",
+      "end": "2000-11-18T20:19:56.811Z",
+      "duration_hours": 0.141667,
+      "category": "Anomaly",
+      "class": "class_22",
+      "subclass": "subclass_1",
+      "dimensionality": "Univariate",
+      "locality": "Global",
+      "length": "Subsequence",
+      "channel_count": 1,
+      "channels": [
+        "channel_75"
+      ],
+      "subsystems": [
+        "subsystem_3"
+      ]
+    },
+    {
+      "id": "id_65",
+      "start": "2000-11-21T08:23:59.061Z",
+      "end": "2000-11-21T08:32:29.061Z",
+      "duration_hours": 0.141667,
+      "category": "Anomaly",
+      "class": "class_22",
+      "subclass": "subclass_3",
+      "dimensionality": "Univariate",
+      "locality": "Global",
+      "length": "Subsequence",
+      "channel_count": 1,
+      "channels": [
+        "channel_73"
+      ],
+      "subsystems": [
+        "subsystem_3"
+      ]
+    },
+    {
+      "id": "id_66",
+      "start": "2000-11-24T02:48:40.686Z",
+      "end": "2000-11-24T02:56:40.683Z",
+      "duration_hours": 0.133332,
+      "category": "Anomaly",
+      "class": "class_22",
+      "subclass": "subclass_3",
+      "dimensionality": "Univariate",
+      "locality": "Global",
+      "length": "Subsequence",
+      "channel_count": 1,
+      "channels": [
+        "channel_76"
+      ],
+      "subsystems": [
+        "subsystem_3"
+      ]
+    },
+    {
+      "id": "id_67",
+      "start": "2000-11-24T08:20:56.811Z",
+      "end": "2000-11-24T08:28:56.811Z",
+      "duration_hours": 0.133333,
+      "category": "Anomaly",
+      "class": "class_22",
+      "subclass": "subclass_1",
+      "dimensionality": "Univariate",
+      "locality": "Global",
+      "length": "Subsequence",
+      "channel_count": 1,
+      "channels": [
+        "channel_75"
+      ],
+      "subsystems": [
+        "subsystem_3"
+      ]
+    },
+    {
+      "id": "id_68",
+      "start": "2000-12-04T00:25:56.811Z",
+      "end": "2000-12-04T00:33:56.811Z",
+      "duration_hours": 0.133333,
+      "category": "Anomaly",
+      "class": "class_22",
+      "subclass": "subclass_1",
+      "dimensionality": "Univariate",
+      "locality": "Global",
+      "length": "Subsequence",
+      "channel_count": 1,
+      "channels": [
+        "channel_75"
+      ],
+      "subsystems": [
+        "subsystem_3"
+      ]
+    },
+    {
+      "id": "id_82",
+      "start": "2002-05-12T01:55:45.540Z",
+      "end": "2002-05-12T07:49:45.540Z",
+      "duration_hours": 5.9,
+      "category": "Anomaly",
+      "class": "class_7",
+      "subclass": "subclass_1",
+      "dimensionality": "Multivariate",
+      "locality": "Local",
+      "length": "Subsequence",
+      "channel_count": 3,
+      "channels": [
+        "channel_14",
+        "channel_21",
+        "channel_29"
+      ],
+      "subsystems": [
+        "subsystem_6"
+      ]
+    },
+    {
+      "id": "id_85",
+      "start": "2002-06-23T02:44:55.254Z",
+      "end": "2002-06-23T02:47:17.754Z",
+      "duration_hours": 0.039583,
+      "category": "Anomaly",
+      "class": "class_21",
+      "subclass": "unknown",
+      "dimensionality": "Multivariate",
+      "locality": "Local",
+      "length": "Subsequence",
+      "channel_count": 6,
+      "channels": [
+        "channel_41",
+        "channel_42",
+        "channel_43",
+        "channel_44",
+        "channel_45",
+        "channel_46"
+      ],
+      "subsystems": [
+        "subsystem_5"
+      ]
+    },
+    {
+      "id": "id_91",
+      "start": "2004-04-07T19:17:25.176Z",
+      "end": "2004-04-07T19:44:55.176Z",
+      "duration_hours": 0.458333,
+      "category": "Anomaly",
+      "class": "class_3",
+      "subclass": "subclass_2",
+      "dimensionality": "Multivariate",
+      "locality": "Local",
+      "length": "Subsequence",
+      "channel_count": 6,
+      "channels": [
+        "channel_47",
+        "channel_48",
+        "channel_49",
+        "channel_50",
+        "channel_51",
+        "channel_52"
+      ],
+      "subsystems": [
+        "subsystem_6"
+      ]
+    },
+    {
+      "id": "id_94",
+      "start": "2004-07-07T07:03:15.447Z",
+      "end": "2004-07-07T09:48:15.447Z",
+      "duration_hours": 2.75,
+      "category": "Anomaly",
+      "class": "class_7",
+      "subclass": "subclass_1",
+      "dimensionality": "Multivariate",
+      "locality": "Local",
+      "length": "Subsequence",
+      "channel_count": 3,
+      "channels": [
+        "channel_14",
+        "channel_21",
+        "channel_29"
+      ],
+      "subsystems": [
+        "subsystem_6"
+      ]
+    }
+  ],
+  "event_summaries": [
+    {
+      "id": "id_1",
+      "start": "2004-12-01T20:42:15.429Z",
+      "end": "2004-12-16T16:52:30.429Z",
+      "duration_hours": 356.170833,
+      "category": "Rare Event",
+      "class": "class_6",
+      "subclass": "subclass_1",
+      "dimensionality": "Multivariate",
+      "locality": "Global",
+      "length": "Subsequence",
+      "channel_count": 52,
+      "channels": [
+        "channel_12",
+        "channel_13",
+        "channel_14",
+        "channel_15",
+        "channel_16",
+        "channel_17",
+        "channel_18",
+        "channel_19",
+        "channel_20",
+        "channel_21",
+        "channel_22",
+        "channel_23",
+        "channel_24",
+        "channel_25",
+        "channel_26",
+        "channel_27",
+        "channel_28",
+        "channel_29",
+        "channel_30",
+        "channel_31"
+      ],
+      "subsystems": [
+        "subsystem_3",
+        "subsystem_5",
+        "subsystem_6"
+      ]
+    },
+    {
+      "id": "id_2",
+      "start": "2001-08-30T06:27:15.570Z",
+      "end": "2001-08-30T09:22:45.570Z",
+      "duration_hours": 2.925,
+      "category": "Anomaly",
+      "class": "class_7",
+      "subclass": "subclass_1",
+      "dimensionality": "Multivariate",
+      "locality": "Local",
+      "length": "Subsequence",
+      "channel_count": 3,
+      "channels": [
+        "channel_14",
+        "channel_21",
+        "channel_29"
+      ],
+      "subsystems": [
+        "subsystem_6"
+      ]
+    },
+    {
+      "id": "id_3",
+      "start": "2001-11-24T17:31:45.561Z",
+      "end": "2001-11-25T00:16:45.561Z",
+      "duration_hours": 6.75,
+      "category": "Anomaly",
+      "class": "class_7",
+      "subclass": "subclass_1",
+      "dimensionality": "Multivariate",
+      "locality": "Global",
+      "length": "Subsequence",
+      "channel_count": 3,
+      "channels": [
+        "channel_14",
+        "channel_21",
+        "channel_29"
+      ],
+      "subsystems": [
+        "subsystem_6"
+      ]
+    },
+    {
+      "id": "id_4",
+      "start": "2000-04-27T20:54:18.621Z",
+      "end": "2000-04-28T02:33:18.621Z",
+      "duration_hours": 5.65,
+      "category": "Anomaly",
+      "class": "class_7",
+      "subclass": "subclass_1",
+      "dimensionality": "Multivariate",
+      "locality": "Local",
+      "length": "Subsequence",
+      "channel_count": 3,
+      "channels": [
+        "channel_14",
+        "channel_21",
+        "channel_29"
+      ],
+      "subsystems": [
+        "subsystem_6"
+      ]
+    },
+    {
+      "id": "id_5",
+      "start": "2001-07-30T18:52:45.573Z",
+      "end": "2001-07-31T02:12:15.573Z",
+      "duration_hours": 7.325,
+      "category": "Anomaly",
+      "class": "class_7",
+      "subclass": "subclass_1",
+      "dimensionality": "Multivariate",
+      "locality": "Local",
+      "length": "Subsequence",
+      "channel_count": 3,
+      "channels": [
+        "channel_14",
+        "channel_21",
+        "channel_29"
+      ],
+      "subsystems": [
+        "subsystem_6"
+      ]
+    },
+    {
+      "id": "id_6",
+      "start": "2001-12-17T07:57:15.558Z",
+      "end": "2001-12-17T11:27:15.558Z",
+      "duration_hours": 3.5,
+      "category": "Anomaly",
+      "class": "class_7",
+      "subclass": "subclass_1",
+      "dimensionality": "Multivariate",
+      "locality": "Local",
+      "length": "Subsequence",
+      "channel_count": 3,
+      "channels": [
+        "channel_14",
+        "channel_21",
+        "channel_29"
+      ],
+      "subsystems": [
+        "subsystem_6"
+      ]
+    },
+    {
+      "id": "id_7",
+      "start": "2002-07-20T17:27:15.534Z",
+      "end": "2002-07-20T20:37:45.534Z",
+      "duration_hours": 3.175,
+      "category": "Anomaly",
+      "class": "class_7",
+      "subclass": "subclass_1",
+      "dimensionality": "Multivariate",
+      "locality": "Local",
+      "length": "Subsequence",
+      "channel_count": 3,
+      "channels": [
+        "channel_14",
+        "channel_21",
+        "channel_29"
+      ],
+      "subsystems": [
+        "subsystem_6"
+      ]
+    },
+    {
+      "id": "id_8",
+      "start": "2003-01-12T14:58:45.513Z",
+      "end": "2003-01-12T20:27:15.513Z",
+      "duration_hours": 5.475,
+      "category": "Anomaly",
+      "class": "class_7",
+      "subclass": "subclass_1",
+      "dimensionality": "Multivariate",
+      "locality": "Local",
+      "length": "Subsequence",
+      "channel_count": 3,
+      "channels": [
+        "channel_14",
+        "channel_21",
+        "channel_29"
+      ],
+      "subsystems": [
+        "subsystem_6"
+      ]
+    },
+    {
+      "id": "id_9",
+      "start": "2003-02-12T07:00:15.510Z",
+      "end": "2003-02-12T08:06:15.510Z",
+      "duration_hours": 1.1,
+      "category": "Anomaly",
+      "class": "class_7",
+      "subclass": "subclass_1",
+      "dimensionality": "Multivariate",
+      "locality": "Local",
+      "length": "Subsequence",
+      "channel_count": 3,
+      "channels": [
+        "channel_14",
+        "channel_21",
+        "channel_29"
+      ],
+      "subsystems": [
+        "subsystem_6"
+      ]
+    },
+    {
+      "id": "id_10",
+      "start": "2005-03-31T08:14:58.125Z",
+      "end": "2005-04-09T15:05:57.414Z",
+      "duration_hours": 222.849803,
+      "category": "Anomaly",
+      "class": "class_9",
+      "subclass": "subclass_1",
+      "dimensionality": "Multivariate",
+      "locality": "Global",
+      "length": "Subsequence",
+      "channel_count": 38,
+      "channels": [
+        "channel_12",
+        "channel_13",
+        "channel_16",
+        "channel_17",
+        "channel_18",
+        "channel_19",
+        "channel_20",
+        "channel_24",
+        "channel_25",
+        "channel_26",
+        "channel_27",
+        "channel_28",
+        "channel_32",
+        "channel_33",
+        "channel_34",
+        "channel_35",
+        "channel_36",
+        "channel_37",
+        "channel_40",
+        "channel_41"
+      ],
+      "subsystems": [
+        "subsystem_3",
+        "subsystem_5",
+        "subsystem_6"
+      ]
+    },
+    {
+      "id": "id_11",
+      "start": "2012-04-20T22:09:00.042Z",
+      "end": "2012-04-21T10:27:52.140Z",
+      "duration_hours": 12.314472,
+      "category": "Anomaly",
+      "class": "class_11",
+      "subclass": "unknown",
+      "dimensionality": "Multivariate",
+      "locality": "Local",
+      "length": "Subsequence",
+      "channel_count": 20,
+      "channels": [
+        "channel_12",
+        "channel_13",
+        "channel_17",
+        "channel_18",
+        "channel_19",
+        "channel_20",
+        "channel_25",
+        "channel_26",
+        "channel_27",
+        "channel_28",
+        "channel_34",
+        "channel_35",
+        "channel_36",
+        "channel_37",
+        "channel_47",
+        "channel_48",
+        "channel_49",
+        "channel_50",
+        "channel_51",
+        "channel_52"
+      ],
+      "subsystems": [
+        "subsystem_6"
+      ]
+    },
+    {
+      "id": "id_12",
+      "start": "2003-12-30T20:31:55.191Z",
+      "end": "2004-01-08T12:00:00.000Z",
+      "duration_hours": 207.468003,
+      "category": "Anomaly",
+      "class": "class_11",
+      "subclass": "unknown",
+      "dimensionality": "Multivariate",
+      "locality": "Global",
+      "length": "Subsequence",
+      "channel_count": 34,
+      "channels": [
+        "channel_12",
+        "channel_13",
+        "channel_16",
+        "channel_17",
+        "channel_18",
+        "channel_19",
+        "channel_20",
+        "channel_24",
+        "channel_25",
+        "channel_26",
+        "channel_27",
+        "channel_28",
+        "channel_32",
+        "channel_33",
+        "channel_34",
+        "channel_35",
+        "channel_36",
+        "channel_37",
+        "channel_39",
+        "channel_40"
+      ],
+      "subsystems": [
+        "subsystem_5",
+        "subsystem_6"
+      ]
+    },
+    {
+      "id": "id_13",
+      "start": "2003-12-18T14:30:15.474Z",
+      "end": "2003-12-20T18:23:32.685Z",
+      "duration_hours": 51.888114,
+      "category": "Anomaly",
+      "class": "class_11",
+      "subclass": "unknown",
+      "dimensionality": "Multivariate",
+      "locality": "Global",
+      "length": "Subsequence",
+      "channel_count": 29,
+      "channels": [
+        "channel_12",
+        "channel_13",
+        "channel_16",
+        "channel_17",
+        "channel_18",
+        "channel_19",
+        "channel_20",
+        "channel_24",
+        "channel_25",
+        "channel_26",
+        "channel_27",
+        "channel_28",
+        "channel_32",
+        "channel_33",
+        "channel_34",
+        "channel_35",
+        "channel_36",
+        "channel_37",
+        "channel_40",
+        "channel_47"
+      ],
+      "subsystems": [
+        "subsystem_6"
+      ]
+    },
+    {
+      "id": "id_14",
+      "start": "2013-06-30T19:36:39.687Z",
+      "end": "2013-07-24T13:05:59.964Z",
+      "duration_hours": 569.488966,
+      "category": "Rare Event",
+      "class": "class_4",
+      "subclass": "subclass_1",
+      "dimensionality": "Multivariate",
+      "locality": "Global",
+      "length": "Subsequence",
+      "channel_count": 27,
+      "channels": [
+        "channel_14",
+        "channel_15",
+        "channel_16",
+        "channel_21",
+        "channel_22",
+        "channel_23",
+        "channel_24",
+        "channel_29",
+        "channel_30",
+        "channel_31",
+        "channel_32",
+        "channel_33",
+        "channel_38",
+        "channel_39",
+        "channel_40",
+        "channel_41",
+        "channel_42",
+        "channel_43",
+        "channel_44",
+        "channel_45"
+      ],
+      "subsystems": [
+        "subsystem_5",
+        "subsystem_6"
+      ]
+    },
+    {
+      "id": "id_15",
+      "start": "2007-04-25T15:00:25.035Z",
+      "end": "2007-04-26T00:17:55.035Z",
+      "duration_hours": 9.291667,
+      "category": "Rare Event",
+      "class": "class_4",
+      "subclass": "unknown",
+      "dimensionality": "Multivariate",
+      "locality": "Global",
+      "length": "Subsequence",
+      "channel_count": 12,
+      "channels": [
+        "channel_41",
+        "channel_42",
+        "channel_43",
+        "channel_44",
+        "channel_45",
+        "channel_46",
+        "channel_47",
+        "channel_48",
+        "channel_49",
+        "channel_50",
+        "channel_51",
+        "channel_52"
+      ],
+      "subsystems": [
+        "subsystem_5",
+        "subsystem_6"
+      ]
+    },
+    {
+      "id": "id_16",
+      "start": "2005-07-07T22:54:37.119Z",
+      "end": "2005-07-08T00:05:19.500Z",
+      "duration_hours": 1.178439,
+      "category": "Rare Event",
+      "class": "class_16",
+      "subclass": "unknown",
+      "dimensionality": "Multivariate",
+      "locality": "Local",
+      "length": "Subsequence",
+      "channel_count": 12,
+      "channels": [
+        "channel_41",
+        "channel_42",
+        "channel_43",
+        "channel_44",
+        "channel_45",
+        "channel_46",
+        "channel_47",
+        "channel_48",
+        "channel_49",
+        "channel_50",
+        "channel_51",
+        "channel_52"
+      ],
+      "subsystems": [
+        "subsystem_5",
+        "subsystem_6"
+      ]
+    },
+    {
+      "id": "id_17",
+      "start": "2005-01-16T21:45:00.423Z",
+      "end": "2005-01-19T17:50:55.140Z",
+      "duration_hours": 68.098533,
+      "category": "Rare Event",
+      "class": "class_4",
+      "subclass": "unknown",
+      "dimensionality": "Multivariate",
+      "locality": "Global",
+      "length": "Subsequence",
+      "channel_count": 41,
+      "channels": [
+        "channel_12",
+        "channel_13",
+        "channel_14",
+        "channel_15",
+        "channel_16",
+        "channel_17",
+        "channel_18",
+        "channel_19",
+        "channel_20",
+        "channel_21",
+        "channel_22",
+        "channel_23",
+        "channel_24",
+        "channel_25",
+        "channel_26",
+        "channel_27",
+        "channel_28",
+        "channel_29",
+        "channel_30",
+        "channel_31"
+      ],
+      "subsystems": [
+        "subsystem_5",
+        "subsystem_6"
+      ]
+    },
+    {
+      "id": "id_18",
+      "start": "2008-09-08T13:45:44.073Z",
+      "end": "2008-09-08T17:09:37.341Z",
+      "duration_hours": 3.39813,
+      "category": "Anomaly",
+      "class": "class_9",
+      "subclass": "subclass_1",
+      "dimensionality": "Multivariate",
+      "locality": "Global",
+      "length": "Subsequence",
+      "channel_count": 33,
+      "channels": [
+        "channel_12",
+        "channel_13",
+        "channel_17",
+        "channel_18",
+        "channel_19",
+        "channel_20",
+        "channel_25",
+        "channel_26",
+        "channel_27",
+        "channel_28",
+        "channel_34",
+        "channel_35",
+        "channel_36",
+        "channel_37",
+        "channel_41",
+        "channel_42",
+        "channel_43",
+        "channel_44",
+        "channel_45",
+        "channel_46"
+      ],
+      "subsystems": [
+        "subsystem_3",
+        "subsystem_5",
+        "subsystem_6"
+      ]
+    },
+    {
+      "id": "id_19",
+      "start": "2003-06-18T18:25:25.212Z",
+      "end": "2003-06-18T23:41:37.590Z",
+      "duration_hours": 5.270105,
+      "category": "Rare Event",
+      "class": "class_16",
+      "subclass": "subclass_1",
+      "dimensionality": "Multivariate",
+      "locality": "Global",
+      "length": "Subsequence",
+      "channel_count": 12,
+      "channels": [
+        "channel_41",
+        "channel_42",
+        "channel_43",
+        "channel_44",
+        "channel_45",
+        "channel_46",
+        "channel_47",
+        "channel_48",
+        "channel_49",
+        "channel_50",
+        "channel_51",
+        "channel_52"
+      ],
+      "subsystems": [
+        "subsystem_5",
+        "subsystem_6"
+      ]
+    },
+    {
+      "id": "id_20",
+      "start": "2008-01-30T03:20:14.103Z",
+      "end": "2008-02-04T18:34:14.103Z",
+      "duration_hours": 135.233333,
+      "category": "Anomaly",
+      "class": "class_18",
+      "subclass": "unknown",
+      "dimensionality": "Multivariate",
+      "locality": "Local",
+      "length": "Subsequence",
+      "channel_count": 13,
+      "channels": [
+        "channel_47",
+        "channel_48",
+        "channel_49",
+        "channel_50",
+        "channel_51",
+        "channel_52",
+        "channel_70",
+        "channel_71",
+        "channel_72",
+        "channel_73",
+        "channel_74",
+        "channel_75",
+        "channel_76"
+      ],
+      "subsystems": [
+        "subsystem_3",
+        "subsystem_6"
+      ]
+    },
+    {
+      "id": "id_21",
+      "start": "2001-03-21T20:50:58.305Z",
+      "end": "2001-04-07T00:04:06.585Z",
+      "duration_hours": 387.218967,
+      "category": "Rare Event",
+      "class": "class_4",
+      "subclass": "unknown",
+      "dimensionality": "Multivariate",
+      "locality": "Global",
+      "length": "Subsequence",
+      "channel_count": 17,
+      "channels": [
+        "channel_16",
+        "channel_24",
+        "channel_32",
+        "channel_33",
+        "channel_40",
+        "channel_41",
+        "channel_42",
+        "channel_43",
+        "channel_44",
+        "channel_45",
+        "channel_46",
+        "channel_47",
+        "channel_48",
+        "channel_49",
+        "channel_50",
+        "channel_51",
+        "channel_52"
+      ],
+      "subsystems": [
+        "subsystem_5",
+        "subsystem_6"
+      ]
+    },
+    {
+      "id": "id_22",
+      "start": "2000-07-27T19:48:58.329Z",
+      "end": "2000-07-28T16:58:10.707Z",
+      "duration_hours": 21.153438,
+      "category": "Rare Event",
+      "class": "class_16",
+      "subclass": "unknown",
+      "dimensionality": "Multivariate",
+      "locality": "Global",
+      "length": "Subsequence",
+      "channel_count": 12,
+      "channels": [
+        "channel_41",
+        "channel_42",
+        "channel_43",
+        "channel_44",
+        "channel_45",
+        "channel_46",
+        "channel_47",
+        "channel_48",
+        "channel_49",
+        "channel_50",
+        "channel_51",
+        "channel_52"
+      ],
+      "subsystems": [
+        "subsystem_5",
+        "subsystem_6"
+      ]
+    },
+    {
+      "id": "id_23",
+      "start": "2000-07-31T03:33:28.329Z",
+      "end": "2000-07-31T07:16:58.329Z",
+      "duration_hours": 3.725,
+      "category": "Rare Event",
+      "class": "class_16",
+      "subclass": "unknown",
+      "dimensionality": "Multivariate",
+      "locality": "Local",
+      "length": "Subsequence",
+      "channel_count": 12,
+      "channels": [
+        "channel_41",
+        "channel_42",
+        "channel_43",
+        "channel_44",
+        "channel_45",
+        "channel_46",
+        "channel_47",
+        "channel_48",
+        "channel_49",
+        "channel_50",
+        "channel_51",
+        "channel_52"
+      ],
+      "subsystems": [
+        "subsystem_5",
+        "subsystem_6"
+      ]
+    },
+    {
+      "id": "id_24",
+      "start": "2012-12-18T06:32:09.723Z",
+      "end": "2012-12-19T06:01:39.723Z",
+      "duration_hours": 23.491667,
+      "category": "Rare Event",
+      "class": "class_10",
+      "subclass": "subclass_1",
+      "dimensionality": "Multivariate",
+      "locality": "Local",
+      "length": "Subsequence",
+      "channel_count": 6,
+      "channels": [
+        "channel_41",
+        "channel_42",
+        "channel_43",
+        "channel_44",
+        "channel_45",
+        "channel_46"
+      ],
+      "subsystems": [
+        "subsystem_5"
+      ]
+    },
+    {
+      "id": "id_25",
+      "start": "2002-07-17T01:30:15.534Z",
+      "end": "2002-07-25T00:00:00.000Z",
+      "duration_hours": 190.495685,
+      "category": "Anomaly",
+      "class": "class_19",
+      "subclass": "unknown",
+      "dimensionality": "Multivariate",
+      "locality": "Global",
+      "length": "Subsequence",
+      "channel_count": 30,
+      "channels": [
+        "channel_12",
+        "channel_13",
+        "channel_16",
+        "channel_17",
+        "channel_18",
+        "channel_19",
+        "channel_20",
+        "channel_24",
+        "channel_25",
+        "channel_26",
+        "channel_27",
+        "channel_28",
+        "channel_32",
+        "channel_33",
+        "channel_34",
+        "channel_35",
+        "channel_36",
+        "channel_37",
+        "channel_40",
+        "channel_47"
+      ],
+      "subsystems": [
+        "subsystem_6"
+      ]
+    },
+    {
+      "id": "id_26",
+      "start": "2007-10-09T21:20:53.502Z",
+      "end": "2007-10-10T00:43:37.377Z",
+      "duration_hours": 3.378854,
+      "category": "Rare Event",
+      "class": "class_8",
+      "subclass": "subclass_1",
+      "dimensionality": "Multivariate",
+      "locality": "Local",
+      "length": "Subsequence",
+      "channel_count": 20,
+      "channels": [
+        "channel_41",
+        "channel_42",
+        "channel_43",
+        "channel_44",
+        "channel_45",
+        "channel_46",
+        "channel_47",
+        "channel_48",
+        "channel_49",
+        "channel_57",
+        "channel_58",
+        "channel_59",
+        "channel_60",
+        "channel_70",
+        "channel_71",
+        "channel_72",
+        "channel_73",
+        "channel_74",
+        "channel_75",
+        "channel_76"
+      ],
+      "subsystems": [
+        "subsystem_3",
+        "subsystem_5",
+        "subsystem_6"
+      ]
+    },
+    {
+      "id": "id_27",
+      "start": "2007-10-26T12:20:53.499Z",
+      "end": "2007-10-26T16:30:53.499Z",
+      "duration_hours": 4.166667,
+      "category": "Rare Event",
+      "class": "class_8",
+      "subclass": "subclass_1",
+      "dimensionality": "Multivariate",
+      "locality": "Local",
+      "length": "Subsequence",
+      "channel_count": 52,
+      "channels": [
+        "channel_12",
+        "channel_13",
+        "channel_14",
+        "channel_15",
+        "channel_16",
+        "channel_17",
+        "channel_18",
+        "channel_19",
+        "channel_20",
+        "channel_21",
+        "channel_22",
+        "channel_23",
+        "channel_24",
+        "channel_25",
+        "channel_26",
+        "channel_27",
+        "channel_28",
+        "channel_29",
+        "channel_30",
+        "channel_31"
+      ],
+      "subsystems": [
+        "subsystem_3",
+        "subsystem_5",
+        "subsystem_6"
+      ]
+    },
+    {
+      "id": "id_28",
+      "start": "2007-12-24T02:30:23.493Z",
+      "end": "2007-12-24T05:16:53.493Z",
+      "duration_hours": 2.775,
+      "category": "Rare Event",
+      "class": "class_8",
+      "subclass": "subclass_1",
+      "dimensionality": "Multivariate",
+      "locality": "Local",
+      "length": "Subsequence",
+      "channel_count": 52,
+      "channels": [
+        "channel_12",
+        "channel_13",
+        "channel_14",
+        "channel_15",
+        "channel_16",
+        "channel_17",
+        "channel_18",
+        "channel_19",
+        "channel_20",
+        "channel_21",
+        "channel_22",
+        "channel_23",
+        "channel_24",
+        "channel_25",
+        "channel_26",
+        "channel_27",
+        "channel_28",
+        "channel_29",
+        "channel_30",
+        "channel_31"
+      ],
+      "subsystems": [
+        "subsystem_3",
+        "subsystem_5",
+        "subsystem_6"
+      ]
+    },
+    {
+      "id": "id_29",
+      "start": "2008-06-07T15:35:53.469Z",
+      "end": "2008-06-07T16:43:37.344Z",
+      "duration_hours": 1.128854,
+      "category": "Rare Event",
+      "class": "class_8",
+      "subclass": "subclass_1",
+      "dimensionality": "Multivariate",
+      "locality": "Local",
+      "length": "Subsequence",
+      "channel_count": 52,
+      "channels": [
+        "channel_12",
+        "channel_13",
+        "channel_14",
+        "channel_15",
+        "channel_16",
+        "channel_17",
+        "channel_18",
+        "channel_19",
+        "channel_20",
+        "channel_21",
+        "channel_22",
+        "channel_23",
+        "channel_24",
+        "channel_25",
+        "channel_26",
+        "channel_27",
+        "channel_28",
+        "channel_29",
+        "channel_30",
+        "channel_31"
+      ],
+      "subsystems": [
+        "subsystem_3",
+        "subsystem_5",
+        "subsystem_6"
+      ]
+    },
+    {
+      "id": "id_30",
+      "start": "2000-02-27T08:27:06.627Z",
+      "end": "2000-02-27T14:06:06.627Z",
+      "duration_hours": 5.65,
+      "category": "Anomaly",
+      "class": "class_7",
+      "subclass": "subclass_1",
+      "dimensionality": "Multivariate",
+      "locality": "Local",
+      "length": "Subsequence",
+      "channel_count": 3,
+      "channels": [
+        "channel_14",
+        "channel_21",
+        "channel_29"
+      ],
+      "subsystems": [
+        "subsystem_6"
+      ]
+    },
+    {
+      "id": "id_31",
+      "start": "2008-06-10T16:20:07.350Z",
+      "end": "2008-06-10T19:43:37.344Z",
+      "duration_hours": 3.391665,
+      "category": "Rare Event",
+      "class": "class_8",
+      "subclass": "subclass_1",
+      "dimensionality": "Multivariate",
+      "locality": "Local",
+      "length": "Subsequence",
+      "channel_count": 52,
+      "channels": [
+        "channel_12",
+        "channel_13",
+        "channel_14",
+        "channel_15",
+        "channel_16",
+        "channel_17",
+        "channel_18",
+        "channel_19",
+        "channel_20",
+        "channel_21",
+        "channel_22",
+        "channel_23",
+        "channel_24",
+        "channel_25",
+        "channel_26",
+        "channel_27",
+        "channel_28",
+        "channel_29",
+        "channel_30",
+        "channel_31"
+      ],
+      "subsystems": [
+        "subsystem_3",
+        "subsystem_5",
+        "subsystem_6"
+      ]
+    },
+    {
+      "id": "id_32",
+      "start": "2008-10-15T20:23:53.451Z",
+      "end": "2008-10-15T23:37:37.323Z",
+      "duration_hours": 3.228853,
+      "category": "Rare Event",
+      "class": "class_8",
+      "subclass": "subclass_1",
+      "dimensionality": "Multivariate",
+      "locality": "Local",
+      "length": "Subsequence",
+      "channel_count": 52,
+      "channels": [
+        "channel_12",
+        "channel_13",
+        "channel_14",
+        "channel_15",
+        "channel_16",
+        "channel_17",
+        "channel_18",
+        "channel_19",
+        "channel_20",
+        "channel_21",
+        "channel_22",
+        "channel_23",
+        "channel_24",
+        "channel_25",
+        "channel_26",
+        "channel_27",
+        "channel_28",
+        "channel_29",
+        "channel_30",
+        "channel_31"
+      ],
+      "subsystems": [
+        "subsystem_3",
+        "subsystem_5",
+        "subsystem_6"
+      ]
+    },
+    {
+      "id": "id_33",
+      "start": "2009-03-08T10:32:53.430Z",
+      "end": "2009-03-08T13:52:37.302Z",
+      "duration_hours": 3.328853,
+      "category": "Rare Event",
+      "class": "class_8",
+      "subclass": "subclass_1",
+      "dimensionality": "Multivariate",
+      "locality": "Local",
+      "length": "Subsequence",
+      "channel_count": 55,
+      "channels": [
+        "channel_12",
+        "channel_13",
+        "channel_14",
+        "channel_15",
+        "channel_16",
+        "channel_17",
+        "channel_18",
+        "channel_19",
+        "channel_20",
+        "channel_21",
+        "channel_22",
+        "channel_23",
+        "channel_24",
+        "channel_25",
+        "channel_26",
+        "channel_27",
+        "channel_28",
+        "channel_29",
+        "channel_30",
+        "channel_31"
+      ],
+      "subsystems": [
+        "subsystem_3",
+        "subsystem_5",
+        "subsystem_6"
+      ]
+    },
+    {
+      "id": "id_34",
+      "start": "2009-06-10T20:06:52.299Z",
+      "end": "2009-06-10T23:37:30.204Z",
+      "duration_hours": 3.510529,
+      "category": "Rare Event",
+      "class": "class_8",
+      "subclass": "subclass_1",
+      "dimensionality": "Multivariate",
+      "locality": "Global",
+      "length": "Subsequence",
+      "channel_count": 56,
+      "channels": [
+        "channel_12",
+        "channel_13",
+        "channel_14",
+        "channel_15",
+        "channel_16",
+        "channel_17",
+        "channel_18",
+        "channel_19",
+        "channel_20",
+        "channel_21",
+        "channel_22",
+        "channel_23",
+        "channel_24",
+        "channel_25",
+        "channel_26",
+        "channel_27",
+        "channel_28",
+        "channel_29",
+        "channel_30",
+        "channel_31"
+      ],
+      "subsystems": [
+        "subsystem_1",
+        "subsystem_3",
+        "subsystem_5",
+        "subsystem_6"
+      ]
+    },
+    {
+      "id": "id_35",
+      "start": "2000-10-22T22:57:58.320Z",
+      "end": "2000-10-23T00:19:05.478Z",
+      "duration_hours": 1.351988,
+      "category": "Rare Event",
+      "class": "class_14",
+      "subclass": "subclass_1",
+      "dimensionality": "Multivariate",
+      "locality": "Local",
+      "length": "Subsequence",
+      "channel_count": 35,
+      "channels": [
+        "channel_12",
+        "channel_13",
+        "channel_14",
+        "channel_15",
+        "channel_16",
+        "channel_17",
+        "channel_18",
+        "channel_19",
+        "channel_20",
+        "channel_21",
+        "channel_22",
+        "channel_23",
+        "channel_24",
+        "channel_25",
+        "channel_26",
+        "channel_27",
+        "channel_28",
+        "channel_29",
+        "channel_30",
+        "channel_31"
+      ],
+      "subsystems": [
+        "subsystem_5",
+        "subsystem_6"
+      ]
+    },
+    {
+      "id": "id_36",
+      "start": "2000-08-16T09:58:48.609Z",
+      "end": "2000-08-16T15:27:18.609Z",
+      "duration_hours": 5.475,
+      "category": "Anomaly",
+      "class": "class_7",
+      "subclass": "subclass_1",
+      "dimensionality": "Multivariate",
+      "locality": "Local",
+      "length": "Subsequence",
+      "channel_count": 3,
+      "channels": [
+        "channel_14",
+        "channel_21",
+        "channel_29"
+      ],
+      "subsystems": [
+        "subsystem_6"
+      ]
+    },
+    {
+      "id": "id_37",
+      "start": "2001-07-25T23:19:55.290Z",
+      "end": "2001-07-25T23:57:55.290Z",
+      "duration_hours": 0.633333,
+      "category": "Rare Event",
+      "class": "class_10",
+      "subclass": "unknown",
+      "dimensionality": "Multivariate",
+      "locality": "Local",
+      "length": "Subsequence",
+      "channel_count": 6,
+      "channels": [
+        "channel_41",
+        "channel_42",
+        "channel_43",
+        "channel_44",
+        "channel_45",
+        "channel_46"
+      ],
+      "subsystems": [
+        "subsystem_5"
+      ]
+    },
+    {
+      "id": "id_38",
+      "start": "2001-10-05T11:39:55.281Z",
+      "end": "2001-10-06T01:13:25.281Z",
+      "duration_hours": 13.558333,
+      "category": "Rare Event",
+      "class": "class_12",
+      "subclass": "unknown",
+      "dimensionality": "Multivariate",
+      "locality": "Local",
+      "length": "Subsequence",
+      "channel_count": 11,
+      "channels": [
+        "channel_41",
+        "channel_42",
+        "channel_43",
+        "channel_44",
+        "channel_45",
+        "channel_47",
+        "channel_48",
+        "channel_49",
+        "channel_50",
+        "channel_51",
+        "channel_52"
+      ],
+      "subsystems": [
+        "subsystem_5",
+        "subsystem_6"
+      ]
+    },
+    {
+      "id": "id_39",
+      "start": "2004-08-23T00:12:25.161Z",
+      "end": "2004-08-23T03:37:07.539Z",
+      "duration_hours": 3.411772,
+      "category": "Rare Event",
+      "class": "class_16",
+      "subclass": "subclass_2",
+      "dimensionality": "Multivariate",
+      "locality": "Local",
+      "length": "Subsequence",
+      "channel_count": 12,
+      "channels": [
+        "channel_41",
+        "channel_42",
+        "channel_43",
+        "channel_44",
+        "channel_45",
+        "channel_46",
+        "channel_47",
+        "channel_48",
+        "channel_49",
+        "channel_50",
+        "channel_51",
+        "channel_52"
+      ],
+      "subsystems": [
+        "subsystem_5",
+        "subsystem_6"
+      ]
+    },
+    {
+      "id": "id_40",
+      "start": "2009-09-20T14:33:09.906Z",
+      "end": "2009-09-20T14:48:52.284Z",
+      "duration_hours": 0.261772,
+      "category": "Rare Event",
+      "class": "class_16",
+      "subclass": "unknown",
+      "dimensionality": "Multivariate",
+      "locality": "Local",
+      "length": "Subsequence",
+      "channel_count": 12,
+      "channels": [
+        "channel_41",
+        "channel_42",
+        "channel_43",
+        "channel_44",
+        "channel_45",
+        "channel_46",
+        "channel_47",
+        "channel_48",
+        "channel_49",
+        "channel_50",
+        "channel_51",
+        "channel_52"
+      ],
+      "subsystems": [
+        "subsystem_5",
+        "subsystem_6"
+      ]
+    },
+    {
+      "id": "id_41",
+      "start": "2004-09-15T17:41:55.158Z",
+      "end": "2004-09-15T17:48:55.158Z",
+      "duration_hours": 0.116667,
+      "category": "Rare Event",
+      "class": "class_10",
+      "subclass": "subclass_1",
+      "dimensionality": "Multivariate",
+      "locality": "Local",
+      "length": "Subsequence",
+      "channel_count": 10,
+      "channels": [
+        "channel_41",
+        "channel_42",
+        "channel_45",
+        "channel_46",
+        "channel_70",
+        "channel_72",
+        "channel_73",
+        "channel_74",
+        "channel_75",
+        "channel_76"
+      ],
+      "subsystems": [
+        "subsystem_3",
+        "subsystem_5"
+      ]
+    },
+    {
+      "id": "id_42",
+      "start": "2012-12-06T18:34:09.723Z",
+      "end": "2012-12-06T18:34:09.723Z",
+      "duration_hours": 0.0,
+      "category": "Anomaly",
+      "class": "class_1",
+      "subclass": "unknown",
+      "dimensionality": "Univariate",
+      "locality": "Local",
+      "length": "Point",
+      "channel_count": 1,
+      "channels": [
+        "channel_41"
+      ],
+      "subsystems": [
+        "subsystem_5"
+      ]
+    },
+    {
+      "id": "id_43",
+      "start": "2008-11-27T15:12:23.775Z",
+      "end": "2008-11-30T15:12:23.775Z",
+      "duration_hours": 72.0,
+      "category": "Anomaly",
+      "class": "class_13",
+      "subclass": "subclass_1",
+      "dimensionality": "Multivariate",
+      "locality": "Local",
+      "length": "Subsequence",
+      "channel_count": 3,
+      "channels": [
+        "channel_61",
+        "channel_62",
+        "channel_63"
+      ],
+      "subsystems": [
+        "subsystem_1"
+      ]
+    },
+    {
+      "id": "id_44",
+      "start": "2010-05-22T18:03:09.870Z",
+      "end": "2010-05-23T11:22:09.870Z",
+      "duration_hours": 17.316667,
+      "category": "Rare Event",
+      "class": "class_4",
+      "subclass": "unknown",
+      "dimensionality": "Multivariate",
+      "locality": "Global",
+      "length": "Subsequence",
+      "channel_count": 13,
+      "channels": [
+        "channel_41",
+        "channel_42",
+        "channel_43",
+        "channel_44",
+        "channel_45",
+        "channel_46",
+        "channel_47",
+        "channel_48",
+        "channel_49",
+        "channel_50",
+        "channel_51",
+        "channel_52",
+        "channel_76"
+      ],
+      "subsystems": [
+        "subsystem_3",
+        "subsystem_5",
+        "subsystem_6"
+      ]
+    },
+    {
+      "id": "id_45",
+      "start": "2001-03-12T20:57:18.588Z",
+      "end": "2001-03-13T01:34:48.588Z",
+      "duration_hours": 4.625,
+      "category": "Anomaly",
+      "class": "class_7",
+      "subclass": "subclass_2",
+      "dimensionality": "Multivariate",
+      "locality": "Global",
+      "length": "Subsequence",
+      "channel_count": 6,
+      "channels": [
+        "channel_14",
+        "channel_21",
+        "channel_22",
+        "channel_29",
+        "channel_31",
+        "channel_39"
+      ],
+      "subsystems": [
+        "subsystem_6"
+      ]
+    },
+    {
+      "id": "id_46",
+      "start": "2012-09-17T03:21:00.018Z",
+      "end": "2012-09-20T14:40:30.018Z",
+      "duration_hours": 83.325,
+      "category": "Anomaly",
+      "class": "class_7",
+      "subclass": "subclass_1",
+      "dimensionality": "Multivariate",
+      "locality": "Local",
+      "length": "Subsequence",
+      "channel_count": 3,
+      "channels": [
+        "channel_14",
+        "channel_21",
+        "channel_29"
+      ],
+      "subsystems": [
+        "subsystem_6"
+      ]
+    },
+    {
+      "id": "id_47",
+      "start": "2010-03-07T11:29:09.882Z",
+      "end": "2010-03-07T14:33:09.882Z",
+      "duration_hours": 3.066667,
+      "category": "Rare Event",
+      "class": "class_16",
+      "subclass": "unknown",
+      "dimensionality": "Multivariate",
+      "locality": "Local",
+      "length": "Subsequence",
+      "channel_count": 12,
+      "channels": [
+        "channel_41",
+        "channel_42",
+        "channel_43",
+        "channel_44",
+        "channel_45",
+        "channel_46",
+        "channel_47",
+        "channel_48",
+        "channel_49",
+        "channel_50",
+        "channel_51",
+        "channel_52"
+      ],
+      "subsystems": [
+        "subsystem_5",
+        "subsystem_6"
+      ]
+    },
+    {
+      "id": "id_48",
+      "start": "2009-11-22T12:38:22.275Z",
+      "end": "2009-11-22T17:33:52.275Z",
+      "duration_hours": 4.925,
+      "category": "Rare Event",
+      "class": "class_16",
+      "subclass": "unknown",
+      "dimensionality": "Multivariate",
+      "locality": "Local",
+      "length": "Subsequence",
+      "channel_count": 12,
+      "channels": [
+        "channel_41",
+        "channel_42",
+        "channel_43",
+        "channel_44",
+        "channel_45",
+        "channel_46",
+        "channel_47",
+        "channel_48",
+        "channel_49",
+        "channel_50",
+        "channel_51",
+        "channel_52"
+      ],
+      "subsystems": [
+        "subsystem_5",
+        "subsystem_6"
+      ]
+    },
+    {
+      "id": "id_49",
+      "start": "2011-10-08T07:08:39.792Z",
+      "end": "2011-10-08T17:33:09.792Z",
+      "duration_hours": 10.408333,
+      "category": "Rare Event",
+      "class": "class_12",
+      "subclass": "unknown",
+      "dimensionality": "Multivariate",
+      "locality": "Local",
+      "length": "Subsequence",
+      "channel_count": 12,
+      "channels": [
+        "channel_41",
+        "channel_42",
+        "channel_43",
+        "channel_44",
+        "channel_45",
+        "channel_46",
+        "channel_47",
+        "channel_48",
+        "channel_49",
+        "channel_50",
+        "channel_51",
+        "channel_52"
+      ],
+      "subsystems": [
+        "subsystem_5",
+        "subsystem_6"
+      ]
+    },
+    {
+      "id": "id_50",
+      "start": "2007-07-30T04:27:55.020Z",
+      "end": "2007-07-30T06:50:07.395Z",
+      "duration_hours": 2.370104,
+      "category": "Rare Event",
+      "class": "class_12",
+      "subclass": "unknown",
+      "dimensionality": "Multivariate",
+      "locality": "Local",
+      "length": "Subsequence",
+      "channel_count": 12,
+      "channels": [
+        "channel_41",
+        "channel_42",
+        "channel_43",
+        "channel_44",
+        "channel_45",
+        "channel_46",
+        "channel_47",
+        "channel_48",
+        "channel_49",
+        "channel_50",
+        "channel_51",
+        "channel_52"
+      ],
+      "subsystems": [
+        "subsystem_5",
+        "subsystem_6"
+      ]
+    },
+    {
+      "id": "id_51",
+      "start": "2011-08-14T19:12:39.801Z",
+      "end": "2011-08-15T08:34:30.084Z",
+      "duration_hours": 13.363968,
+      "category": "Rare Event",
+      "class": "class_16",
+      "subclass": "unknown",
+      "dimensionality": "Multivariate",
+      "locality": "Local",
+      "length": "Subsequence",
+      "channel_count": 15,
+      "channels": [
+        "channel_14",
+        "channel_21",
+        "channel_29",
+        "channel_41",
+        "channel_42",
+        "channel_43",
+        "channel_44",
+        "channel_45",
+        "channel_46",
+        "channel_47",
+        "channel_48",
+        "channel_49",
+        "channel_50",
+        "channel_51",
+        "channel_52"
+      ],
+      "subsystems": [
+        "subsystem_5",
+        "subsystem_6"
+      ]
+    },
+    {
+      "id": "id_52",
+      "start": "2001-05-27T18:45:56.790Z",
+      "end": "2001-05-28T14:30:31.290Z",
+      "duration_hours": 19.742917,
+      "category": "Communication Gap",
+      "class": "class_5",
+      "subclass": "unknown",
+      "dimensionality": "",
+      "locality": "",
+      "length": "",
+      "channel_count": 52,
+      "channels": [
+        "channel_12",
+        "channel_13",
+        "channel_14",
+        "channel_15",
+        "channel_16",
+        "channel_17",
+        "channel_18",
+        "channel_19",
+        "channel_20",
+        "channel_21",
+        "channel_22",
+        "channel_23",
+        "channel_24",
+        "channel_25",
+        "channel_26",
+        "channel_27",
+        "channel_28",
+        "channel_29",
+        "channel_30",
+        "channel_31"
+      ],
+      "subsystems": [
+        "subsystem_3",
+        "subsystem_5",
+        "subsystem_6"
+      ]
+    },
+    {
+      "id": "id_53",
+      "start": "2001-06-27T08:13:42.162Z",
+      "end": "2001-06-27T09:02:44.406Z",
+      "duration_hours": 0.81729,
+      "category": "Communication Gap",
+      "class": "class_5",
+      "subclass": "unknown",
+      "dimensionality": "",
+      "locality": "",
+      "length": "",
+      "channel_count": 52,
+      "channels": [
+        "channel_12",
+        "channel_13",
+        "channel_14",
+        "channel_15",
+        "channel_16",
+        "channel_17",
+        "channel_18",
+        "channel_19",
+        "channel_20",
+        "channel_21",
+        "channel_22",
+        "channel_23",
+        "channel_24",
+        "channel_25",
+        "channel_26",
+        "channel_27",
+        "channel_28",
+        "channel_29",
+        "channel_30",
+        "channel_31"
+      ],
+      "subsystems": [
+        "subsystem_3",
+        "subsystem_5",
+        "subsystem_6"
+      ]
+    },
+    {
+      "id": "id_54",
+      "start": "2002-10-16T05:58:45.525Z",
+      "end": "2002-10-16T11:55:07.620Z",
+      "duration_hours": 5.939471,
+      "category": "Communication Gap",
+      "class": "class_5",
+      "subclass": "unknown",
+      "dimensionality": "",
+      "locality": "",
+      "length": "",
+      "channel_count": 52,
+      "channels": [
+        "channel_12",
+        "channel_13",
+        "channel_14",
+        "channel_15",
+        "channel_16",
+        "channel_17",
+        "channel_18",
+        "channel_19",
+        "channel_20",
+        "channel_21",
+        "channel_22",
+        "channel_23",
+        "channel_24",
+        "channel_25",
+        "channel_26",
+        "channel_27",
+        "channel_28",
+        "channel_29",
+        "channel_30",
+        "channel_31"
+      ],
+      "subsystems": [
+        "subsystem_3",
+        "subsystem_5",
+        "subsystem_6"
+      ]
+    },
+    {
+      "id": "id_55",
+      "start": "2011-04-23T08:19:39.819Z",
+      "end": "2011-04-23T08:19:39.819Z",
+      "duration_hours": 0.0,
+      "category": "Rare Event",
+      "class": "class_16",
+      "subclass": "subclass_3",
+      "dimensionality": "Multivariate",
+      "locality": "Local",
+      "length": "Point",
+      "channel_count": 3,
+      "channels": [
+        "channel_41",
+        "channel_43",
+        "channel_45"
+      ],
+      "subsystems": [
+        "subsystem_5"
+      ]
+    },
+    {
+      "id": "id_56",
+      "start": "2001-05-15T22:40:48.579Z",
+      "end": "2001-05-17T17:58:48.579Z",
+      "duration_hours": 43.3,
+      "category": "Anomaly",
+      "class": "class_7",
+      "subclass": "subclass_1",
+      "dimensionality": "Multivariate",
+      "locality": "Local",
+      "length": "Subsequence",
+      "channel_count": 3,
+      "channels": [
+        "channel_14",
+        "channel_21",
+        "channel_29"
+      ],
+      "subsystems": [
+        "subsystem_6"
+      ]
+    },
+    {
+      "id": "id_57",
+      "start": "2001-05-30T22:24:01.290Z",
+      "end": "2001-05-31T11:29:56.790Z",
+      "duration_hours": 13.09875,
+      "category": "Communication Gap",
+      "class": "class_5",
+      "subclass": "unknown",
+      "dimensionality": "",
+      "locality": "",
+      "length": "",
+      "channel_count": 52,
+      "channels": [
+        "channel_12",
+        "channel_13",
+        "channel_14",
+        "channel_15",
+        "channel_16",
+        "channel_17",
+        "channel_18",
+        "channel_19",
+        "channel_20",
+        "channel_21",
+        "channel_22",
+        "channel_23",
+        "channel_24",
+        "channel_25",
+        "channel_26",
+        "channel_27",
+        "channel_28",
+        "channel_29",
+        "channel_30",
+        "channel_31"
+      ],
+      "subsystems": [
+        "subsystem_3",
+        "subsystem_5",
+        "subsystem_6"
+      ]
+    },
+    {
+      "id": "id_58",
+      "start": "2001-05-23T07:00:18.579Z",
+      "end": "2001-05-23T14:21:18.579Z",
+      "duration_hours": 7.35,
+      "category": "Anomaly",
+      "class": "class_7",
+      "subclass": "subclass_1",
+      "dimensionality": "Multivariate",
+      "locality": "Local",
+      "length": "Subsequence",
+      "channel_count": 3,
+      "channels": [
+        "channel_14",
+        "channel_21",
+        "channel_29"
+      ],
+      "subsystems": [
+        "subsystem_6"
+      ]
+    },
+    {
+      "id": "id_59",
+      "start": "2000-10-13T22:31:48.603Z",
+      "end": "2000-10-22T22:43:48.603Z",
+      "duration_hours": 216.2,
+      "category": "Rare Event",
+      "class": "class_14",
+      "subclass": "subclass_1",
+      "dimensionality": "Multivariate",
+      "locality": "Global",
+      "length": "Subsequence",
+      "channel_count": 35,
+      "channels": [
+        "channel_12",
+        "channel_13",
+        "channel_14",
+        "channel_15",
+        "channel_16",
+        "channel_17",
+        "channel_18",
+        "channel_19",
+        "channel_20",
+        "channel_21",
+        "channel_22",
+        "channel_23",
+        "channel_24",
+        "channel_25",
+        "channel_26",
+        "channel_27",
+        "channel_28",
+        "channel_29",
+        "channel_30",
+        "channel_31"
+      ],
+      "subsystems": [
+        "subsystem_5",
+        "subsystem_6"
+      ]
+    },
+    {
+      "id": "id_60",
+      "start": "2000-10-16T20:37:54.939Z",
+      "end": "2000-10-16T20:47:24.939Z",
+      "duration_hours": 0.158333,
+      "category": "Rare Event",
+      "class": "class_22",
+      "subclass": "subclass_2",
+      "dimensionality": "Univariate",
+      "locality": "Local",
+      "length": "Subsequence",
+      "channel_count": 1,
+      "channels": [
+        "channel_74"
+      ],
+      "subsystems": [
+        "subsystem_3"
+      ]
+    },
+    {
+      "id": "id_61",
+      "start": "2000-11-11T10:14:59.061Z",
+      "end": "2000-11-11T10:22:59.061Z",
+      "duration_hours": 0.133333,
+      "category": "Anomaly",
+      "class": "class_22",
+      "subclass": "subclass_1",
+      "dimensionality": "Univariate",
+      "locality": "Global",
+      "length": "Subsequence",
+      "channel_count": 1,
+      "channels": [
+        "channel_73"
+      ],
+      "subsystems": [
+        "subsystem_3"
+      ]
+    },
+    {
+      "id": "id_62",
+      "start": "2000-11-13T02:09:29.061Z",
+      "end": "2000-11-13T02:17:29.061Z",
+      "duration_hours": 0.133333,
+      "category": "Anomaly",
+      "class": "class_22",
+      "subclass": "subclass_3",
+      "dimensionality": "Univariate",
+      "locality": "Global",
+      "length": "Subsequence",
+      "channel_count": 1,
+      "channels": [
+        "channel_73"
+      ],
+      "subsystems": [
+        "subsystem_3"
+      ]
+    },
+    {
+      "id": "id_63",
+      "start": "2000-11-15T05:50:10.686Z",
+      "end": "2000-11-15T05:58:40.686Z",
+      "duration_hours": 0.141667,
+      "category": "Anomaly",
+      "class": "class_22",
+      "subclass": "subclass_3",
+      "dimensionality": "Univariate",
+      "locality": "Global",
+      "length": "Subsequence",
+      "channel_count": 1,
+      "channels": [
+        "channel_76"
+      ],
+      "subsystems": [
+        "subsystem_3"
+      ]
+    },
+    {
+      "id": "id_64",
+      "start": "2000-11-18T20:11:26.811Z",
+      "end": "2000-11-18T20:19:56.811Z",
+      "duration_hours": 0.141667,
+      "category": "Anomaly",
+      "class": "class_22",
+      "subclass": "subclass_1",
+      "dimensionality": "Univariate",
+      "locality": "Global",
+      "length": "Subsequence",
+      "channel_count": 1,
+      "channels": [
+        "channel_75"
+      ],
+      "subsystems": [
+        "subsystem_3"
+      ]
+    },
+    {
+      "id": "id_65",
+      "start": "2000-11-21T08:23:59.061Z",
+      "end": "2000-11-21T08:32:29.061Z",
+      "duration_hours": 0.141667,
+      "category": "Anomaly",
+      "class": "class_22",
+      "subclass": "subclass_3",
+      "dimensionality": "Univariate",
+      "locality": "Global",
+      "length": "Subsequence",
+      "channel_count": 1,
+      "channels": [
+        "channel_73"
+      ],
+      "subsystems": [
+        "subsystem_3"
+      ]
+    },
+    {
+      "id": "id_66",
+      "start": "2000-11-24T02:48:40.686Z",
+      "end": "2000-11-24T02:56:40.683Z",
+      "duration_hours": 0.133332,
+      "category": "Anomaly",
+      "class": "class_22",
+      "subclass": "subclass_3",
+      "dimensionality": "Univariate",
+      "locality": "Global",
+      "length": "Subsequence",
+      "channel_count": 1,
+      "channels": [
+        "channel_76"
+      ],
+      "subsystems": [
+        "subsystem_3"
+      ]
+    },
+    {
+      "id": "id_67",
+      "start": "2000-11-24T08:20:56.811Z",
+      "end": "2000-11-24T08:28:56.811Z",
+      "duration_hours": 0.133333,
+      "category": "Anomaly",
+      "class": "class_22",
+      "subclass": "subclass_1",
+      "dimensionality": "Univariate",
+      "locality": "Global",
+      "length": "Subsequence",
+      "channel_count": 1,
+      "channels": [
+        "channel_75"
+      ],
+      "subsystems": [
+        "subsystem_3"
+      ]
+    },
+    {
+      "id": "id_68",
+      "start": "2000-12-04T00:25:56.811Z",
+      "end": "2000-12-04T00:33:56.811Z",
+      "duration_hours": 0.133333,
+      "category": "Anomaly",
+      "class": "class_22",
+      "subclass": "subclass_1",
+      "dimensionality": "Univariate",
+      "locality": "Global",
+      "length": "Subsequence",
+      "channel_count": 1,
+      "channels": [
+        "channel_75"
+      ],
+      "subsystems": [
+        "subsystem_3"
+      ]
+    },
+    {
+      "id": "id_69",
+      "start": "2000-12-06T14:31:48.933Z",
+      "end": "2000-12-06T14:40:30.933Z",
+      "duration_hours": 0.145,
+      "category": "Rare Event",
+      "class": "class_22",
+      "subclass": "subclass_2",
+      "dimensionality": "Univariate",
+      "locality": "Local",
+      "length": "Subsequence",
+      "channel_count": 1,
+      "channels": [
+        "channel_74"
+      ],
+      "subsystems": [
+        "subsystem_3"
+      ]
+    },
+    {
+      "id": "id_70",
+      "start": "2000-12-15T17:21:47.424Z",
+      "end": "2000-12-15T17:26:47.424Z",
+      "duration_hours": 0.083333,
+      "category": "Rare Event",
+      "class": "class_22",
+      "subclass": "subclass_2",
+      "dimensionality": "Univariate",
+      "locality": "Global",
+      "length": "Subsequence",
+      "channel_count": 1,
+      "channels": [
+        "channel_70"
+      ],
+      "subsystems": [
+        "subsystem_3"
+      ]
+    },
+    {
+      "id": "id_71",
+      "start": "2000-12-15T21:32:01.308Z",
+      "end": "2000-12-15T21:37:01.308Z",
+      "duration_hours": 0.083333,
+      "category": "Rare Event",
+      "class": "class_22",
+      "subclass": "subclass_2",
+      "dimensionality": "Univariate",
+      "locality": "Global",
+      "length": "Subsequence",
+      "channel_count": 1,
+      "channels": [
+        "channel_71"
+      ],
+      "subsystems": [
+        "subsystem_3"
+      ]
+    },
+    {
+      "id": "id_72",
+      "start": "2000-12-16T02:47:45.180Z",
+      "end": "2000-12-16T02:52:45.180Z",
+      "duration_hours": 0.083333,
+      "category": "Rare Event",
+      "class": "class_22",
+      "subclass": "subclass_2",
+      "dimensionality": "Univariate",
+      "locality": "Global",
+      "length": "Subsequence",
+      "channel_count": 1,
+      "channels": [
+        "channel_72"
+      ],
+      "subsystems": [
+        "subsystem_3"
+      ]
+    },
+    {
+      "id": "id_73",
+      "start": "2000-12-22T16:58:58.314Z",
+      "end": "2000-12-26T14:50:05.808Z",
+      "duration_hours": 93.852082,
+      "category": "Anomaly",
+      "class": "class_15",
+      "subclass": "subclass_1",
+      "dimensionality": "Multivariate",
+      "locality": "Global",
+      "length": "Subsequence",
+      "channel_count": 21,
+      "channels": [
+        "channel_41",
+        "channel_42",
+        "channel_43",
+        "channel_44",
+        "channel_45",
+        "channel_46",
+        "channel_47",
+        "channel_48",
+        "channel_49",
+        "channel_50",
+        "channel_51",
+        "channel_52",
+        "channel_57",
+        "channel_58",
+        "channel_59",
+        "channel_60",
+        "channel_72",
+        "channel_73",
+        "channel_74",
+        "channel_75"
+      ],
+      "subsystems": [
+        "subsystem_3",
+        "subsystem_5",
+        "subsystem_6"
+      ]
+    },
+    {
+      "id": "id_74",
+      "start": "2000-12-17T21:47:29.058Z",
+      "end": "2000-12-17T21:55:59.058Z",
+      "duration_hours": 0.141667,
+      "category": "Rare Event",
+      "class": "class_22",
+      "subclass": "subclass_2",
+      "dimensionality": "Univariate",
+      "locality": "Global",
+      "length": "Subsequence",
+      "channel_count": 1,
+      "channels": [
+        "channel_73"
+      ],
+      "subsystems": [
+        "subsystem_3"
+      ]
+    },
+    {
+      "id": "id_75",
+      "start": "2000-12-18T00:37:26.808Z",
+      "end": "2000-12-18T00:45:26.808Z",
+      "duration_hours": 0.133333,
+      "category": "Rare Event",
+      "class": "class_22",
+      "subclass": "subclass_2",
+      "dimensionality": "Univariate",
+      "locality": "Global",
+      "length": "Subsequence",
+      "channel_count": 1,
+      "channels": [
+        "channel_75"
+      ],
+      "subsystems": [
+        "subsystem_3"
+      ]
+    },
+    {
+      "id": "id_76",
+      "start": "2000-12-18T06:25:40.680Z",
+      "end": "2000-12-18T06:34:10.680Z",
+      "duration_hours": 0.141667,
+      "category": "Rare Event",
+      "class": "class_22",
+      "subclass": "subclass_2",
+      "dimensionality": "Univariate",
+      "locality": "Global",
+      "length": "Subsequence",
+      "channel_count": 1,
+      "channels": [
+        "channel_76"
+      ],
+      "subsystems": [
+        "subsystem_3"
+      ]
+    },
+    {
+      "id": "id_77",
+      "start": "2001-02-01T12:18:18.591Z",
+      "end": "2001-02-09T00:00:00.000Z",
+      "duration_hours": 179.694836,
+      "category": "Rare Event",
+      "class": "class_14",
+      "subclass": "subclass_1",
+      "dimensionality": "Multivariate",
+      "locality": "Global",
+      "length": "Subsequence",
+      "channel_count": 35,
+      "channels": [
+        "channel_12",
+        "channel_13",
+        "channel_14",
+        "channel_15",
+        "channel_16",
+        "channel_17",
+        "channel_18",
+        "channel_19",
+        "channel_20",
+        "channel_21",
+        "channel_22",
+        "channel_23",
+        "channel_24",
+        "channel_25",
+        "channel_26",
+        "channel_27",
+        "channel_28",
+        "channel_29",
+        "channel_30",
+        "channel_31"
+      ],
+      "subsystems": [
+        "subsystem_5",
+        "subsystem_6"
+      ]
+    },
+    {
+      "id": "id_78",
+      "start": "2001-04-04T00:00:28.302Z",
+      "end": "2001-04-14T06:59:40.680Z",
+      "duration_hours": 246.986772,
+      "category": "Rare Event",
+      "class": "class_6",
+      "subclass": "subclass_2",
+      "dimensionality": "Multivariate",
+      "locality": "Global",
+      "length": "Subsequence",
+      "channel_count": 26,
+      "channels": [
+        "channel_12",
+        "channel_13",
+        "channel_17",
+        "channel_18",
+        "channel_19",
+        "channel_20",
+        "channel_25",
+        "channel_26",
+        "channel_27",
+        "channel_28",
+        "channel_34",
+        "channel_35",
+        "channel_36",
+        "channel_37",
+        "channel_41",
+        "channel_42",
+        "channel_43",
+        "channel_44",
+        "channel_45",
+        "channel_46"
+      ],
+      "subsystems": [
+        "subsystem_5",
+        "subsystem_6"
+      ]
+    },
+    {
+      "id": "id_79",
+      "start": "2001-04-23T12:35:58.302Z",
+      "end": "2001-04-25T17:30:28.302Z",
+      "duration_hours": 52.908333,
+      "category": "Rare Event",
+      "class": "class_2",
+      "subclass": "subclass_1",
+      "dimensionality": "Multivariate",
+      "locality": "Global",
+      "length": "Subsequence",
+      "channel_count": 13,
+      "channels": [
+        "channel_41",
+        "channel_42",
+        "channel_43",
+        "channel_44",
+        "channel_45",
+        "channel_46",
+        "channel_47",
+        "channel_48",
+        "channel_49",
+        "channel_50",
+        "channel_51",
+        "channel_52",
+        "channel_66"
+      ],
+      "subsystems": [
+        "subsystem_5",
+        "subsystem_6"
+      ]
+    },
+    {
+      "id": "id_80",
+      "start": "2001-08-10T04:01:45.570Z",
+      "end": "2001-08-23T00:00:00.000Z",
+      "duration_hours": 307.970675,
+      "category": "Rare Event",
+      "class": "class_14",
+      "subclass": "subclass_1",
+      "dimensionality": "Multivariate",
+      "locality": "Global",
+      "length": "Subsequence",
+      "channel_count": 14,
+      "channels": [
+        "channel_14",
+        "channel_15",
+        "channel_21",
+        "channel_22",
+        "channel_23",
+        "channel_29",
+        "channel_31",
+        "channel_39",
+        "channel_41",
+        "channel_42",
+        "channel_43",
+        "channel_44",
+        "channel_45",
+        "channel_46"
+      ],
+      "subsystems": [
+        "subsystem_5",
+        "subsystem_6"
+      ]
+    },
+    {
+      "id": "id_81",
+      "start": "2002-02-15T01:21:15.549Z",
+      "end": "2002-02-25T18:00:00.000Z",
+      "duration_hours": 256.645681,
+      "category": "Rare Event",
+      "class": "class_14",
+      "subclass": "subclass_1",
+      "dimensionality": "Multivariate",
+      "locality": "Global",
+      "length": "Subsequence",
+      "channel_count": 16,
+      "channels": [
+        "channel_14",
+        "channel_15",
+        "channel_21",
+        "channel_22",
+        "channel_23",
+        "channel_29",
+        "channel_30",
+        "channel_31",
+        "channel_38",
+        "channel_39",
+        "channel_41",
+        "channel_42",
+        "channel_43",
+        "channel_44",
+        "channel_45",
+        "channel_46"
+      ],
+      "subsystems": [
+        "subsystem_5",
+        "subsystem_6"
+      ]
+    },
+    {
+      "id": "id_82",
+      "start": "2002-05-12T01:55:45.540Z",
+      "end": "2002-05-12T07:49:45.540Z",
+      "duration_hours": 5.9,
+      "category": "Anomaly",
+      "class": "class_7",
+      "subclass": "subclass_1",
+      "dimensionality": "Multivariate",
+      "locality": "Local",
+      "length": "Subsequence",
+      "channel_count": 3,
+      "channels": [
+        "channel_14",
+        "channel_21",
+        "channel_29"
+      ],
+      "subsystems": [
+        "subsystem_6"
+      ]
+    },
+    {
+      "id": "id_83",
+      "start": "2002-05-20T22:21:15.540Z",
+      "end": "2002-05-21T20:51:25.257Z",
+      "duration_hours": 22.502699,
+      "category": "Anomaly",
+      "class": "class_3",
+      "subclass": "subclass_1",
+      "dimensionality": "Multivariate",
+      "locality": "Global",
+      "length": "Subsequence",
+      "channel_count": 26,
+      "channels": [
+        "channel_12",
+        "channel_13",
+        "channel_17",
+        "channel_18",
+        "channel_19",
+        "channel_20",
+        "channel_25",
+        "channel_26",
+        "channel_27",
+        "channel_28",
+        "channel_34",
+        "channel_35",
+        "channel_36",
+        "channel_37",
+        "channel_41",
+        "channel_42",
+        "channel_43",
+        "channel_44",
+        "channel_45",
+        "channel_46"
+      ],
+      "subsystems": [
+        "subsystem_5",
+        "subsystem_6"
+      ]
+    },
+    {
+      "id": "id_84",
+      "start": "2002-06-23T14:12:55.254Z",
+      "end": "2002-06-25T17:22:07.635Z",
+      "duration_hours": 51.153439,
+      "category": "Anomaly",
+      "class": "class_17",
+      "subclass": "subclass_1",
+      "dimensionality": "Multivariate",
+      "locality": "Global",
+      "length": "Subsequence",
+      "channel_count": 15,
+      "channels": [
+        "channel_41",
+        "channel_42",
+        "channel_43",
+        "channel_44",
+        "channel_45",
+        "channel_46",
+        "channel_47",
+        "channel_48",
+        "channel_49",
+        "channel_50",
+        "channel_51",
+        "channel_52",
+        "channel_64",
+        "channel_65",
+        "channel_66"
+      ],
+      "subsystems": [
+        "subsystem_5",
+        "subsystem_6"
+      ]
+    },
+    {
+      "id": "id_85",
+      "start": "2002-06-23T02:44:55.254Z",
+      "end": "2002-06-23T02:47:17.754Z",
+      "duration_hours": 0.039583,
+      "category": "Anomaly",
+      "class": "class_21",
+      "subclass": "unknown",
+      "dimensionality": "Multivariate",
+      "locality": "Local",
+      "length": "Subsequence",
+      "channel_count": 6,
+      "channels": [
+        "channel_41",
+        "channel_42",
+        "channel_43",
+        "channel_44",
+        "channel_45",
+        "channel_46"
+      ],
+      "subsystems": [
+        "subsystem_5"
+      ]
+    },
+    {
+      "id": "id_86",
+      "start": "2002-09-23T08:51:55.245Z",
+      "end": "2002-09-27T07:52:02.739Z",
+      "duration_hours": 95.002082,
+      "category": "Anomaly",
+      "class": "class_15",
+      "subclass": "subclass_1",
+      "dimensionality": "Multivariate",
+      "locality": "Global",
+      "length": "Subsequence",
+      "channel_count": 16,
+      "channels": [
+        "channel_41",
+        "channel_42",
+        "channel_43",
+        "channel_44",
+        "channel_45",
+        "channel_46",
+        "channel_47",
+        "channel_48",
+        "channel_49",
+        "channel_50",
+        "channel_51",
+        "channel_52",
+        "channel_57",
+        "channel_58",
+        "channel_59",
+        "channel_60"
+      ],
+      "subsystems": [
+        "subsystem_5",
+        "subsystem_6"
+      ]
+    },
+    {
+      "id": "id_87",
+      "start": "2003-02-27T02:52:25.224Z",
+      "end": "2003-03-10T00:00:00.000Z",
+      "duration_hours": 261.126327,
+      "category": "Rare Event",
+      "class": "class_14",
+      "subclass": "subclass_1",
+      "dimensionality": "Multivariate",
+      "locality": "Global",
+      "length": "Subsequence",
+      "channel_count": 12,
+      "channels": [
+        "channel_15",
+        "channel_22",
+        "channel_23",
+        "channel_31",
+        "channel_38",
+        "channel_39",
+        "channel_41",
+        "channel_42",
+        "channel_43",
+        "channel_44",
+        "channel_45",
+        "channel_46"
+      ],
+      "subsystems": [
+        "subsystem_5",
+        "subsystem_6"
+      ]
+    },
+    {
+      "id": "id_88",
+      "start": "2003-10-01T03:17:55.200Z",
+      "end": "2003-10-10T12:00:00.000Z",
+      "duration_hours": 224.701333,
+      "category": "Rare Event",
+      "class": "class_14",
+      "subclass": "subclass_1",
+      "dimensionality": "Multivariate",
+      "locality": "Global",
+      "length": "Subsequence",
+      "channel_count": 16,
+      "channels": [
+        "channel_14",
+        "channel_15",
+        "channel_21",
+        "channel_22",
+        "channel_23",
+        "channel_29",
+        "channel_30",
+        "channel_31",
+        "channel_38",
+        "channel_39",
+        "channel_41",
+        "channel_42",
+        "channel_43",
+        "channel_44",
+        "channel_45",
+        "channel_46"
+      ],
+      "subsystems": [
+        "subsystem_5",
+        "subsystem_6"
+      ]
+    },
+    {
+      "id": "id_89",
+      "start": "2003-11-15T23:11:25.194Z",
+      "end": "2003-11-23T21:15:15.477Z",
+      "duration_hours": 190.063968,
+      "category": "Anomaly",
+      "class": "class_2",
+      "subclass": "subclass_2",
+      "dimensionality": "Multivariate",
+      "locality": "Global",
+      "length": "Subsequence",
+      "channel_count": 19,
+      "channels": [
+        "channel_15",
+        "channel_22",
+        "channel_23",
+        "channel_30",
+        "channel_31",
+        "channel_38",
+        "channel_39",
+        "channel_41",
+        "channel_42",
+        "channel_43",
+        "channel_44",
+        "channel_45",
+        "channel_46",
+        "channel_47",
+        "channel_48",
+        "channel_49",
+        "channel_50",
+        "channel_51",
+        "channel_52"
+      ],
+      "subsystems": [
+        "subsystem_5",
+        "subsystem_6"
+      ]
+    },
+    {
+      "id": "id_90",
+      "start": "2003-12-30T20:29:37.569Z",
+      "end": "2003-12-30T20:43:07.569Z",
+      "duration_hours": 0.225,
+      "category": "Anomaly",
+      "class": "class_3",
+      "subclass": "subclass_2",
+      "dimensionality": "Multivariate",
+      "locality": "Global",
+      "length": "Subsequence",
+      "channel_count": 12,
+      "channels": [
+        "channel_41",
+        "channel_42",
+        "channel_43",
+        "channel_44",
+        "channel_45",
+        "channel_46",
+        "channel_47",
+        "channel_48",
+        "channel_49",
+        "channel_50",
+        "channel_51",
+        "channel_52"
+      ],
+      "subsystems": [
+        "subsystem_5",
+        "subsystem_6"
+      ]
+    },
+    {
+      "id": "id_91",
+      "start": "2004-04-07T19:17:25.176Z",
+      "end": "2004-04-07T19:44:55.176Z",
+      "duration_hours": 0.458333,
+      "category": "Anomaly",
+      "class": "class_3",
+      "subclass": "subclass_2",
+      "dimensionality": "Multivariate",
+      "locality": "Local",
+      "length": "Subsequence",
+      "channel_count": 6,
+      "channels": [
+        "channel_47",
+        "channel_48",
+        "channel_49",
+        "channel_50",
+        "channel_51",
+        "channel_52"
+      ],
+      "subsystems": [
+        "subsystem_6"
+      ]
+    },
+    {
+      "id": "id_92",
+      "start": "2004-04-28T16:19:45.456Z",
+      "end": "2004-04-29T01:12:15.456Z",
+      "duration_hours": 8.875,
+      "category": "Anomaly",
+      "class": "class_7",
+      "subclass": "subclass_1",
+      "dimensionality": "Multivariate",
+      "locality": "Global",
+      "length": "Subsequence",
+      "channel_count": 3,
+      "channels": [
+        "channel_14",
+        "channel_21",
+        "channel_29"
+      ],
+      "subsystems": [
+        "subsystem_6"
+      ]
+    },
+    {
+      "id": "id_93",
+      "start": "2004-05-15T02:22:07.551Z",
+      "end": "2004-05-15T02:53:37.551Z",
+      "duration_hours": 0.525,
+      "category": "Anomaly",
+      "class": "class_3",
+      "subclass": "subclass_2",
+      "dimensionality": "Multivariate",
+      "locality": "Global",
+      "length": "Subsequence",
+      "channel_count": 10,
+      "channels": [
+        "channel_41",
+        "channel_42",
+        "channel_43",
+        "channel_44",
+        "channel_45",
+        "channel_46",
+        "channel_47",
+        "channel_48",
+        "channel_50",
+        "channel_51"
+      ],
+      "subsystems": [
+        "subsystem_5",
+        "subsystem_6"
+      ]
+    },
+    {
+      "id": "id_94",
+      "start": "2004-07-07T07:03:15.447Z",
+      "end": "2004-07-07T09:48:15.447Z",
+      "duration_hours": 2.75,
+      "category": "Anomaly",
+      "class": "class_7",
+      "subclass": "subclass_1",
+      "dimensionality": "Multivariate",
+      "locality": "Local",
+      "length": "Subsequence",
+      "channel_count": 3,
+      "channels": [
+        "channel_14",
+        "channel_21",
+        "channel_29"
+      ],
+      "subsystems": [
+        "subsystem_6"
+      ]
+    },
+    {
+      "id": "id_95",
+      "start": "2004-09-15T13:46:02.652Z",
+      "end": "2004-09-24T00:00:00.000Z",
+      "duration_hours": 202.232597,
+      "category": "Rare Event",
+      "class": "class_14",
+      "subclass": "subclass_1",
+      "dimensionality": "Multivariate",
+      "locality": "Global",
+      "length": "Subsequence",
+      "channel_count": 24,
+      "channels": [
+        "channel_14",
+        "channel_15",
+        "channel_21",
+        "channel_22",
+        "channel_23",
+        "channel_29",
+        "channel_30",
+        "channel_31",
+        "channel_38",
+        "channel_39",
+        "channel_41",
+        "channel_42",
+        "channel_43",
+        "channel_44",
+        "channel_45",
+        "channel_46",
+        "channel_47",
+        "channel_48",
+        "channel_49",
+        "channel_50"
+      ],
+      "subsystems": [
+        "subsystem_5",
+        "subsystem_6"
+      ]
+    },
+    {
+      "id": "id_96",
+      "start": "2004-11-03T14:35:25.152Z",
+      "end": "2004-11-06T00:52:32.643Z",
+      "duration_hours": 58.285414,
+      "category": "Anomaly",
+      "class": "class_15",
+      "subclass": "subclass_1",
+      "dimensionality": "Multivariate",
+      "locality": "Global",
+      "length": "Subsequence",
+      "channel_count": 16,
+      "channels": [
+        "channel_41",
+        "channel_42",
+        "channel_43",
+        "channel_44",
+        "channel_45",
+        "channel_46",
+        "channel_47",
+        "channel_48",
+        "channel_49",
+        "channel_50",
+        "channel_51",
+        "channel_52",
+        "channel_57",
+        "channel_58",
+        "channel_59",
+        "channel_60"
+      ],
+      "subsystems": [
+        "subsystem_5",
+        "subsystem_6"
+      ]
+    },
+    {
+      "id": "id_97",
+      "start": "2004-12-01T07:30:15.429Z",
+      "end": "2004-12-01T14:43:45.429Z",
+      "duration_hours": 7.225,
+      "category": "Anomaly",
+      "class": "class_7",
+      "subclass": "subclass_1",
+      "dimensionality": "Multivariate",
+      "locality": "Global",
+      "length": "Subsequence",
+      "channel_count": 3,
+      "channels": [
+        "channel_14",
+        "channel_21",
+        "channel_29"
+      ],
+      "subsystems": [
+        "subsystem_6"
+      ]
+    },
+    {
+      "id": "id_98",
+      "start": "2005-03-25T03:59:55.134Z",
+      "end": "2005-03-28T09:24:15.414Z",
+      "duration_hours": 77.405633,
+      "category": "Rare Event",
+      "class": "class_14",
+      "subclass": "subclass_1",
+      "dimensionality": "Multivariate",
+      "locality": "Global",
+      "length": "Subsequence",
+      "channel_count": 16,
+      "channels": [
+        "channel_14",
+        "channel_15",
+        "channel_21",
+        "channel_22",
+        "channel_23",
+        "channel_29",
+        "channel_30",
+        "channel_31",
+        "channel_38",
+        "channel_39",
+        "channel_41",
+        "channel_42",
+        "channel_43",
+        "channel_44",
+        "channel_45",
+        "channel_46"
+      ],
+      "subsystems": [
+        "subsystem_5",
+        "subsystem_6"
+      ]
+    },
+    {
+      "id": "id_99",
+      "start": "2005-02-07T15:40:45.420Z",
+      "end": "2005-02-07T19:16:45.420Z",
+      "duration_hours": 3.6,
+      "category": "Anomaly",
+      "class": "class_7",
+      "subclass": "subclass_1",
+      "dimensionality": "Multivariate",
+      "locality": "Local",
+      "length": "Subsequence",
+      "channel_count": 3,
+      "channels": [
+        "channel_14",
+        "channel_21",
+        "channel_29"
+      ],
+      "subsystems": [
+        "subsystem_6"
+      ]
+    },
+    {
+      "id": "id_100",
+      "start": "2005-07-04T19:53:57.402Z",
+      "end": "2005-07-12T00:00:00.000Z",
+      "duration_hours": 172.100722,
+      "category": "Rare Event",
+      "class": "class_14",
+      "subclass": "subclass_1",
+      "dimensionality": "Multivariate",
+      "locality": "Global",
+      "length": "Subsequence",
+      "channel_count": 20,
+      "channels": [
+        "channel_14",
+        "channel_15",
+        "channel_21",
+        "channel_22",
+        "channel_23",
+        "channel_24",
+        "channel_29",
+        "channel_30",
+        "channel_31",
+        "channel_32",
+        "channel_33",
+        "channel_38",
+        "channel_39",
+        "channel_40",
+        "channel_41",
+        "channel_42",
+        "channel_43",
+        "channel_44",
+        "channel_45",
+        "channel_46"
+      ],
+      "subsystems": [
+        "subsystem_5",
+        "subsystem_6"
+      ]
+    },
+    {
+      "id": "id_101",
+      "start": "2005-09-01T14:42:10.107Z",
+      "end": "2005-09-12T23:59:42.393Z",
+      "duration_hours": 273.292302,
+      "category": "Anomaly",
+      "class": "class_20",
+      "subclass": "unknown",
+      "dimensionality": "Multivariate",
+      "locality": "Global",
+      "length": "Subsequence",
+      "channel_count": 51,
+      "channels": [
+        "channel_12",
+        "channel_13",
+        "channel_14",
+        "channel_16",
+        "channel_17",
+        "channel_18",
+        "channel_19",
+        "channel_20",
+        "channel_21",
+        "channel_22",
+        "channel_24",
+        "channel_25",
+        "channel_26",
+        "channel_27",
+        "channel_28",
+        "channel_29",
+        "channel_30",
+        "channel_31",
+        "channel_32",
+        "channel_33"
+      ],
+      "subsystems": [
+        "subsystem_3",
+        "subsystem_5",
+        "subsystem_6"
+      ]
+    },
+    {
+      "id": "id_102",
+      "start": "2005-09-27T21:39:20.604Z",
+      "end": "2005-10-07T00:00:00.000Z",
+      "duration_hours": 218.344277,
+      "category": "Anomaly",
+      "class": "class_20",
+      "subclass": "unknown",
+      "dimensionality": "Multivariate",
+      "locality": "Global",
+      "length": "Subsequence",
+      "channel_count": 44,
+      "channels": [
+        "channel_12",
+        "channel_13",
+        "channel_14",
+        "channel_16",
+        "channel_17",
+        "channel_18",
+        "channel_19",
+        "channel_20",
+        "channel_22",
+        "channel_24",
+        "channel_25",
+        "channel_26",
+        "channel_27",
+        "channel_28",
+        "channel_32",
+        "channel_33",
+        "channel_34",
+        "channel_35",
+        "channel_36",
+        "channel_37"
+      ],
+      "subsystems": [
+        "subsystem_3",
+        "subsystem_5",
+        "subsystem_6"
+      ]
+    },
+    {
+      "id": "id_103",
+      "start": "2005-10-22T09:12:13.473Z",
+      "end": "2005-11-01T11:59:42.387Z",
+      "duration_hours": 242.791365,
+      "category": "Anomaly",
+      "class": "class_20",
+      "subclass": "unknown",
+      "dimensionality": "Multivariate",
+      "locality": "Global",
+      "length": "Subsequence",
+      "channel_count": 45,
+      "channels": [
+        "channel_12",
+        "channel_13",
+        "channel_16",
+        "channel_17",
+        "channel_18",
+        "channel_19",
+        "channel_20",
+        "channel_24",
+        "channel_25",
+        "channel_26",
+        "channel_27",
+        "channel_28",
+        "channel_31",
+        "channel_32",
+        "channel_33",
+        "channel_34",
+        "channel_35",
+        "channel_36",
+        "channel_37",
+        "channel_39"
+      ],
+      "subsystems": [
+        "subsystem_3",
+        "subsystem_5",
+        "subsystem_6"
+      ]
+    },
+    {
+      "id": "id_104",
+      "start": "2005-12-22T10:40:12.381Z",
+      "end": "2005-12-28T19:47:42.378Z",
+      "duration_hours": 153.124999,
+      "category": "Rare Event",
+      "class": "class_14",
+      "subclass": "subclass_1",
+      "dimensionality": "Multivariate",
+      "locality": "Global",
+      "length": "Subsequence",
+      "channel_count": 19,
+      "channels": [
+        "channel_14",
+        "channel_15",
+        "channel_21",
+        "channel_22",
+        "channel_23",
+        "channel_24",
+        "channel_29",
+        "channel_30",
+        "channel_31",
+        "channel_32",
+        "channel_33",
+        "channel_38",
+        "channel_39",
+        "channel_41",
+        "channel_42",
+        "channel_43",
+        "channel_44",
+        "channel_45",
+        "channel_46"
+      ],
+      "subsystems": [
+        "subsystem_5",
+        "subsystem_6"
+      ]
+    },
+    {
+      "id": "id_105",
+      "start": "2006-02-28T17:58:09.372Z",
+      "end": "2006-02-28T23:01:09.372Z",
+      "duration_hours": 5.05,
+      "category": "Anomaly",
+      "class": "class_7",
+      "subclass": "subclass_1",
+      "dimensionality": "Multivariate",
+      "locality": "Local",
+      "length": "Subsequence",
+      "channel_count": 3,
+      "channels": [
+        "channel_14",
+        "channel_21",
+        "channel_29"
+      ],
+      "subsystems": [
+        "subsystem_6"
+      ]
+    },
+    {
+      "id": "id_106",
+      "start": "2006-04-28T00:00:19.083Z",
+      "end": "2006-05-01T22:31:09.363Z",
+      "duration_hours": 94.513967,
+      "category": "Rare Event",
+      "class": "class_14",
+      "subclass": "subclass_2",
+      "dimensionality": "Multivariate",
+      "locality": "Global",
+      "length": "Subsequence",
+      "channel_count": 33,
+      "channels": [
+        "channel_14",
+        "channel_15",
+        "channel_17",
+        "channel_18",
+        "channel_19",
+        "channel_20",
+        "channel_21",
+        "channel_22",
+        "channel_23",
+        "channel_25",
+        "channel_26",
+        "channel_27",
+        "channel_28",
+        "channel_29",
+        "channel_30",
+        "channel_31",
+        "channel_34",
+        "channel_36",
+        "channel_37",
+        "channel_38"
+      ],
+      "subsystems": [
+        "subsystem_5",
+        "subsystem_6"
+      ]
+    },
+    {
+      "id": "id_107",
+      "start": "2006-04-22T06:45:31.461Z",
+      "end": "2006-04-22T07:01:49.083Z",
+      "duration_hours": 0.271562,
+      "category": "Anomaly",
+      "class": "class_3",
+      "subclass": "subclass_2",
+      "dimensionality": "Multivariate",
+      "locality": "Global",
+      "length": "Subsequence",
+      "channel_count": 11,
+      "channels": [
+        "channel_41",
+        "channel_42",
+        "channel_43",
+        "channel_44",
+        "channel_45",
+        "channel_46",
+        "channel_47",
+        "channel_48",
+        "channel_50",
+        "channel_51",
+        "channel_52"
+      ],
+      "subsystems": [
+        "subsystem_5",
+        "subsystem_6"
+      ]
+    },
+    {
+      "id": "id_108",
+      "start": "2006-05-10T13:16:09.363Z",
+      "end": "2006-05-10T20:35:39.363Z",
+      "duration_hours": 7.325,
+      "category": "Anomaly",
+      "class": "class_7",
+      "subclass": "subclass_1",
+      "dimensionality": "Multivariate",
+      "locality": "Local",
+      "length": "Subsequence",
+      "channel_count": 3,
+      "channels": [
+        "channel_14",
+        "channel_21",
+        "channel_29"
+      ],
+      "subsystems": [
+        "subsystem_6"
+      ]
+    },
+    {
+      "id": "id_109",
+      "start": "2006-09-25T19:55:42.150Z",
+      "end": "2006-09-25T19:55:49.062Z",
+      "duration_hours": 0.00192,
+      "category": "Anomaly",
+      "class": "class_3",
+      "subclass": "subclass_2",
+      "dimensionality": "Multivariate",
+      "locality": "Global",
+      "length": "Point",
+      "channel_count": 6,
+      "channels": [
+        "channel_41",
+        "channel_42",
+        "channel_43",
+        "channel_44",
+        "channel_45",
+        "channel_46"
+      ],
+      "subsystems": [
+        "subsystem_5"
+      ]
+    },
+    {
+      "id": "id_110",
+      "start": "2006-11-08T18:01:45.144Z",
+      "end": "2006-11-08T18:01:49.056Z",
+      "duration_hours": 0.001087,
+      "category": "Anomaly",
+      "class": "class_3",
+      "subclass": "subclass_2",
+      "dimensionality": "Multivariate",
+      "locality": "Global",
+      "length": "Point",
+      "channel_count": 6,
+      "channels": [
+        "channel_41",
+        "channel_42",
+        "channel_43",
+        "channel_44",
+        "channel_45",
+        "channel_46"
+      ],
+      "subsystems": [
+        "subsystem_5"
+      ]
+    },
+    {
+      "id": "id_111",
+      "start": "2006-11-19T01:01:09.336Z",
+      "end": "2006-11-19T06:19:09.336Z",
+      "duration_hours": 5.3,
+      "category": "Anomaly",
+      "class": "class_7",
+      "subclass": "subclass_1",
+      "dimensionality": "Multivariate",
+      "locality": "Local",
+      "length": "Subsequence",
+      "channel_count": 3,
+      "channels": [
+        "channel_14",
+        "channel_21",
+        "channel_29"
+      ],
+      "subsystems": [
+        "subsystem_6"
+      ]
+    },
+    {
+      "id": "id_112",
+      "start": "2006-11-26T12:23:49.053Z",
+      "end": "2006-12-03T12:14:39.336Z",
+      "duration_hours": 167.847301,
+      "category": "Rare Event",
+      "class": "class_14",
+      "subclass": "subclass_1",
+      "dimensionality": "Multivariate",
+      "locality": "Global",
+      "length": "Subsequence",
+      "channel_count": 30,
+      "channels": [
+        "channel_14",
+        "channel_15",
+        "channel_16",
+        "channel_21",
+        "channel_22",
+        "channel_23",
+        "channel_24",
+        "channel_29",
+        "channel_30",
+        "channel_31",
+        "channel_32",
+        "channel_33",
+        "channel_38",
+        "channel_39",
+        "channel_40",
+        "channel_41",
+        "channel_42",
+        "channel_43",
+        "channel_44",
+        "channel_45"
+      ],
+      "subsystems": [
+        "subsystem_5",
+        "subsystem_6"
+      ]
+    },
+    {
+      "id": "id_113",
+      "start": "2006-11-28T00:11:39.336Z",
+      "end": "2006-11-28T04:14:39.336Z",
+      "duration_hours": 4.05,
+      "category": "Anomaly",
+      "class": "class_7",
+      "subclass": "subclass_1",
+      "dimensionality": "Multivariate",
+      "locality": "Local",
+      "length": "Subsequence",
+      "channel_count": 3,
+      "channels": [
+        "channel_14",
+        "channel_21",
+        "channel_29"
+      ],
+      "subsystems": [
+        "subsystem_6"
+      ]
+    },
+    {
+      "id": "id_114",
+      "start": "2006-12-10T15:10:39.141Z",
+      "end": "2006-12-10T15:10:49.053Z",
+      "duration_hours": 0.002753,
+      "category": "Anomaly",
+      "class": "class_3",
+      "subclass": "subclass_2",
+      "dimensionality": "Multivariate",
+      "locality": "Global",
+      "length": "Point",
+      "channel_count": 6,
+      "channels": [
+        "channel_41",
+        "channel_42",
+        "channel_43",
+        "channel_44",
+        "channel_45",
+        "channel_46"
+      ],
+      "subsystems": [
+        "subsystem_5"
+      ]
+    },
+    {
+      "id": "id_115",
+      "start": "2007-01-12T15:41:39.330Z",
+      "end": "2007-01-12T22:46:09.330Z",
+      "duration_hours": 7.075,
+      "category": "Anomaly",
+      "class": "class_7",
+      "subclass": "subclass_1",
+      "dimensionality": "Multivariate",
+      "locality": "Local",
+      "length": "Subsequence",
+      "channel_count": 3,
+      "channels": [
+        "channel_14",
+        "channel_21",
+        "channel_29"
+      ],
+      "subsystems": [
+        "subsystem_6"
+      ]
+    },
+    {
+      "id": "id_116",
+      "start": "2007-04-14T08:12:52.029Z",
+      "end": "2007-04-30T00:00:00.000Z",
+      "duration_hours": 375.785547,
+      "category": "Anomaly",
+      "class": "class_14",
+      "subclass": "subclass_3",
+      "dimensionality": "Multivariate",
+      "locality": "Global",
+      "length": "Subsequence",
+      "channel_count": 58,
+      "channels": [
+        "channel_12",
+        "channel_13",
+        "channel_14",
+        "channel_15",
+        "channel_16",
+        "channel_17",
+        "channel_18",
+        "channel_19",
+        "channel_20",
+        "channel_21",
+        "channel_22",
+        "channel_23",
+        "channel_24",
+        "channel_25",
+        "channel_26",
+        "channel_27",
+        "channel_28",
+        "channel_29",
+        "channel_30",
+        "channel_31"
+      ],
+      "subsystems": [
+        "subsystem_1",
+        "subsystem_3",
+        "subsystem_5",
+        "subsystem_6"
+      ]
+    },
+    {
+      "id": "id_117",
+      "start": "2007-05-10T07:11:55.032Z",
+      "end": "2007-05-21T00:00:00.000Z",
+      "duration_hours": 256.80138,
+      "category": "Rare Event",
+      "class": "class_14",
+      "subclass": "subclass_1",
+      "dimensionality": "Multivariate",
+      "locality": "Global",
+      "length": "Subsequence",
+      "channel_count": 22,
+      "channels": [
+        "channel_14",
+        "channel_15",
+        "channel_21",
+        "channel_22",
+        "channel_23",
+        "channel_29",
+        "channel_30",
+        "channel_31",
+        "channel_38",
+        "channel_39",
+        "channel_41",
+        "channel_42",
+        "channel_43",
+        "channel_44",
+        "channel_45",
+        "channel_46",
+        "channel_47",
+        "channel_48",
+        "channel_49",
+        "channel_50"
+      ],
+      "subsystems": [
+        "subsystem_5",
+        "subsystem_6"
+      ]
+    },
+    {
+      "id": "id_118",
+      "start": "2007-05-22T05:30:06.120Z",
+      "end": "2007-05-22T05:30:06.120Z",
+      "duration_hours": 0.0,
+      "category": "Anomaly",
+      "class": "class_3",
+      "subclass": "subclass_2",
+      "dimensionality": "Multivariate",
+      "locality": "Global",
+      "length": "Point",
+      "channel_count": 6,
+      "channels": [
+        "channel_41",
+        "channel_42",
+        "channel_43",
+        "channel_44",
+        "channel_45",
+        "channel_46"
+      ],
+      "subsystems": [
+        "subsystem_5"
+      ]
+    },
+    {
+      "id": "id_119",
+      "start": "2007-05-30T06:47:45.312Z",
+      "end": "2007-05-30T13:31:15.312Z",
+      "duration_hours": 6.725,
+      "category": "Anomaly",
+      "class": "class_7",
+      "subclass": "subclass_1",
+      "dimensionality": "Multivariate",
+      "locality": "Global",
+      "length": "Subsequence",
+      "channel_count": 3,
+      "channels": [
+        "channel_14",
+        "channel_21",
+        "channel_29"
+      ],
+      "subsystems": [
+        "subsystem_6"
+      ]
+    },
+    {
+      "id": "id_120",
+      "start": "2007-08-14T22:14:45.300Z",
+      "end": "2007-08-15T05:55:15.300Z",
+      "duration_hours": 7.675,
+      "category": "Anomaly",
+      "class": "class_7",
+      "subclass": "subclass_1",
+      "dimensionality": "Multivariate",
+      "locality": "Local",
+      "length": "Subsequence",
+      "channel_count": 3,
+      "channels": [
+        "channel_14",
+        "channel_21",
+        "channel_29"
+      ],
+      "subsystems": [
+        "subsystem_6"
+      ]
+    },
+    {
+      "id": "id_121",
+      "start": "2007-09-25T22:01:55.011Z",
+      "end": "2007-09-26T00:10:25.011Z",
+      "duration_hours": 2.141667,
+      "category": "Anomaly",
+      "class": "class_3",
+      "subclass": "subclass_2",
+      "dimensionality": "Multivariate",
+      "locality": "Global",
+      "length": "Subsequence",
+      "channel_count": 12,
+      "channels": [
+        "channel_41",
+        "channel_42",
+        "channel_43",
+        "channel_44",
+        "channel_45",
+        "channel_46",
+        "channel_47",
+        "channel_48",
+        "channel_49",
+        "channel_50",
+        "channel_51",
+        "channel_52"
+      ],
+      "subsystems": [
+        "subsystem_5",
+        "subsystem_6"
+      ]
+    },
+    {
+      "id": "id_122",
+      "start": "2007-09-29T11:58:42.099Z",
+      "end": "2007-09-29T12:12:55.011Z",
+      "duration_hours": 0.23692,
+      "category": "Anomaly",
+      "class": "class_3",
+      "subclass": "subclass_2",
+      "dimensionality": "Multivariate",
+      "locality": "Global",
+      "length": "Subsequence",
+      "channel_count": 8,
+      "channels": [
+        "channel_41",
+        "channel_42",
+        "channel_43",
+        "channel_44",
+        "channel_45",
+        "channel_46",
+        "channel_47",
+        "channel_50"
+      ],
+      "subsystems": [
+        "subsystem_5",
+        "subsystem_6"
+      ]
+    },
+    {
+      "id": "id_123",
+      "start": "2007-10-07T00:31:55.011Z",
+      "end": "2007-10-18T00:00:00.000Z",
+      "duration_hours": 263.468052,
+      "category": "Rare Event",
+      "class": "class_14",
+      "subclass": "subclass_1",
+      "dimensionality": "Multivariate",
+      "locality": "Global",
+      "length": "Subsequence",
+      "channel_count": 22,
+      "channels": [
+        "channel_14",
+        "channel_15",
+        "channel_21",
+        "channel_22",
+        "channel_23",
+        "channel_29",
+        "channel_30",
+        "channel_31",
+        "channel_38",
+        "channel_39",
+        "channel_41",
+        "channel_42",
+        "channel_43",
+        "channel_44",
+        "channel_45",
+        "channel_46",
+        "channel_47",
+        "channel_48",
+        "channel_49",
+        "channel_50"
+      ],
+      "subsystems": [
+        "subsystem_5",
+        "subsystem_6"
+      ]
+    },
+    {
+      "id": "id_124",
+      "start": "2007-10-26T18:59:42.093Z",
+      "end": "2007-10-26T19:11:55.008Z",
+      "duration_hours": 0.203587,
+      "category": "Anomaly",
+      "class": "class_3",
+      "subclass": "subclass_2",
+      "dimensionality": "Multivariate",
+      "locality": "Global",
+      "length": "Subsequence",
+      "channel_count": 8,
+      "channels": [
+        "channel_41",
+        "channel_42",
+        "channel_43",
+        "channel_44",
+        "channel_45",
+        "channel_46",
+        "channel_48",
+        "channel_49"
+      ],
+      "subsystems": [
+        "subsystem_5",
+        "subsystem_6"
+      ]
+    },
+    {
+      "id": "id_125",
+      "start": "2007-12-26T06:01:02.493Z",
+      "end": "2008-01-01T13:35:45.279Z",
+      "duration_hours": 151.578552,
+      "category": "Rare Event",
+      "class": "class_2",
+      "subclass": "subclass_3",
+      "dimensionality": "Multivariate",
+      "locality": "Global",
+      "length": "Subsequence",
+      "channel_count": 44,
+      "channels": [
+        "channel_13",
+        "channel_14",
+        "channel_15",
+        "channel_16",
+        "channel_17",
+        "channel_18",
+        "channel_19",
+        "channel_20",
+        "channel_21",
+        "channel_22",
+        "channel_23",
+        "channel_24",
+        "channel_25",
+        "channel_26",
+        "channel_27",
+        "channel_28",
+        "channel_29",
+        "channel_30",
+        "channel_31",
+        "channel_32"
+      ],
+      "subsystems": [
+        "subsystem_5",
+        "subsystem_6"
+      ]
+    },
+    {
+      "id": "id_126",
+      "start": "2008-02-21T11:37:15.273Z",
+      "end": "2008-02-21T17:26:45.273Z",
+      "duration_hours": 5.825,
+      "category": "Anomaly",
+      "class": "class_7",
+      "subclass": "subclass_1",
+      "dimensionality": "Multivariate",
+      "locality": "Local",
+      "length": "Subsequence",
+      "channel_count": 3,
+      "channels": [
+        "channel_14",
+        "channel_21",
+        "channel_29"
+      ],
+      "subsystems": [
+        "subsystem_6"
+      ]
+    },
+    {
+      "id": "id_127",
+      "start": "2008-03-14T00:31:15.270Z",
+      "end": "2008-03-14T01:34:15.270Z",
+      "duration_hours": 1.05,
+      "category": "Anomaly",
+      "class": "class_7",
+      "subclass": "subclass_1",
+      "dimensionality": "Multivariate",
+      "locality": "Local",
+      "length": "Subsequence",
+      "channel_count": 3,
+      "channels": [
+        "channel_14",
+        "channel_21",
+        "channel_29"
+      ],
+      "subsystems": [
+        "subsystem_6"
+      ]
+    },
+    {
+      "id": "id_128",
+      "start": "2008-05-25T19:31:54.978Z",
+      "end": "2008-06-02T00:00:00.000Z",
+      "duration_hours": 172.468062,
+      "category": "Rare Event",
+      "class": "class_14",
+      "subclass": "subclass_1",
+      "dimensionality": "Multivariate",
+      "locality": "Global",
+      "length": "Subsequence",
+      "channel_count": 16,
+      "channels": [
+        "channel_14",
+        "channel_15",
+        "channel_21",
+        "channel_22",
+        "channel_23",
+        "channel_29",
+        "channel_30",
+        "channel_31",
+        "channel_38",
+        "channel_39",
+        "channel_41",
+        "channel_42",
+        "channel_43",
+        "channel_44",
+        "channel_45",
+        "channel_46"
+      ],
+      "subsystems": [
+        "subsystem_5",
+        "subsystem_6"
+      ]
+    },
+    {
+      "id": "id_129",
+      "start": "2008-07-24T21:43:18.057Z",
+      "end": "2008-07-24T21:43:24.969Z",
+      "duration_hours": 0.00192,
+      "category": "Anomaly",
+      "class": "class_3",
+      "subclass": "subclass_2",
+      "dimensionality": "Multivariate",
+      "locality": "Global",
+      "length": "Point",
+      "channel_count": 6,
+      "channels": [
+        "channel_41",
+        "channel_42",
+        "channel_43",
+        "channel_44",
+        "channel_45",
+        "channel_46"
+      ],
+      "subsystems": [
+        "subsystem_5"
+      ]
+    },
+    {
+      "id": "id_130",
+      "start": "2008-08-16T09:05:54.051Z",
+      "end": "2008-08-16T09:05:54.966Z",
+      "duration_hours": 0.000254,
+      "category": "Anomaly",
+      "class": "class_3",
+      "subclass": "subclass_2",
+      "dimensionality": "Multivariate",
+      "locality": "Global",
+      "length": "Point",
+      "channel_count": 6,
+      "channels": [
+        "channel_41",
+        "channel_42",
+        "channel_43",
+        "channel_44",
+        "channel_45",
+        "channel_46"
+      ],
+      "subsystems": [
+        "subsystem_5"
+      ]
+    },
+    {
+      "id": "id_131",
+      "start": "2008-12-26T21:13:15.228Z",
+      "end": "2008-12-27T03:17:45.228Z",
+      "duration_hours": 6.075,
+      "category": "Anomaly",
+      "class": "class_7",
+      "subclass": "subclass_1",
+      "dimensionality": "Multivariate",
+      "locality": "Local",
+      "length": "Subsequence",
+      "channel_count": 3,
+      "channels": [
+        "channel_14",
+        "channel_21",
+        "channel_29"
+      ],
+      "subsystems": [
+        "subsystem_6"
+      ]
+    },
+    {
+      "id": "id_132",
+      "start": "2009-01-23T19:26:24.942Z",
+      "end": "2009-01-23T19:26:27.030Z",
+      "duration_hours": 0.00058,
+      "category": "Anomaly",
+      "class": "class_3",
+      "subclass": "subclass_2",
+      "dimensionality": "Multivariate",
+      "locality": "Global",
+      "length": "Point",
+      "channel_count": 6,
+      "channels": [
+        "channel_41",
+        "channel_42",
+        "channel_43",
+        "channel_44",
+        "channel_45",
+        "channel_46"
+      ],
+      "subsystems": [
+        "subsystem_5"
+      ]
+    },
+    {
+      "id": "id_133",
+      "start": "2009-03-13T03:10:54.936Z",
+      "end": "2009-03-24T12:00:00.000Z",
+      "duration_hours": 272.818073,
+      "category": "Rare Event",
+      "class": "class_14",
+      "subclass": "subclass_1",
+      "dimensionality": "Multivariate",
+      "locality": "Global",
+      "length": "Subsequence",
+      "channel_count": 16,
+      "channels": [
+        "channel_14",
+        "channel_15",
+        "channel_21",
+        "channel_22",
+        "channel_23",
+        "channel_29",
+        "channel_30",
+        "channel_31",
+        "channel_38",
+        "channel_39",
+        "channel_41",
+        "channel_42",
+        "channel_43",
+        "channel_44",
+        "channel_45",
+        "channel_46"
+      ],
+      "subsystems": [
+        "subsystem_5",
+        "subsystem_6"
+      ]
+    },
+    {
+      "id": "id_134",
+      "start": "2009-05-25T13:09:02.418Z",
+      "end": "2009-07-04T20:18:00.201Z",
+      "duration_hours": 967.149384,
+      "category": "Anomaly",
+      "class": "class_14",
+      "subclass": "subclass_4",
+      "dimensionality": "Multivariate",
+      "locality": "Global",
+      "length": "Subsequence",
+      "channel_count": 58,
+      "channels": [
+        "channel_12",
+        "channel_13",
+        "channel_14",
+        "channel_15",
+        "channel_16",
+        "channel_17",
+        "channel_18",
+        "channel_19",
+        "channel_20",
+        "channel_21",
+        "channel_22",
+        "channel_23",
+        "channel_24",
+        "channel_25",
+        "channel_26",
+        "channel_27",
+        "channel_28",
+        "channel_29",
+        "channel_30",
+        "channel_31"
+      ],
+      "subsystems": [
+        "subsystem_1",
+        "subsystem_3",
+        "subsystem_5",
+        "subsystem_6"
+      ]
+    },
+    {
+      "id": "id_135",
+      "start": "2009-07-06T13:16:30.201Z",
+      "end": "2009-07-07T07:31:30.201Z",
+      "duration_hours": 18.25,
+      "category": "Anomaly",
+      "class": "class_7",
+      "subclass": "subclass_1",
+      "dimensionality": "Multivariate",
+      "locality": "Local",
+      "length": "Subsequence",
+      "channel_count": 3,
+      "channels": [
+        "channel_14",
+        "channel_21",
+        "channel_29"
+      ],
+      "subsystems": [
+        "subsystem_6"
+      ]
+    },
+    {
+      "id": "id_136",
+      "start": "2009-07-16T20:00:00.198Z",
+      "end": "2009-07-24T00:00:00.000Z",
+      "duration_hours": 171.999945,
+      "category": "Rare Event",
+      "class": "class_14",
+      "subclass": "subclass_1",
+      "dimensionality": "Multivariate",
+      "locality": "Global",
+      "length": "Subsequence",
+      "channel_count": 19,
+      "channels": [
+        "channel_14",
+        "channel_15",
+        "channel_21",
+        "channel_22",
+        "channel_23",
+        "channel_29",
+        "channel_30",
+        "channel_31",
+        "channel_32",
+        "channel_33",
+        "channel_38",
+        "channel_39",
+        "channel_40",
+        "channel_41",
+        "channel_42",
+        "channel_43",
+        "channel_44",
+        "channel_45",
+        "channel_46"
+      ],
+      "subsystems": [
+        "subsystem_5",
+        "subsystem_6"
+      ]
+    },
+    {
+      "id": "id_137",
+      "start": "2009-09-21T09:16:30.189Z",
+      "end": "2009-09-21T12:01:30.189Z",
+      "duration_hours": 2.75,
+      "category": "Anomaly",
+      "class": "class_7",
+      "subclass": "subclass_1",
+      "dimensionality": "Multivariate",
+      "locality": "Local",
+      "length": "Subsequence",
+      "channel_count": 3,
+      "channels": [
+        "channel_14",
+        "channel_21",
+        "channel_29"
+      ],
+      "subsystems": [
+        "subsystem_6"
+      ]
+    },
+    {
+      "id": "id_138",
+      "start": "2009-10-13T06:39:17.397Z",
+      "end": "2009-10-15T02:26:47.397Z",
+      "duration_hours": 43.791667,
+      "category": "Anomaly",
+      "class": "class_15",
+      "subclass": "subclass_1",
+      "dimensionality": "Multivariate",
+      "locality": "Global",
+      "length": "Subsequence",
+      "channel_count": 16,
+      "channels": [
+        "channel_41",
+        "channel_42",
+        "channel_43",
+        "channel_44",
+        "channel_45",
+        "channel_46",
+        "channel_47",
+        "channel_48",
+        "channel_49",
+        "channel_50",
+        "channel_51",
+        "channel_52",
+        "channel_57",
+        "channel_58",
+        "channel_59",
+        "channel_60"
+      ],
+      "subsystems": [
+        "subsystem_5",
+        "subsystem_6"
+      ]
+    },
+    {
+      "id": "id_139",
+      "start": "2009-12-10T13:11:39.894Z",
+      "end": "2009-12-21T00:00:00.000Z",
+      "duration_hours": 250.805585,
+      "category": "Rare Event",
+      "class": "class_14",
+      "subclass": "subclass_1",
+      "dimensionality": "Multivariate",
+      "locality": "Local",
+      "length": "Subsequence",
+      "channel_count": 15,
+      "channels": [
+        "channel_14",
+        "channel_15",
+        "channel_21",
+        "channel_22",
+        "channel_23",
+        "channel_30",
+        "channel_31",
+        "channel_38",
+        "channel_39",
+        "channel_41",
+        "channel_42",
+        "channel_43",
+        "channel_44",
+        "channel_45",
+        "channel_46"
+      ],
+      "subsystems": [
+        "subsystem_5",
+        "subsystem_6"
+      ]
+    },
+    {
+      "id": "id_140",
+      "start": "2010-03-22T01:06:59.967Z",
+      "end": "2010-03-22T01:07:09.879Z",
+      "duration_hours": 0.002753,
+      "category": "Anomaly",
+      "class": "class_3",
+      "subclass": "subclass_2",
+      "dimensionality": "Multivariate",
+      "locality": "Global",
+      "length": "Point",
+      "channel_count": 6,
+      "channels": [
+        "channel_41",
+        "channel_42",
+        "channel_43",
+        "channel_44",
+        "channel_45",
+        "channel_46"
+      ],
+      "subsystems": [
+        "subsystem_5"
+      ]
+    },
+    {
+      "id": "id_141",
+      "start": "2010-04-28T06:00:00.156Z",
+      "end": "2010-04-29T18:18:00.156Z",
+      "duration_hours": 36.3,
+      "category": "Anomaly",
+      "class": "class_7",
+      "subclass": "subclass_2",
+      "dimensionality": "Multivariate",
+      "locality": "Local",
+      "length": "Subsequence",
+      "channel_count": 5,
+      "channels": [
+        "channel_15",
+        "channel_22",
+        "channel_23",
+        "channel_31",
+        "channel_39"
+      ],
+      "subsystems": [
+        "subsystem_6"
+      ]
+    },
+    {
+      "id": "id_142",
+      "start": "2010-04-22T01:18:52.254Z",
+      "end": "2010-04-22T01:45:52.254Z",
+      "duration_hours": 0.45,
+      "category": "Anomaly",
+      "class": "class_3",
+      "subclass": "subclass_2",
+      "dimensionality": "Multivariate",
+      "locality": "Global",
+      "length": "Subsequence",
+      "channel_count": 12,
+      "channels": [
+        "channel_41",
+        "channel_42",
+        "channel_43",
+        "channel_44",
+        "channel_45",
+        "channel_46",
+        "channel_47",
+        "channel_48",
+        "channel_49",
+        "channel_50",
+        "channel_51",
+        "channel_52"
+      ],
+      "subsystems": [
+        "subsystem_5",
+        "subsystem_6"
+      ]
+    },
+    {
+      "id": "id_143",
+      "start": "2010-05-04T00:21:00.156Z",
+      "end": "2010-05-10T13:57:00.156Z",
+      "duration_hours": 157.6,
+      "category": "Anomaly",
+      "class": "class_7",
+      "subclass": "subclass_2",
+      "dimensionality": "Multivariate",
+      "locality": "Local",
+      "length": "Subsequence",
+      "channel_count": 6,
+      "channels": [
+        "channel_15",
+        "channel_21",
+        "channel_22",
+        "channel_23",
+        "channel_29",
+        "channel_31"
+      ],
+      "subsystems": [
+        "subsystem_6"
+      ]
+    },
+    {
+      "id": "id_144",
+      "start": "2000-02-12T19:25:48.966Z",
+      "end": "2000-02-12T19:34:39.963Z",
+      "duration_hours": 0.147499,
+      "category": "Anomaly",
+      "class": "class_22",
+      "subclass": "subclass_1",
+      "dimensionality": "Univariate",
+      "locality": "Local",
+      "length": "Subsequence",
+      "channel_count": 1,
+      "channels": [
+        "channel_74"
+      ],
+      "subsystems": [
+        "subsystem_3"
+      ]
+    },
+    {
+      "id": "id_145",
+      "start": "2010-05-19T00:45:00.153Z",
+      "end": "2010-06-01T00:00:00.000Z",
+      "duration_hours": 311.249957,
+      "category": "Anomaly",
+      "class": "class_22",
+      "subclass": "subclass_4",
+      "dimensionality": "Multivariate",
+      "locality": "Global",
+      "length": "Subsequence",
+      "channel_count": 53,
+      "channels": [
+        "channel_12",
+        "channel_13",
+        "channel_14",
+        "channel_15",
+        "channel_16",
+        "channel_17",
+        "channel_18",
+        "channel_19",
+        "channel_20",
+        "channel_21",
+        "channel_22",
+        "channel_23",
+        "channel_24",
+        "channel_25",
+        "channel_26",
+        "channel_27",
+        "channel_28",
+        "channel_29",
+        "channel_30",
+        "channel_31"
+      ],
+      "subsystems": [
+        "subsystem_3",
+        "subsystem_5",
+        "subsystem_6"
+      ]
+    },
+    {
+      "id": "id_146",
+      "start": "2010-05-23T21:18:00.153Z",
+      "end": "2010-05-24T12:52:30.153Z",
+      "duration_hours": 15.575,
+      "category": "Anomaly",
+      "class": "class_7",
+      "subclass": "subclass_1",
+      "dimensionality": "Multivariate",
+      "locality": "Global",
+      "length": "Subsequence",
+      "channel_count": 3,
+      "channels": [
+        "channel_14",
+        "channel_21",
+        "channel_29"
+      ],
+      "subsystems": [
+        "subsystem_6"
+      ]
+    },
+    {
+      "id": "id_147",
+      "start": "2010-08-18T22:31:39.858Z",
+      "end": "2010-08-30T00:00:00.000Z",
+      "duration_hours": 265.472262,
+      "category": "Rare Event",
+      "class": "class_14",
+      "subclass": "subclass_1",
+      "dimensionality": "Multivariate",
+      "locality": "Local",
+      "length": "Subsequence",
+      "channel_count": 16,
+      "channels": [
+        "channel_14",
+        "channel_15",
+        "channel_21",
+        "channel_22",
+        "channel_23",
+        "channel_29",
+        "channel_30",
+        "channel_31",
+        "channel_38",
+        "channel_39",
+        "channel_41",
+        "channel_42",
+        "channel_43",
+        "channel_44",
+        "channel_45",
+        "channel_46"
+      ],
+      "subsystems": [
+        "subsystem_5",
+        "subsystem_6"
+      ]
+    },
+    {
+      "id": "id_148",
+      "start": "2010-07-31T08:42:00.144Z",
+      "end": "2010-07-31T11:28:30.144Z",
+      "duration_hours": 2.775,
+      "category": "Anomaly",
+      "class": "class_7",
+      "subclass": "subclass_1",
+      "dimensionality": "Multivariate",
+      "locality": "Local",
+      "length": "Subsequence",
+      "channel_count": 3,
+      "channels": [
+        "channel_14",
+        "channel_21",
+        "channel_29"
+      ],
+      "subsystems": [
+        "subsystem_6"
+      ]
+    },
+    {
+      "id": "id_149",
+      "start": "2010-09-07T02:22:09.855Z",
+      "end": "2010-09-07T02:38:22.233Z",
+      "duration_hours": 0.270105,
+      "category": "Anomaly",
+      "class": "class_3",
+      "subclass": "subclass_2",
+      "dimensionality": "Multivariate",
+      "locality": "Global",
+      "length": "Subsequence",
+      "channel_count": 12,
+      "channels": [
+        "channel_41",
+        "channel_42",
+        "channel_43",
+        "channel_44",
+        "channel_45",
+        "channel_46",
+        "channel_47",
+        "channel_48",
+        "channel_49",
+        "channel_50",
+        "channel_51",
+        "channel_52"
+      ],
+      "subsystems": [
+        "subsystem_5",
+        "subsystem_6"
+      ]
+    },
+    {
+      "id": "id_150",
+      "start": "2010-10-26T17:24:52.224Z",
+      "end": "2010-10-26T17:45:52.224Z",
+      "duration_hours": 0.35,
+      "category": "Anomaly",
+      "class": "class_3",
+      "subclass": "subclass_2",
+      "dimensionality": "Multivariate",
+      "locality": "Global",
+      "length": "Subsequence",
+      "channel_count": 12,
+      "channels": [
+        "channel_41",
+        "channel_42",
+        "channel_43",
+        "channel_44",
+        "channel_45",
+        "channel_46",
+        "channel_47",
+        "channel_48",
+        "channel_49",
+        "channel_50",
+        "channel_51",
+        "channel_52"
+      ],
+      "subsystems": [
+        "subsystem_5",
+        "subsystem_6"
+      ]
+    },
+    {
+      "id": "id_151",
+      "start": "2000-02-10T01:31:16.347Z",
+      "end": "2000-02-24T01:03:06.627Z",
+      "duration_hours": 335.530633,
+      "category": "Rare Event",
+      "class": "class_14",
+      "subclass": "subclass_1",
+      "dimensionality": "Multivariate",
+      "locality": "Global",
+      "length": "Subsequence",
+      "channel_count": 27,
+      "channels": [
+        "channel_14",
+        "channel_15",
+        "channel_16",
+        "channel_21",
+        "channel_22",
+        "channel_23",
+        "channel_24",
+        "channel_29",
+        "channel_30",
+        "channel_31",
+        "channel_32",
+        "channel_33",
+        "channel_38",
+        "channel_39",
+        "channel_40",
+        "channel_41",
+        "channel_42",
+        "channel_43",
+        "channel_44",
+        "channel_45"
+      ],
+      "subsystems": [
+        "subsystem_5",
+        "subsystem_6"
+      ]
+    },
+    {
+      "id": "id_152",
+      "start": "2011-01-27T03:52:30.114Z",
+      "end": "2011-01-27T19:10:30.114Z",
+      "duration_hours": 15.3,
+      "category": "Anomaly",
+      "class": "class_7",
+      "subclass": "subclass_1",
+      "dimensionality": "Multivariate",
+      "locality": "Local",
+      "length": "Subsequence",
+      "channel_count": 3,
+      "channels": [
+        "channel_14",
+        "channel_21",
+        "channel_29"
+      ],
+      "subsystems": [
+        "subsystem_6"
+      ]
+    },
+    {
+      "id": "id_153",
+      "start": "2011-01-28T22:29:18.030Z",
+      "end": "2011-01-29T13:44:18.030Z",
+      "duration_hours": 15.25,
+      "category": "Anomaly",
+      "class": "class_17",
+      "subclass": "subclass_1",
+      "dimensionality": "Multivariate",
+      "locality": "Global",
+      "length": "Subsequence",
+      "channel_count": 9,
+      "channels": [
+        "channel_41",
+        "channel_42",
+        "channel_43",
+        "channel_44",
+        "channel_45",
+        "channel_46",
+        "channel_64",
+        "channel_65",
+        "channel_66"
+      ],
+      "subsystems": [
+        "subsystem_5",
+        "subsystem_6"
+      ]
+    },
+    {
+      "id": "id_154",
+      "start": "2011-02-23T19:41:09.828Z",
+      "end": "2011-03-04T00:00:00.000Z",
+      "duration_hours": 196.313937,
+      "category": "Rare Event",
+      "class": "class_14",
+      "subclass": "subclass_1",
+      "dimensionality": "Multivariate",
+      "locality": "Global",
+      "length": "Subsequence",
+      "channel_count": 28,
+      "channels": [
+        "channel_14",
+        "channel_15",
+        "channel_16",
+        "channel_21",
+        "channel_22",
+        "channel_23",
+        "channel_24",
+        "channel_29",
+        "channel_30",
+        "channel_31",
+        "channel_32",
+        "channel_33",
+        "channel_38",
+        "channel_39",
+        "channel_40",
+        "channel_41",
+        "channel_42",
+        "channel_43",
+        "channel_44",
+        "channel_45"
+      ],
+      "subsystems": [
+        "subsystem_5",
+        "subsystem_6"
+      ]
+    },
+    {
+      "id": "id_155",
+      "start": "2011-04-21T22:15:52.197Z",
+      "end": "2011-05-02T23:58:30.099Z",
+      "duration_hours": 265.710528,
+      "category": "Rare Event",
+      "class": "class_14",
+      "subclass": "subclass_5",
+      "dimensionality": "Multivariate",
+      "locality": "Local",
+      "length": "Subsequence",
+      "channel_count": 46,
+      "channels": [
+        "channel_12",
+        "channel_13",
+        "channel_14",
+        "channel_15",
+        "channel_16",
+        "channel_17",
+        "channel_18",
+        "channel_19",
+        "channel_20",
+        "channel_21",
+        "channel_22",
+        "channel_23",
+        "channel_24",
+        "channel_25",
+        "channel_26",
+        "channel_27",
+        "channel_28",
+        "channel_29",
+        "channel_30",
+        "channel_31"
+      ],
+      "subsystems": [
+        "subsystem_5",
+        "subsystem_6"
+      ]
+    },
+    {
+      "id": "id_156",
+      "start": "2011-04-13T03:12:00.102Z",
+      "end": "2011-04-13T05:28:30.102Z",
+      "duration_hours": 2.275,
+      "category": "Anomaly",
+      "class": "class_7",
+      "subclass": "subclass_1",
+      "dimensionality": "Multivariate",
+      "locality": "Local",
+      "length": "Subsequence",
+      "channel_count": 3,
+      "channels": [
+        "channel_14",
+        "channel_21",
+        "channel_29"
+      ],
+      "subsystems": [
+        "subsystem_6"
+      ]
+    },
+    {
+      "id": "id_157",
+      "start": "2011-04-19T07:09:39.819Z",
+      "end": "2011-04-19T21:44:18.018Z",
+      "duration_hours": 14.577278,
+      "category": "Anomaly",
+      "class": "class_17",
+      "subclass": "subclass_1",
+      "dimensionality": "Multivariate",
+      "locality": "Global",
+      "length": "Subsequence",
+      "channel_count": 8,
+      "channels": [
+        "channel_41",
+        "channel_42",
+        "channel_43",
+        "channel_44",
+        "channel_45",
+        "channel_64",
+        "channel_65",
+        "channel_66"
+      ],
+      "subsystems": [
+        "subsystem_5",
+        "subsystem_6"
+      ]
+    },
+    {
+      "id": "id_158",
+      "start": "2000-02-26T02:41:44.841Z",
+      "end": "2000-02-26T02:46:44.841Z",
+      "duration_hours": 0.083333,
+      "category": "Anomaly",
+      "class": "class_22",
+      "subclass": "subclass_1",
+      "dimensionality": "Univariate",
+      "locality": "Global",
+      "length": "Subsequence",
+      "channel_count": 1,
+      "channels": [
+        "channel_75"
+      ],
+      "subsystems": [
+        "subsystem_3"
+      ]
+    },
+    {
+      "id": "id_159",
+      "start": "2011-06-09T02:57:09.813Z",
+      "end": "2011-06-20T00:00:00.000Z",
+      "duration_hours": 261.047274,
+      "category": "Rare Event",
+      "class": "class_14",
+      "subclass": "subclass_1",
+      "dimensionality": "Multivariate",
+      "locality": "Local",
+      "length": "Subsequence",
+      "channel_count": 16,
+      "channels": [
+        "channel_14",
+        "channel_15",
+        "channel_21",
+        "channel_22",
+        "channel_23",
+        "channel_29",
+        "channel_30",
+        "channel_31",
+        "channel_38",
+        "channel_39",
+        "channel_41",
+        "channel_42",
+        "channel_43",
+        "channel_44",
+        "channel_45",
+        "channel_46"
+      ],
+      "subsystems": [
+        "subsystem_5",
+        "subsystem_6"
+      ]
+    },
+    {
+      "id": "id_160",
+      "start": "2011-08-12T19:57:32.889Z",
+      "end": "2011-08-12T20:22:39.801Z",
+      "duration_hours": 0.418587,
+      "category": "Anomaly",
+      "class": "class_3",
+      "subclass": "subclass_2",
+      "dimensionality": "Multivariate",
+      "locality": "Global",
+      "length": "Subsequence",
+      "channel_count": 10,
+      "channels": [
+        "channel_41",
+        "channel_42",
+        "channel_43",
+        "channel_44",
+        "channel_45",
+        "channel_46",
+        "channel_48",
+        "channel_49",
+        "channel_51",
+        "channel_52"
+      ],
+      "subsystems": [
+        "subsystem_5",
+        "subsystem_6"
+      ]
+    },
+    {
+      "id": "id_161",
+      "start": "2011-08-16T14:52:30.084Z",
+      "end": "2011-08-16T20:24:00.084Z",
+      "duration_hours": 5.525,
+      "category": "Anomaly",
+      "class": "class_7",
+      "subclass": "subclass_1",
+      "dimensionality": "Multivariate",
+      "locality": "Local",
+      "length": "Subsequence",
+      "channel_count": 3,
+      "channels": [
+        "channel_14",
+        "channel_21",
+        "channel_29"
+      ],
+      "subsystems": [
+        "subsystem_6"
+      ]
+    },
+    {
+      "id": "id_162",
+      "start": "2011-09-17T16:06:00.078Z",
+      "end": "2011-09-17T18:24:00.078Z",
+      "duration_hours": 2.3,
+      "category": "Anomaly",
+      "class": "class_7",
+      "subclass": "subclass_1",
+      "dimensionality": "Multivariate",
+      "locality": "Local",
+      "length": "Subsequence",
+      "channel_count": 3,
+      "channels": [
+        "channel_14",
+        "channel_21",
+        "channel_29"
+      ],
+      "subsystems": [
+        "subsystem_6"
+      ]
+    },
+    {
+      "id": "id_163",
+      "start": "2000-03-08T13:22:14.838Z",
+      "end": "2000-03-08T13:27:14.838Z",
+      "duration_hours": 0.083333,
+      "category": "Anomaly",
+      "class": "class_22",
+      "subclass": "subclass_1",
+      "dimensionality": "Univariate",
+      "locality": "Global",
+      "length": "Subsequence",
+      "channel_count": 1,
+      "channels": [
+        "channel_75"
+      ],
+      "subsystems": [
+        "subsystem_3"
+      ]
+    },
+    {
+      "id": "id_164",
+      "start": "2011-11-24T17:17:39.786Z",
+      "end": "2011-12-03T21:28:30.066Z",
+      "duration_hours": 220.180633,
+      "category": "Rare Event",
+      "class": "class_14",
+      "subclass": "subclass_1",
+      "dimensionality": "Multivariate",
+      "locality": "Local",
+      "length": "Subsequence",
+      "channel_count": 17,
+      "channels": [
+        "channel_14",
+        "channel_15",
+        "channel_16",
+        "channel_21",
+        "channel_22",
+        "channel_23",
+        "channel_29",
+        "channel_30",
+        "channel_31",
+        "channel_38",
+        "channel_39",
+        "channel_41",
+        "channel_42",
+        "channel_43",
+        "channel_44",
+        "channel_45",
+        "channel_46"
+      ],
+      "subsystems": [
+        "subsystem_5",
+        "subsystem_6"
+      ]
+    },
+    {
+      "id": "id_165",
+      "start": "2011-12-28T04:02:39.780Z",
+      "end": "2011-12-28T04:02:47.868Z",
+      "duration_hours": 0.002247,
+      "category": "Anomaly",
+      "class": "class_3",
+      "subclass": "subclass_2",
+      "dimensionality": "Multivariate",
+      "locality": "Global",
+      "length": "Point",
+      "channel_count": 6,
+      "channels": [
+        "channel_41",
+        "channel_42",
+        "channel_43",
+        "channel_44",
+        "channel_45",
+        "channel_46"
+      ],
+      "subsystems": [
+        "subsystem_5"
+      ]
+    },
+    {
+      "id": "id_166",
+      "start": "2012-01-07T03:42:26.865Z",
+      "end": "2012-01-07T03:54:09.777Z",
+      "duration_hours": 0.195253,
+      "category": "Anomaly",
+      "class": "class_3",
+      "subclass": "subclass_2",
+      "dimensionality": "Multivariate",
+      "locality": "Global",
+      "length": "Subsequence",
+      "channel_count": 8,
+      "channels": [
+        "channel_41",
+        "channel_42",
+        "channel_43",
+        "channel_44",
+        "channel_45",
+        "channel_46",
+        "channel_49",
+        "channel_52"
+      ],
+      "subsystems": [
+        "subsystem_5",
+        "subsystem_6"
+      ]
+    },
+    {
+      "id": "id_167",
+      "start": "2000-03-19T06:00:14.838Z",
+      "end": "2000-04-01T12:00:00.000Z",
+      "duration_hours": 317.995878,
+      "category": "Anomaly",
+      "class": "class_20",
+      "subclass": "unknown",
+      "dimensionality": "Multivariate",
+      "locality": "Global",
+      "length": "Subsequence",
+      "channel_count": 43,
+      "channels": [
+        "channel_12",
+        "channel_13",
+        "channel_16",
+        "channel_17",
+        "channel_18",
+        "channel_19",
+        "channel_20",
+        "channel_24",
+        "channel_25",
+        "channel_26",
+        "channel_27",
+        "channel_28",
+        "channel_32",
+        "channel_33",
+        "channel_34",
+        "channel_35",
+        "channel_36",
+        "channel_37",
+        "channel_40",
+        "channel_41"
+      ],
+      "subsystems": [
+        "subsystem_3",
+        "subsystem_5",
+        "subsystem_6"
+      ]
+    },
+    {
+      "id": "id_168",
+      "start": "2000-03-23T16:02:29.085Z",
+      "end": "2000-03-23T16:07:29.085Z",
+      "duration_hours": 0.083333,
+      "category": "Rare Event",
+      "class": "class_22",
+      "subclass": "subclass_2",
+      "dimensionality": "Univariate",
+      "locality": "Global",
+      "length": "Subsequence",
+      "channel_count": 1,
+      "channels": [
+        "channel_73"
+      ],
+      "subsystems": [
+        "subsystem_3"
+      ]
+    },
+    {
+      "id": "id_169",
+      "start": "2012-06-20T22:45:09.750Z",
+      "end": "2012-07-02T00:00:00.000Z",
+      "duration_hours": 265.247292,
+      "category": "Rare Event",
+      "class": "class_14",
+      "subclass": "subclass_1",
+      "dimensionality": "Multivariate",
+      "locality": "Local",
+      "length": "Subsequence",
+      "channel_count": 16,
+      "channels": [
+        "channel_14",
+        "channel_15",
+        "channel_21",
+        "channel_22",
+        "channel_23",
+        "channel_29",
+        "channel_30",
+        "channel_31",
+        "channel_38",
+        "channel_39",
+        "channel_41",
+        "channel_42",
+        "channel_43",
+        "channel_44",
+        "channel_45",
+        "channel_46"
+      ],
+      "subsystems": [
+        "subsystem_5",
+        "subsystem_6"
+      ]
+    },
+    {
+      "id": "id_170",
+      "start": "2000-03-23T18:17:26.838Z",
+      "end": "2000-03-23T18:22:26.838Z",
+      "duration_hours": 0.083333,
+      "category": "Rare Event",
+      "class": "class_22",
+      "subclass": "subclass_2",
+      "dimensionality": "Univariate",
+      "locality": "Global",
+      "length": "Subsequence",
+      "channel_count": 1,
+      "channels": [
+        "channel_75"
+      ],
+      "subsystems": [
+        "subsystem_3"
+      ]
+    },
+    {
+      "id": "id_171",
+      "start": "2012-07-14T08:09:00.030Z",
+      "end": "2012-07-16T02:55:30.030Z",
+      "duration_hours": 42.775,
+      "category": "Anomaly",
+      "class": "class_7",
+      "subclass": "subclass_1",
+      "dimensionality": "Multivariate",
+      "locality": "Local",
+      "length": "Subsequence",
+      "channel_count": 3,
+      "channels": [
+        "channel_14",
+        "channel_21",
+        "channel_29"
+      ],
+      "subsystems": [
+        "subsystem_6"
+      ]
+    },
+    {
+      "id": "id_172",
+      "start": "2012-09-19T13:42:51.000Z",
+      "end": "2012-09-19T13:43:09.000Z",
+      "duration_hours": 0.005,
+      "category": "Anomaly",
+      "class": "class_3",
+      "subclass": "subclass_2",
+      "dimensionality": "Multivariate",
+      "locality": "Global",
+      "length": "Point",
+      "channel_count": 6,
+      "channels": [
+        "channel_41",
+        "channel_42",
+        "channel_43",
+        "channel_44",
+        "channel_45",
+        "channel_46"
+      ],
+      "subsystems": [
+        "subsystem_5"
+      ]
+    },
+    {
+      "id": "id_173",
+      "start": "2000-03-23T20:16:40.710Z",
+      "end": "2000-03-23T20:21:40.710Z",
+      "duration_hours": 0.083333,
+      "category": "Rare Event",
+      "class": "class_22",
+      "subclass": "subclass_2",
+      "dimensionality": "Univariate",
+      "locality": "Global",
+      "length": "Subsequence",
+      "channel_count": 1,
+      "channels": [
+        "channel_76"
+      ],
+      "subsystems": [
+        "subsystem_3"
+      ]
+    },
+    {
+      "id": "id_174",
+      "start": "2012-10-04T15:15:47.229Z",
+      "end": "2012-10-06T06:21:09.735Z",
+      "duration_hours": 39.089585,
+      "category": "Rare Event",
+      "class": "class_15",
+      "subclass": "subclass_2",
+      "dimensionality": "Multivariate",
+      "locality": "Local",
+      "length": "Subsequence",
+      "channel_count": 16,
+      "channels": [
+        "channel_41",
+        "channel_42",
+        "channel_43",
+        "channel_44",
+        "channel_45",
+        "channel_46",
+        "channel_47",
+        "channel_48",
+        "channel_49",
+        "channel_50",
+        "channel_51",
+        "channel_52",
+        "channel_57",
+        "channel_58",
+        "channel_59",
+        "channel_60"
+      ],
+      "subsystems": [
+        "subsystem_5",
+        "subsystem_6"
+      ]
+    },
+    {
+      "id": "id_175",
+      "start": "2012-12-06T12:07:30.006Z",
+      "end": "2012-12-11T00:00:00.000Z",
+      "duration_hours": 107.874998,
+      "category": "Rare Event",
+      "class": "class_14",
+      "subclass": "subclass_1",
+      "dimensionality": "Multivariate",
+      "locality": "Local",
+      "length": "Subsequence",
+      "channel_count": 16,
+      "channels": [
+        "channel_14",
+        "channel_15",
+        "channel_21",
+        "channel_22",
+        "channel_23",
+        "channel_29",
+        "channel_30",
+        "channel_31",
+        "channel_38",
+        "channel_39",
+        "channel_41",
+        "channel_42",
+        "channel_43",
+        "channel_44",
+        "channel_45",
+        "channel_46"
+      ],
+      "subsystems": [
+        "subsystem_5",
+        "subsystem_6"
+      ]
+    },
+    {
+      "id": "id_176",
+      "start": "2013-02-09T23:44:22.089Z",
+      "end": "2013-02-10T00:06:09.711Z",
+      "duration_hours": 0.363228,
+      "category": "Anomaly",
+      "class": "class_3",
+      "subclass": "subclass_2",
+      "dimensionality": "Multivariate",
+      "locality": "Global",
+      "length": "Subsequence",
+      "channel_count": 12,
+      "channels": [
+        "channel_41",
+        "channel_42",
+        "channel_43",
+        "channel_44",
+        "channel_45",
+        "channel_46",
+        "channel_47",
+        "channel_48",
+        "channel_49",
+        "channel_50",
+        "channel_51",
+        "channel_52"
+      ],
+      "subsystems": [
+        "subsystem_5",
+        "subsystem_6"
+      ]
+    },
+    {
+      "id": "id_177",
+      "start": "2013-03-24T16:57:09.705Z",
+      "end": "2013-03-24T17:29:22.080Z",
+      "duration_hours": 0.536771,
+      "category": "Anomaly",
+      "class": "class_3",
+      "subclass": "subclass_2",
+      "dimensionality": "Multivariate",
+      "locality": "Global",
+      "length": "Subsequence",
+      "channel_count": 12,
+      "channels": [
+        "channel_41",
+        "channel_42",
+        "channel_43",
+        "channel_44",
+        "channel_45",
+        "channel_46",
+        "channel_47",
+        "channel_48",
+        "channel_49",
+        "channel_50",
+        "channel_51",
+        "channel_52"
+      ],
+      "subsystems": [
+        "subsystem_5",
+        "subsystem_6"
+      ]
+    },
+    {
+      "id": "id_178",
+      "start": "2013-04-25T01:13:29.982Z",
+      "end": "2013-04-25T07:07:29.982Z",
+      "duration_hours": 5.9,
+      "category": "Anomaly",
+      "class": "class_7",
+      "subclass": "subclass_1",
+      "dimensionality": "Multivariate",
+      "locality": "Local",
+      "length": "Subsequence",
+      "channel_count": 3,
+      "channels": [
+        "channel_14",
+        "channel_21",
+        "channel_29"
+      ],
+      "subsystems": [
+        "subsystem_6"
+      ]
+    },
+    {
+      "id": "id_179",
+      "start": "2013-07-23T21:25:29.964Z",
+      "end": "2013-07-24T02:59:59.964Z",
+      "duration_hours": 5.575,
+      "category": "Anomaly",
+      "class": "class_7",
+      "subclass": "subclass_1",
+      "dimensionality": "Multivariate",
+      "locality": "Global",
+      "length": "Subsequence",
+      "channel_count": 3,
+      "channels": [
+        "channel_14",
+        "channel_21",
+        "channel_29"
+      ],
+      "subsystems": [
+        "subsystem_6"
+      ]
+    },
+    {
+      "id": "id_180",
+      "start": "2013-08-11T18:47:22.056Z",
+      "end": "2013-08-29T00:00:00.000Z",
+      "duration_hours": 413.21054,
+      "category": "Rare Event",
+      "class": "class_2",
+      "subclass": "subclass_4",
+      "dimensionality": "Multivariate",
+      "locality": "Global",
+      "length": "Subsequence",
+      "channel_count": 48,
+      "channels": [
+        "channel_12",
+        "channel_13",
+        "channel_14",
+        "channel_15",
+        "channel_16",
+        "channel_17",
+        "channel_18",
+        "channel_19",
+        "channel_20",
+        "channel_21",
+        "channel_22",
+        "channel_23",
+        "channel_24",
+        "channel_25",
+        "channel_26",
+        "channel_27",
+        "channel_28",
+        "channel_29",
+        "channel_30",
+        "channel_31"
+      ],
+      "subsystems": [
+        "subsystem_1",
+        "subsystem_5",
+        "subsystem_6"
+      ]
+    },
+    {
+      "id": "id_181",
+      "start": "2013-08-27T17:26:59.961Z",
+      "end": "2013-08-30T01:02:59.961Z",
+      "duration_hours": 55.6,
+      "category": "Anomaly",
+      "class": "class_7",
+      "subclass": "subclass_1",
+      "dimensionality": "Multivariate",
+      "locality": "Local",
+      "length": "Subsequence",
+      "channel_count": 3,
+      "channels": [
+        "channel_14",
+        "channel_21",
+        "channel_29"
+      ],
+      "subsystems": [
+        "subsystem_6"
+      ]
+    },
+    {
+      "id": "id_182",
+      "start": "2013-09-12T01:59:59.958Z",
+      "end": "2013-09-19T00:00:00.000Z",
+      "duration_hours": 166.000012,
+      "category": "Rare Event",
+      "class": "class_14",
+      "subclass": "subclass_6",
+      "dimensionality": "Multivariate",
+      "locality": "Local",
+      "length": "Subsequence",
+      "channel_count": 16,
+      "channels": [
+        "channel_14",
+        "channel_15",
+        "channel_21",
+        "channel_22",
+        "channel_23",
+        "channel_29",
+        "channel_30",
+        "channel_31",
+        "channel_38",
+        "channel_39",
+        "channel_41",
+        "channel_42",
+        "channel_43",
+        "channel_44",
+        "channel_45",
+        "channel_46"
+      ],
+      "subsystems": [
+        "subsystem_5",
+        "subsystem_6"
+      ]
+    },
+    {
+      "id": "id_183",
+      "start": "2013-09-05T18:32:23.763Z",
+      "end": "2013-09-06T12:10:09.678Z",
+      "duration_hours": 17.629421,
+      "category": "Anomaly",
+      "class": "class_3",
+      "subclass": "subclass_2",
+      "dimensionality": "Multivariate",
+      "locality": "Global",
+      "length": "Subsequence",
+      "channel_count": 9,
+      "channels": [
+        "channel_41",
+        "channel_42",
+        "channel_43",
+        "channel_44",
+        "channel_45",
+        "channel_46",
+        "channel_47",
+        "channel_48",
+        "channel_49"
+      ],
+      "subsystems": [
+        "subsystem_5",
+        "subsystem_6"
+      ]
+    },
+    {
+      "id": "id_184",
+      "start": "2013-10-01T01:13:39.672Z",
+      "end": "2013-10-01T01:27:52.050Z",
+      "duration_hours": 0.236772,
+      "category": "Anomaly",
+      "class": "class_3",
+      "subclass": "subclass_2",
+      "dimensionality": "Multivariate",
+      "locality": "Global",
+      "length": "Subsequence",
+      "channel_count": 10,
+      "channels": [
+        "channel_41",
+        "channel_42",
+        "channel_43",
+        "channel_44",
+        "channel_45",
+        "channel_46",
+        "channel_47",
+        "channel_48",
+        "channel_49",
+        "channel_52"
+      ],
+      "subsystems": [
+        "subsystem_5",
+        "subsystem_6"
+      ]
+    },
+    {
+      "id": "id_185",
+      "start": "2000-04-23T15:15:58.341Z",
+      "end": "2000-04-25T20:22:10.719Z",
+      "duration_hours": 53.103438,
+      "category": "Anomaly",
+      "class": "class_3",
+      "subclass": "subclass_1",
+      "dimensionality": "Multivariate",
+      "locality": "Global",
+      "length": "Subsequence",
+      "channel_count": 26,
+      "channels": [
+        "channel_12",
+        "channel_13",
+        "channel_17",
+        "channel_18",
+        "channel_19",
+        "channel_20",
+        "channel_25",
+        "channel_26",
+        "channel_27",
+        "channel_28",
+        "channel_34",
+        "channel_35",
+        "channel_36",
+        "channel_37",
+        "channel_41",
+        "channel_42",
+        "channel_43",
+        "channel_44",
+        "channel_45",
+        "channel_46"
+      ],
+      "subsystems": [
+        "subsystem_5",
+        "subsystem_6"
+      ]
+    },
+    {
+      "id": "id_186",
+      "start": "2013-11-11T05:27:23.754Z",
+      "end": "2013-11-11T05:37:39.666Z",
+      "duration_hours": 0.171087,
+      "category": "Anomaly",
+      "class": "class_3",
+      "subclass": "subclass_2",
+      "dimensionality": "Multivariate",
+      "locality": "Global",
+      "length": "Subsequence",
+      "channel_count": 12,
+      "channels": [
+        "channel_41",
+        "channel_42",
+        "channel_43",
+        "channel_44",
+        "channel_45",
+        "channel_46",
+        "channel_47",
+        "channel_48",
+        "channel_49",
+        "channel_50",
+        "channel_51",
+        "channel_52"
+      ],
+      "subsystems": [
+        "subsystem_5",
+        "subsystem_6"
+      ]
+    },
+    {
+      "id": "id_187",
+      "start": "2013-11-19T14:57:17.751Z",
+      "end": "2013-11-19T15:08:22.041Z",
+      "duration_hours": 0.184525,
+      "category": "Anomaly",
+      "class": "class_3",
+      "subclass": "subclass_2",
+      "dimensionality": "Multivariate",
+      "locality": "Global",
+      "length": "Subsequence",
+      "channel_count": 12,
+      "channels": [
+        "channel_41",
+        "channel_42",
+        "channel_43",
+        "channel_44",
+        "channel_45",
+        "channel_46",
+        "channel_47",
+        "channel_48",
+        "channel_49",
+        "channel_50",
+        "channel_51",
+        "channel_52"
+      ],
+      "subsystems": [
+        "subsystem_5",
+        "subsystem_6"
+      ]
+    },
+    {
+      "id": "id_188",
+      "start": "2013-11-23T06:52:29.946Z",
+      "end": "2013-11-23T11:19:29.946Z",
+      "duration_hours": 4.45,
+      "category": "Anomaly",
+      "class": "class_7",
+      "subclass": "subclass_1",
+      "dimensionality": "Multivariate",
+      "locality": "Local",
+      "length": "Subsequence",
+      "channel_count": 3,
+      "channels": [
+        "channel_14",
+        "channel_21",
+        "channel_29"
+      ],
+      "subsystems": [
+        "subsystem_6"
+      ]
+    },
+    {
+      "id": "id_189",
+      "start": "2013-12-04T16:32:59.943Z",
+      "end": "2013-12-06T06:44:59.943Z",
+      "duration_hours": 38.2,
+      "category": "Anomaly",
+      "class": "class_7",
+      "subclass": "subclass_1",
+      "dimensionality": "Multivariate",
+      "locality": "Local",
+      "length": "Subsequence",
+      "channel_count": 3,
+      "channels": [
+        "channel_14",
+        "channel_21",
+        "channel_29"
+      ],
+      "subsystems": [
+        "subsystem_6"
+      ]
+    },
+    {
+      "id": "id_190",
+      "start": "2000-05-28T23:07:48.951Z",
+      "end": "2000-05-28T23:17:18.951Z",
+      "duration_hours": 0.158333,
+      "category": "Rare Event",
+      "class": "class_22",
+      "subclass": "subclass_2",
+      "dimensionality": "Univariate",
+      "locality": "Local",
+      "length": "Subsequence",
+      "channel_count": 1,
+      "channels": [
+        "channel_74"
+      ],
+      "subsystems": [
+        "subsystem_3"
+      ]
+    },
+    {
+      "id": "id_191",
+      "start": "2000-05-31T19:00:00.954Z",
+      "end": "2000-05-31T19:09:24.951Z",
+      "duration_hours": 0.156666,
+      "category": "Anomaly",
+      "class": "class_22",
+      "subclass": "subclass_3",
+      "dimensionality": "Univariate",
+      "locality": "Local",
+      "length": "Subsequence",
+      "channel_count": 1,
+      "channels": [
+        "channel_74"
+      ],
+      "subsystems": [
+        "subsystem_3"
+      ]
+    },
+    {
+      "id": "id_192",
+      "start": "2000-06-19T02:49:59.076Z",
+      "end": "2000-06-19T02:58:59.076Z",
+      "duration_hours": 0.15,
+      "category": "Anomaly",
+      "class": "class_22",
+      "subclass": "subclass_3",
+      "dimensionality": "Univariate",
+      "locality": "Global",
+      "length": "Subsequence",
+      "channel_count": 1,
+      "channels": [
+        "channel_73"
+      ],
+      "subsystems": [
+        "subsystem_3"
+      ]
+    },
+    {
+      "id": "id_193",
+      "start": "2000-06-25T00:42:40.701Z",
+      "end": "2000-06-25T03:17:26.826Z",
+      "duration_hours": 2.579479,
+      "category": "Anomaly",
+      "class": "class_22",
+      "subclass": "subclass_3",
+      "dimensionality": "Multivariate",
+      "locality": "Local",
+      "length": "Subsequence",
+      "channel_count": 13,
+      "channels": [
+        "channel_41",
+        "channel_42",
+        "channel_43",
+        "channel_44",
+        "channel_45",
+        "channel_46",
+        "channel_70",
+        "channel_71",
+        "channel_72",
+        "channel_73",
+        "channel_74",
+        "channel_75",
+        "channel_76"
+      ],
+      "subsystems": [
+        "subsystem_3",
+        "subsystem_5"
+      ]
+    },
+    {
+      "id": "id_194",
+      "start": "2000-07-03T07:19:06.951Z",
+      "end": "2000-07-03T07:21:00.948Z",
+      "duration_hours": 0.031666,
+      "category": "Anomaly",
+      "class": "class_22",
+      "subclass": "subclass_1",
+      "dimensionality": "Univariate",
+      "locality": "Local",
+      "length": "Subsequence",
+      "channel_count": 1,
+      "channels": [
+        "channel_74"
+      ],
+      "subsystems": [
+        "subsystem_3"
+      ]
+    },
+    {
+      "id": "id_195",
+      "start": "2000-08-25T09:10:59.067Z",
+      "end": "2000-08-25T09:19:59.067Z",
+      "duration_hours": 0.15,
+      "category": "Anomaly",
+      "class": "class_22",
+      "subclass": "subclass_1",
+      "dimensionality": "Univariate",
+      "locality": "Global",
+      "length": "Subsequence",
+      "channel_count": 1,
+      "channels": [
+        "channel_73"
+      ],
+      "subsystems": [
+        "subsystem_3"
+      ]
+    },
+    {
+      "id": "id_196",
+      "start": "2000-09-10T17:22:59.067Z",
+      "end": "2000-09-10T17:31:29.067Z",
+      "duration_hours": 0.141667,
+      "category": "Rare Event",
+      "class": "class_22",
+      "subclass": "subclass_2",
+      "dimensionality": "Univariate",
+      "locality": "Global",
+      "length": "Subsequence",
+      "channel_count": 1,
+      "channels": [
+        "channel_73"
+      ],
+      "subsystems": [
+        "subsystem_3"
+      ]
+    },
+    {
+      "id": "id_197",
+      "start": "2000-09-10T20:12:56.817Z",
+      "end": "2000-09-10T20:20:56.817Z",
+      "duration_hours": 0.133333,
+      "category": "Rare Event",
+      "class": "class_22",
+      "subclass": "subclass_2",
+      "dimensionality": "Univariate",
+      "locality": "Global",
+      "length": "Subsequence",
+      "channel_count": 1,
+      "channels": [
+        "channel_75"
+      ],
+      "subsystems": [
+        "subsystem_3"
+      ]
+    },
+    {
+      "id": "id_198",
+      "start": "2000-09-10T22:13:10.689Z",
+      "end": "2000-09-10T22:21:10.689Z",
+      "duration_hours": 0.133333,
+      "category": "Rare Event",
+      "class": "class_22",
+      "subclass": "subclass_2",
+      "dimensionality": "Univariate",
+      "locality": "Global",
+      "length": "Subsequence",
+      "channel_count": 1,
+      "channels": [
+        "channel_76"
+      ],
+      "subsystems": [
+        "subsystem_3"
+      ]
+    },
+    {
+      "id": "id_199",
+      "start": "2000-09-28T22:04:54.942Z",
+      "end": "2000-09-28T22:14:24.939Z",
+      "duration_hours": 0.158332,
+      "category": "Anomaly",
+      "class": "class_22",
+      "subclass": "subclass_1",
+      "dimensionality": "Univariate",
+      "locality": "Local",
+      "length": "Subsequence",
+      "channel_count": 1,
+      "channels": [
+        "channel_74"
+      ],
+      "subsystems": [
+        "subsystem_3"
+      ]
+    },
+    {
+      "id": "id_200",
+      "start": "2000-10-10T00:23:28.323Z",
+      "end": "2000-10-13T00:02:05.817Z",
+      "duration_hours": 71.643748,
+      "category": "Anomaly",
+      "class": "class_15",
+      "subclass": "subclass_1",
+      "dimensionality": "Multivariate",
+      "locality": "Global",
+      "length": "Subsequence",
+      "channel_count": 16,
+      "channels": [
+        "channel_41",
+        "channel_42",
+        "channel_43",
+        "channel_44",
+        "channel_45",
+        "channel_46",
+        "channel_47",
+        "channel_48",
+        "channel_49",
+        "channel_50",
+        "channel_51",
+        "channel_52",
+        "channel_57",
+        "channel_58",
+        "channel_59",
+        "channel_60"
+      ],
+      "subsystems": [
+        "subsystem_5",
+        "subsystem_6"
+      ]
+    }
+  ]
+}

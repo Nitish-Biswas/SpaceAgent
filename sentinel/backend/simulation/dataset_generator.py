@@ -61,7 +61,7 @@ SENTINEL_SYSTEM_PROMPT = (
     "- If your confidence is below 0.70, set requires_human_review: true\n"
     "\n"
     'OUTPUT FORMAT — STRICT JSON, NO EXCEPTIONS:\n'
-    '{"hypotheses": [{"rank": 1, "root_cause": "EPS_POWER_FAULT", "component": "SOLAR_ARRAY_A",\n'
+    '{"hypotheses": [{"rank": 1, "root_cause": "EPS_SOLAR_UNDERVOLT", "component": "SOLAR_ARRAY_A",\n'
     '"confidence": 0.88, "causal_chain": ["I_sa drops to 0A in sunlight",\n'
     '"battery begins draining", "V_bat falls to 24.1V", "EPS fault flag set",\n'
     '"safe mode triggered"]},\n'
@@ -80,34 +80,34 @@ SENTINEL_SYSTEM_PROMPT = (
 # ---------------------------------------------------------------------------
 
 _FAULT_TYPES = [
-    "EPS_POWER_FAULT",
-    "ADCS_SENSOR_FAULT",
-    "OBC_SOFTWARE_FAULT",
-    "TCS_THERMAL_FAULT",
-    "COMMS_FAULT",
-    "MULTI_SYSTEM_CASCADE",
+    "EPS_SOLAR_UNDERVOLT",
+    "ADCS_GYRO_SEU",
+    "OBC_WATCHDOG_OVERFLOW",
+    "TCS_THERMAL_RUNAWAY",
+    "COMMS_TRANSPONDER_LOSS",
+    "MULTI_CASCADE",
 ]
 
 # Plausible alternative hypotheses for each fault type (rank-2 and rank-3).
 # These represent physically adjacent failure modes that a real analyst might
 # consider before ruling them out.
 _ALT_HYPOTHESES: dict = {
-    "EPS_POWER_FAULT":      ("MULTI_SYSTEM_CASCADE", "COMMS_FAULT"),
-    "ADCS_SENSOR_FAULT":    ("MULTI_SYSTEM_CASCADE", "OBC_SOFTWARE_FAULT"),
-    "OBC_SOFTWARE_FAULT":   ("ADCS_SENSOR_FAULT",    "MULTI_SYSTEM_CASCADE"),
-    "TCS_THERMAL_FAULT":    ("MULTI_SYSTEM_CASCADE", "EPS_POWER_FAULT"),
-    "COMMS_FAULT":          ("ADCS_SENSOR_FAULT",    "MULTI_SYSTEM_CASCADE"),
-    "MULTI_SYSTEM_CASCADE": ("ADCS_SENSOR_FAULT",    "EPS_POWER_FAULT"),
+    "EPS_SOLAR_UNDERVOLT":      ("MULTI_CASCADE", "COMMS_TRANSPONDER_LOSS"),
+    "ADCS_GYRO_SEU":            ("MULTI_CASCADE", "OBC_WATCHDOG_OVERFLOW"),
+    "OBC_WATCHDOG_OVERFLOW":    ("ADCS_GYRO_SEU",    "MULTI_CASCADE"),
+    "TCS_THERMAL_RUNAWAY":      ("MULTI_CASCADE", "EPS_SOLAR_UNDERVOLT"),
+    "COMMS_TRANSPONDER_LOSS":   ("ADCS_GYRO_SEU",    "MULTI_CASCADE"),
+    "MULTI_CASCADE":            ("ADCS_GYRO_SEU",    "EPS_SOLAR_UNDERVOLT"),
 }
 
 # Recovery command prefixes derived from each fault type's subsystem.
 _CMD_PREFIX: dict = {
-    "EPS_POWER_FAULT":      "CMD_EPS",
-    "ADCS_SENSOR_FAULT":    "CMD_ADCS",
-    "OBC_SOFTWARE_FAULT":   "CMD_OBC",
-    "TCS_THERMAL_FAULT":    "CMD_TCS",
-    "COMMS_FAULT":          "CMD_COMMS",
-    "MULTI_SYSTEM_CASCADE": "CMD_MULTI",
+    "EPS_SOLAR_UNDERVOLT":      "CMD_EPS",
+    "ADCS_GYRO_SEU":            "CMD_ADCS",
+    "OBC_WATCHDOG_OVERFLOW":    "CMD_OBC",
+    "TCS_THERMAL_RUNAWAY":      "CMD_TCS",
+    "COMMS_TRANSPONDER_LOSS":   "CMD_COMMS",
+    "MULTI_CASCADE":            "CMD_MULTI",
 }
 
 

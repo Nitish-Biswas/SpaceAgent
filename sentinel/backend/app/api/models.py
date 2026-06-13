@@ -103,7 +103,7 @@ class Hypothesis(BaseModel):
     root_cause: str = Field(
         ...,
         min_length=3,
-        description="Fault class, e.g. EPS_POWER_FAULT, ADCS_GYRO_SEU",
+        description="Fault class, e.g. ADCS_GYRO_SEU, EPS_SOLAR_UNDERVOLT",
     )
     affected_component: str = Field(
         ...,

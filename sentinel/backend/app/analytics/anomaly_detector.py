@@ -457,12 +457,12 @@ if __name__ == "__main__":
     import json as _json
 
     FAULT_TYPES = [
-        "EPS_POWER_FAULT",
-        "ADCS_SENSOR_FAULT",
-        "OBC_SOFTWARE_FAULT",
-        "TCS_THERMAL_FAULT",
+        "EPS_SOLAR_UNDERVOLT",
+        "ADCS_GYRO_SEU",
+        "OBC_WATCHDOG_OVERFLOW",
+        "TCS_THERMAL_RUNAWAY",
         "COMMS_FAULT",
-        "MULTI_SYSTEM_CASCADE",
+        "MULTI_CASCADE",
     ]
 
     sim = SatelliteFaultSimulator(seed=42)
