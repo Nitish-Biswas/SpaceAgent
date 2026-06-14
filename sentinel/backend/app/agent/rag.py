@@ -59,9 +59,31 @@ CHROMA_DB_DIR = os.path.join(_BACKEND_DIR, "data", "chroma_db")
 CHROMA_COLLECTION_NAME = "ecss_procedures"
 
 DEFAULT_TOP_K = 3
-CHUNK_SIZE = 512        # Tokens per chunk — good for technical docs
+CHUNK_SIZE = 512        # Tokens per chunk -- good for technical docs
 CHUNK_OVERLAP = 50      # Overlap to preserve context across boundaries
 EMBEDDING_MODEL = "all-MiniLM-L6-v2"  # Free, local, no API key needed
+GEMINI_EMBED_MODEL = "text-embedding-004"  # Gemini embedding model (free tier)
+
+# -- Memory-saving overrides ------------------------------------------------
+#
+# Option A: USE_GEMINI_RAG=true  (RECOMMENDED for free hosting)
+#   Loads precomputed vectors from data/ecss_gemini_rag.npz (built once locally)
+#   1 Gemini embed API call per query. Zero PyTorch. Zero ChromaDB. ~5MB RAM.
+#   Run: python sentinel/backend/data_tools/precompute_gemini_embeddings.py
+#
+# Option B: DISABLE_PDF_RAG=true  (no RAG at all, just fallback KB)
+#   Saves ~400MB RAM. Agent still works via Gemini + built-in keyword KB.
+#
+USE_GEMINI_RAG: bool = os.environ.get("USE_GEMINI_RAG", "false").lower() in ("1", "true", "yes")
+DISABLE_PDF_RAG: bool = (
+    not USE_GEMINI_RAG
+    and os.environ.get("DISABLE_PDF_RAG", "false").lower() in ("1", "true", "yes")
+)
+
+_THIS_FILE = os.path.dirname(os.path.abspath(__file__))
+GEMINI_RAG_NPZ = os.path.normpath(
+    os.path.join(_THIS_FILE, "..", "..", "data", "ecss_gemini_rag.npz")
+)
 
 # ── Memory-saving override ──────────────────────────────────────────────────
 # Set DISABLE_PDF_RAG=true in your environment (e.g. Render free tier) to skip
@@ -105,15 +127,32 @@ class RAGStatus:
         return f"PDF RAG unavailable: {self.last_error} (using fallback KB)"
 
 
-# Module-level state (lazy-initialized)
+# Initialize _rag_status now that RAGStatus is defined
 _rag_status = RAGStatus()
+
+if USE_GEMINI_RAG:
+    logger.info(
+        "USE_GEMINI_RAG=true -- will use precomputed Gemini embeddings "
+        "(zero PyTorch/ChromaDB). Query embedding via Gemini API."
+    )
+elif DISABLE_PDF_RAG:
+    logger.info(
+        "DISABLE_PDF_RAG=true -- skipping sentence-transformers/ChromaDB. "
+        "Fallback KB will be used for all retrievals."
+    )
+
+
+# Module-level state (lazy-initialized after RAGStatus class is defined below)
+_rag_status: Any = None   # set to RAGStatus() after class def
 _chroma_collection: Any = None
 _embedding_fn: Any = None
 
+# Gemini RAG numpy index (loaded once when USE_GEMINI_RAG=true)
+_gemini_vectors: Any = None   # np.ndarray shape (N, D), L2-normalised float32
+_gemini_chunks: Any = None    # np.ndarray of str
+_gemini_sources: Any = None   # np.ndarray of str
+_gemini_rag_loaded: bool = False
 
-# ═══════════════════════════════════════════════════════════════════════════
-# SECTION 1 — KNOWLEDGE BASE ENTRY STRUCTURE
-# ═══════════════════════════════════════════════════════════════════════════
 
 @dataclass(frozen=True)
 class KBEntry:
@@ -831,11 +870,102 @@ def _try_pdf_rag(query: str, top_k: int = DEFAULT_TOP_K) -> list[str] | None:
     return formatted if formatted else None
 
 
-# ═══════════════════════════════════════════════════════════════════════════
-# SECTION 6 — PUBLIC RETRIEVAL API
-# ═══════════════════════════════════════════════════════════════════════════
+# ===========================================================================
+# SECTION 5b -- GEMINI RAG (precomputed numpy vectors, zero PyTorch)
+# ===========================================================================
+
+def _load_gemini_rag() -> bool:
+    """Load precomputed Gemini embeddings from ecss_gemini_rag.npz.
+
+    Returns True on success, False if the file doesn't exist or is invalid.
+    Safe to call multiple times (idempotent).
+    """
+    global _gemini_vectors, _gemini_chunks, _gemini_sources, _gemini_rag_loaded
+
+    if _gemini_rag_loaded:
+        return _gemini_vectors is not None
+
+    _gemini_rag_loaded = True  # mark attempted so we don't retry on every call
+
+    if not os.path.exists(GEMINI_RAG_NPZ):
+        logger.warning(
+            "USE_GEMINI_RAG=true but %s not found. "
+            "Run: python sentinel/backend/data_tools/precompute_gemini_embeddings.py",
+            GEMINI_RAG_NPZ,
+        )
+        return False
+
+    try:
+        import numpy as np
+        data = np.load(GEMINI_RAG_NPZ, allow_pickle=True)
+        _gemini_vectors = data["vectors"]   # (N, D) float32, L2-normalised
+        _gemini_chunks  = data["chunks"]    # (N,) object array of str
+        _gemini_sources = data["sources"]   # (N,) object array of str
+        logger.info(
+            "Gemini RAG loaded: %d chunks x %d dims from %s",
+            _gemini_vectors.shape[0], _gemini_vectors.shape[1], GEMINI_RAG_NPZ,
+        )
+        return True
+    except Exception as e:
+        logger.error("Failed to load Gemini RAG file %s: %s", GEMINI_RAG_NPZ, e)
+        _gemini_vectors = None
+        return False
+
+
+def _query_gemini_rag(query: str, top_k: int = 3) -> list[str]:
+    """Embed query via Gemini API, return top-k chunks by cosine similarity.
+
+    Requires:
+      - GEMINI_API_KEY in environment
+      - ecss_gemini_rag.npz loaded (call _load_gemini_rag() first)
+      - numpy (already a project dependency)
+
+    Raises on API error (caller should catch and fall back to KB).
+    """
+    import numpy as np
+
+    if _gemini_vectors is None:
+        raise RuntimeError("Gemini RAG vectors not loaded")
+
+    api_key = os.environ.get("GEMINI_API_KEY", "")
+    if not api_key:
+        raise RuntimeError("GEMINI_API_KEY not set")
+
+    from google import genai
+    client = genai.Client(api_key=api_key)
+
+    result = client.models.embed_content(
+        model=GEMINI_EMBED_MODEL,
+        contents=[query],
+    )
+    q_vec = np.array(result.embeddings[0].values, dtype=np.float32)
+    norm = np.linalg.norm(q_vec)
+    if norm > 0:
+        q_vec /= norm
+
+    # Cosine similarity = dot product (vectors are already L2-normalised)
+    scores = _gemini_vectors @ q_vec          # shape (N,)
+    top_idx = np.argsort(scores)[::-1][:top_k]
+
+    chunks = []
+    for idx in top_idx:
+        source = str(_gemini_sources[idx]) if _gemini_sources is not None else "ECSS"
+        text   = str(_gemini_chunks[idx])
+        chunks.append(f"[Source: {source}]\n{text}")
+
+    logger.info(
+        "Gemini RAG query returned %d chunks (top score=%.3f)",
+        len(chunks), float(scores[top_idx[0]]) if len(top_idx) else 0,
+    )
+    return chunks
+
+
+# ===========================================================================
+# SECTION 6 -- PUBLIC RETRIEVAL API
+# ===========================================================================
 
 def retrieve_procedures(
+
     query: str = "",
     fault_cues: list[str] | None = None,
     top_k: int = DEFAULT_TOP_K,
@@ -870,12 +1000,28 @@ def retrieve_procedures(
     """
     global _rag_status
 
-    # Build combined query for PDF RAG
+    # Build combined query for PDF RAG / Gemini RAG
     combined_query = query
     if fault_cues:
         combined_query += " " + " ".join(fault_cues)
 
-    # Try PDF RAG first
+    # ── USE_GEMINI_RAG path (precomputed numpy vectors, zero PyTorch) ─────────
+    if USE_GEMINI_RAG and use_pdf_rag and combined_query.strip():
+        try:
+            if _load_gemini_rag():
+                results = _query_gemini_rag(combined_query, top_k)
+                if results:
+                    _rag_status.last_source = "gemini_rag"
+                    return results
+                logger.info("Gemini RAG returned no results, falling back to KB")
+            else:
+                logger.warning("Gemini RAG not available, falling back to KB")
+        except Exception as exc:
+            logger.warning("Gemini RAG query failed (non-fatal): %s", exc)
+        _rag_status.last_source = "fallback_kb"
+        return _retrieve_from_fallback(query, fault_cues, top_k)
+
+    # ── Standard ChromaDB / PDF RAG path ─────────────────────────────────────
     if use_pdf_rag and combined_query.strip():
         pdf_results = _try_pdf_rag(combined_query, top_k)
         if pdf_results:
@@ -888,6 +1034,7 @@ def retrieve_procedures(
     # Fall back to keyword-based KB matching
     _rag_status.last_source = "fallback_kb"
     return _retrieve_from_fallback(query, fault_cues, top_k)
+
 
 
 def _retrieve_from_fallback(
