@@ -63,6 +63,18 @@ CHUNK_SIZE = 512        # Tokens per chunk — good for technical docs
 CHUNK_OVERLAP = 50      # Overlap to preserve context across boundaries
 EMBEDDING_MODEL = "all-MiniLM-L6-v2"  # Free, local, no API key needed
 
+# ── Memory-saving override ──────────────────────────────────────────────────
+# Set DISABLE_PDF_RAG=true in your environment (e.g. Render free tier) to skip
+# loading sentence-transformers + PyTorch + ChromaDB (~400 MB RAM saved).
+# The fallback knowledge base always handles all fault types.
+DISABLE_PDF_RAG: bool = os.environ.get("DISABLE_PDF_RAG", "false").lower() in ("1", "true", "yes")
+if DISABLE_PDF_RAG:
+    logger.info(
+        "DISABLE_PDF_RAG=true — skipping sentence-transformers/ChromaDB. "
+        "Fallback KB will be used for all retrievals."
+    )
+
+
 
 # ═══════════════════════════════════════════════════════════════════════════
 # RAG STATUS TRACKING
@@ -629,6 +641,13 @@ def initialize_pdf_rag(force_rebuild: bool = False) -> bool:
         fall back to FALLBACK_KB).
     """
     global _chroma_collection, _embedding_fn, _rag_status
+
+    # ── Early exit when PDF RAG is explicitly disabled (saves ~400 MB RAM) ──
+    if DISABLE_PDF_RAG:
+        _rag_status.initialized = True
+        _rag_status.available = False
+        _rag_status.last_error = "PDF RAG disabled via DISABLE_PDF_RAG env var"
+        return False
 
     if _rag_status.initialized and _rag_status.available and not force_rebuild:
         return True
